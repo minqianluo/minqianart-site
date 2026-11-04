@@ -81,3 +81,6 @@ html:lang(ja) body,html:lang(zh-Hans) body,html:lang(zh-Hant) body{line-break:st
   html:not([lang=en]) body .hero .ribbon{padding-left:66px;padding-right:46px}
   html:not([lang=en]) footer .legal{padding:0 40px 0 54px}
 }
+/* rose kept clear of the placeholder caption (all langs) */
+body .gal .main .rosea{bottom:96px!important}
+@media (max-width:600px){body .gal .main .rosea{bottom:120px!important;width:150px!important;right:-30px!important}}
