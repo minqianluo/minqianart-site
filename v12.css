@@ -1,0 +1,7 @@
+header.site a,footer a{text-decoration:none;color:inherit}
+.m-menu{display:none}
+@media (max-width:600px){
+ .menu-open .m-menu{display:flex;flex-direction:column;position:fixed;left:0;right:0;top:113px;z-index:300;background:#fffaf0;border-top:1px solid #c9a96a;border-bottom:3px double #c9a96a;box-shadow:0 14px 30px rgba(60,10,20,.25);padding:8px 0}
+ .menu-open .m-menu a{display:block;padding:14px 28px;font-family:CormorantSC,'Cormorant Garamond',serif;letter-spacing:.18em;font-size:16px;color:#5a1420;text-decoration:none;border-bottom:1px solid rgba(201,169,106,.35)}
+ .menu-open .m-menu a:last-child{border-bottom:0}
+}

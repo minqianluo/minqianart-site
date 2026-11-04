@@ -1,0 +1,21 @@
+.v3 .pdp>img{position:absolute;pointer-events:none;z-index:0}
+.pd-drape{left:-40px;top:-10px;width:1520px;opacity:.85;z-index:3!important}
+.pd-music{width:600px;left:40px;top:80px;opacity:.4;mix-blend-mode:multiply;transform:rotate(-6deg)}
+.pd-letter{width:460px;left:300px;top:640px;opacity:.4;mix-blend-mode:multiply;transform:rotate(7deg)}
+.pd-lace{width:640px;left:-80px;top:520px;opacity:.9;transform:rotate(-10deg);z-index:3!important}
+.pd-lace2{width:520px;right:-120px;top:900px;opacity:.85;transform:rotate(14deg)}
+.pd-chand{width:150px;left:720px;top:60px;opacity:.4;mix-blend-mode:multiply}
+.pd-candle{width:130px;left:30px;top:900px;opacity:.4;mix-blend-mode:multiply}
+.v3 .gal .main{border-radius:320px 320px 0 0;background:rgba(255,251,242,.7);overflow:visible}
+.v3 .gal .main .c.tl,.v3 .gal .main .c.tr{display:none}
+.orbit2{position:absolute;left:50%;top:50%;width:470px;height:550px;transform:translate(-50%,-47%);z-index:1;pointer-events:none}
+.p-bow{position:absolute;width:210px;left:60px;top:430px;z-index:5;transform:rotate(-14deg)}
+.p-pearls{position:absolute;width:420px;left:110px;bottom:120px;z-index:5;transform:rotate(-6deg)}
+.v3 .buy-vellum{border-radius:300px 300px 0 0;opacity:.6}
+.v3 .th{border-radius:60px 60px 4px 4px;overflow:hidden}
+.v3 .fopt,.v3 .subj span{border-radius:40px 40px 4px 4px}
+.v3 .drop{border-radius:120px 120px 8px 8px}
+.v3 .box3{border-radius:200px 200px 6px 6px;padding-top:70px}
+.v3 .pinfo{padding-top:150px}
+.v3 footer{margin-top:0}
+.pd-drape{top:-120px!important;opacity:.7!important}

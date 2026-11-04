@@ -1,0 +1,30 @@
+@media (max-width:600px){
+body{width:390px;font-size:17px}
+.topbar{font-size:11px;letter-spacing:.12em;padding:7px 10px}
+header.site{grid-template-columns:44px 1fr 44px;padding:12px 14px}
+header.site nav a{display:none}
+header.site nav:first-child:before{content:"";display:block;width:26px;height:16px;border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);position:relative;background:linear-gradient(var(--gold),var(--gold)) center/100% 2px no-repeat}
+header.site nav.r a:last-child{display:inline;margin:0;font-size:0}
+header.site nav.r a:last-child .cartdot{font-size:12px}
+.brand{justify-content:center;gap:8px}.brand img{width:40px;height:40px}.brand .wordmark{font-size:38px}
+.hero{height:auto;padding:26px 18px 96px}
+.hero .copy{position:relative;left:auto;top:auto;width:auto}
+.hero .copy .emb{width:170px}
+.hero .copy h1{font-size:38px}.hero .copy h1 em{font-size:37px;padding:0}
+.hero .art-wrap .fr{width:300px!important}
+.hero .copy p{font-size:18px;margin:10px auto 20px}
+.hero .copy .btns{flex-direction:column;gap:16px;align-items:center}
+.hero .copy .btns .btn{width:300px;text-align:center;padding:14px 10px;font-size:15px}
+.hero .art-wrap{position:relative;right:auto;top:auto;width:300px;margin:44px auto 40px}
+.hero .veer-tl{width:260px;left:-120px;top:-70px}.hero .veer-bl{display:none}
+.hero .bf1{width:58px;right:12px;top:120px}.hero .bf2{width:58px;right:auto;left:14px;top:auto;bottom:250px}
+.hero .rose-r{width:150px;right:-40px;bottom:40px}.hero .rose-r2{display:none}
+.hero .badge{right:30px;top:auto;bottom:190px}.hero .badge .wax{width:86px;height:86px}
+.hero .ribbon{height:auto;flex-wrap:wrap;gap:4px 14px;padding:10px 12px;font-size:12px;white-space:normal}
+.hero .ribbon i{display:none}
+.featured{display:none}
+.collections{padding:60px 0 60px}
+h2.sect{font-size:40px}.kicker{font-size:13px;letter-spacing:.22em}.divider{width:330px;height:30px}.lede{font-size:18px;padding:0 24px}
+.cards{grid-template-columns:340px;gap:44px;margin-top:40px}
+.card{padding:40px 26px 34px}.card .stage{height:290px}
+}

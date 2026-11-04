@@ -1,0 +1,7 @@
+@media (max-width:600px){
+ .v5 .fborder img{display:none}
+ .v5 .fborder img:nth-child(3n+1){display:block;width:84px!important}
+ .v5 .fborder img.l{left:-34px!important}.v5 .fborder img.r{right:-34px!important}
+ .v5 .sx-fl{width:84px!important;top:-70px!important}.v5 .sx-fl.l{left:4px!important}.v5 .sx-fl.r{right:4px!important}
+ .v5 .hero .veer-tl{width:100px!important;top:40px!important;left:-36px!important}
+}

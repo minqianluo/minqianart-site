@@ -1,0 +1,22 @@
+/* v4: no pearls · large PD needle-lace pieces · painted floral border */
+body.v4{position:relative}
+.fborder{position:absolute;inset:0;pointer-events:none;z-index:40;overflow:hidden}
+.fborder img{position:absolute;filter:drop-shadow(0 4px 6px rgba(60,25,15,.25))}
+.fborder .bf{filter:drop-shadow(0 3px 3px rgba(60,25,15,.3))}
+.v4 .sx-lace{width:560px;opacity:.9}
+.v4 .sx-lace.l{left:-150px;bottom:20px;transform:rotate(-8deg)}
+.v4 .sx-lace.r{right:-160px;top:60px;transform:rotate(11deg)}
+.v4 .sx-fl{position:absolute!important;width:230px;z-index:6;top:-90px;filter:drop-shadow(0 4px 6px rgba(60,25,15,.25))}
+.v4 .sx-fl.l{left:150px;transform:rotate(-14deg)}
+.v4 .sx-fl.r{right:150px;transform:rotate(12deg) scaleX(-1)}
+.v4 .sx-drape{opacity:.9}
+.v4 .h-lace1{width:600px;opacity:.9}.v4 .h-lace2{width:520px;opacity:.9}
+.v4 .cl-lace{opacity:.9}
+.v4 .ab-lace{width:480px;opacity:.85}
+.v4 .drape-lace{display:none}
+.v4 .sx-lace{width:440px;opacity:.75}
+.v4 .sx-lace.l{left:-190px}.v4 .sx-lace.r{right:-200px}
+.v4 .h-lace1,.v4 .h-lace2{opacity:.8}
+.v4 .pd-drape{display:none!important}
+.v4 .pd-lace{width:520px;opacity:.75}
+.v4 .pd-lace2{width:460px;opacity:.75}

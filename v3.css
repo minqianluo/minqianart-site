@@ -1,0 +1,122 @@
+/* ===== v3: soft sheer lace, ephemera, chandeliers, arches & ovals (cream) ===== */
+.v3 .scallop-top,.v3 .lace-hem,.v3 .lace-edge,.v3 .scallop-foot,.v3 .tape,.v3 .corner-fl,.v3 .torn-strip,.v3 .sec-doily{display:none!important}
+.v3 img[src*="lace_"]{filter:drop-shadow(0 1px 1.5px rgba(90,60,40,.28));pointer-events:none}
+/* hero */
+.v3 .hero{height:960px}
+.v3 .hero .drape{position:absolute;left:0;top:0;width:100%;height:150px;z-index:9;opacity:.92}
+.v3 .hero .drape-lace{position:absolute;left:-40px;top:70px;width:1520px;z-index:9;opacity:.9}
+.v3 .bigscript{position:absolute;left:40px;top:560px;font-family:Pinyon,cursive;font-size:230px;color:rgba(112,30,38,.07);white-space:nowrap;z-index:0;transform:rotate(-6deg)}
+.v3 .chand-hero{position:absolute;left:770px;top:60px;width:170px;opacity:.55;z-index:2;mix-blend-mode:multiply}
+.v3 .tblock{position:absolute;font-family:CormorantSC,serif;font-size:12px;letter-spacing:.18em;color:#7a5a44;line-height:1.7;z-index:4}
+.v3 .tblock i{font-family:Cormorant,serif;letter-spacing:.02em;font-size:13px;text-transform:none}
+.v3 .tb1{left:800px;top:820px;width:220px;text-align:center}
+.v3 .arch-panel{position:absolute;left:165px;top:100px;width:630px;height:800px;border-radius:315px 315px 0 0;background:rgba(255,251,242,.72);border:1px solid rgba(201,163,92,.8);box-shadow:0 0 0 8px rgba(255,251,242,.35),0 0 0 9px rgba(201,163,92,.45);z-index:1}
+.v3 .hero .copy{top:150px;z-index:3}
+.v3 .hero .copy .emb{width:200px}
+.v3 .hero .copy h1{font-size:56px}.v3 .hero .copy h1 em{font-size:60px}
+.v3 .veer-tl{z-index:5!important}
+.v3 .collage-hero{top:120px}
+.collage-hero .h-music{width:520px;left:40px;top:40px;transform:rotate(-7deg);opacity:.75;mix-blend-mode:multiply}
+.collage-hero .h-letter{width:330px;left:330px;top:300px;transform:rotate(9deg);opacity:.8;mix-blend-mode:multiply}
+.v3 .ch-paper1{width:380px;left:180px;top:420px;transform:rotate(-4deg);opacity:.85}
+.v3 .ch-vellum{opacity:.55}
+.collage-hero .h-lace1{width:620px;left:-30px;top:470px;transform:rotate(-12deg);opacity:.95}
+.collage-hero .h-lace2{width:360px;left:400px;top:-20px;transform:rotate(20deg);opacity:.9}
+.collage-hero .h-candle{width:170px;left:-40px;top:250px;opacity:.5;mix-blend-mode:multiply}
+.v3 .hero .art-wrap{top:150px}
+.orbit{position:absolute;left:-75px;top:-55px;width:620px;height:723px;z-index:-1;pointer-events:none}
+.fr.artist .art{object-position:50% 34%;filter:none}
+.h-bow{position:absolute;width:300px;left:-120px;top:330px;transform:rotate(-14deg);z-index:6}
+.h-pearls{position:absolute;width:520px;left:-30px;top:420px;transform:rotate(-8deg);z-index:6}
+.h-pdrop{position:absolute;width:120px;right:-60px;top:80px;z-index:6;opacity:.95}
+.v3 .nameplate{bottom:-48px}
+.v3 .hero .badge{right:40px;top:640px}
+.v3 .hero .rose-r{bottom:-10px}
+.hem-lace{position:absolute;left:-60px;bottom:20px;width:1560px;height:150px;z-index:7;opacity:.9}
+.v3 .hero .ribbon{height:44px;background:var(--wine);font-size:13px;z-index:8}
+/* curved transitions */
+.v3 section.cl,.v3 .about{border-radius:50% 50% 0 0/110px 110px 0 0;margin-top:-60px;padding-top:140px;box-shadow:0 -10px 24px -18px rgba(90,50,30,.35)}
+.v3 .featured{background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(0,0,0,.08)),url(assets/brand/damask_cream.svg),#5c171e;z-index:1}
+.v3 .collections{background:#f3e8d2 url(assets/brand/damask_wine.svg);z-index:2}
+.v3 .steps{background:#efe1c4 url(assets/brand/damask_wine.svg);z-index:3}
+.v3 .unbox{background:#f3e8d2 url(assets/brand/damask_wine.svg);z-index:4}
+.v3 .about{position:relative;background:#ead9b8;z-index:5;overflow:hidden;padding-bottom:110px}
+.v3 .testi{background:#f3e8d2 url(assets/brand/damask_wine.svg);z-index:6}
+.v3 footer{z-index:7;border-radius:50% 50% 0 0/90px 90px 0 0;margin-top:-50px;padding-top:150px;border-top:none;overflow:hidden}
+/* section collage pieces */
+.sx-drape{position:absolute;left:50%;transform:translateX(-50%);top:6px;width:1000px;opacity:.85;z-index:1}
+.sx-eph{position:absolute;left:-60px;top:60px;width:420px;opacity:.28;mix-blend-mode:multiply;transform:rotate(-8deg);z-index:0}
+.sx-lace{position:absolute;width:420px;opacity:.85;z-index:1}
+.sx-lace.l{left:-120px;bottom:40px;transform:rotate(18deg)}.sx-lace.r{right:-120px;top:120px;transform:rotate(-22deg)}
+.sx-candle{position:absolute;width:150px;top:120px;opacity:.38;mix-blend-mode:multiply;z-index:0}
+.sx-candle.l{left:60px}.sx-candle.r{right:60px}
+.v3 .featured .sx-eph{opacity:.12;mix-blend-mode:screen}.v3 .featured .sx-candle{mix-blend-mode:screen;opacity:.25;filter:invert(1) sepia(1)}
+.v3 .featured .sx-drape{opacity:.6}
+/* salon extras */
+.salon .sl{position:absolute;z-index:3;pointer-events:none}
+.sl.l1{width:380px;left:-60px;top:250px;opacity:.75;transform:rotate(-12deg)}
+.sl.l2{width:200px;left:520px;top:-60px;z-index:4}
+.sl.l3{width:420px;left:830px;top:330px;opacity:.7;transform:rotate(14deg)}
+.sl.l4{width:520px;left:360px;top:300px;transform:rotate(4deg);z-index:4}
+.sl.l5{width:360px;left:820px;top:-40px;opacity:.5;transform:rotate(5deg);z-index:0}
+.sl.l6{width:150px;left:1090px;top:260px;opacity:.35;filter:invert(1) sepia(1);mix-blend-mode:screen;z-index:0}
+.v3 .sp.p2,.v3 .sp.p4{display:none}
+/* keyhole banner */
+.keyhole{position:relative;width:720px;margin:0 auto 10px;padding:70px 60px 150px;border-radius:360px 360px 0 0;background:rgba(255,251,242,.85);border:1px solid var(--gold);box-shadow:0 0 0 10px rgba(255,251,242,.4),0 0 0 11px rgba(201,163,92,.5);overflow:visible}
+.kh-art{display:none}
+.kh-hole{position:absolute;left:50%;bottom:-70px;transform:translateX(-50%);width:150px;height:150px;border-radius:50%;overflow:hidden;border:2px solid var(--gold);box-shadow:0 0 0 7px #f3e8d2,0 0 0 8px var(--gold),0 6px 14px rgba(70,40,20,.35)}
+.kh-hole img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.v3 .cards{margin-top:110px}
+/* arch cards */
+.v3 .card{border-radius:200px 200px 6px 6px;padding-top:60px;background:rgba(255,251,242,.84)}
+.v3 .card:before{border-radius:192px 192px 2px 2px}
+.v3 .card .c.tl,.v3 .card .c.tr{display:none}
+.v3 .cd-paper{border-radius:0;opacity:.45;top:60px;mix-blend-mode:multiply}
+.cl-lace{position:absolute;width:300px;left:-90px;top:-30px;opacity:.85;transform:rotate(-20deg);z-index:3}
+.cl-pearl{position:absolute;width:150px;right:-50px;top:150px;z-index:4;transform:rotate(20deg)}
+.v3 .cd-doily{display:none}
+.v3 .card .stage{z-index:2}
+/* steps: arch medallions on vellum arches */
+.v3 .st-vellum{border-radius:200px 200px 0 0}
+.v3 .step{border-radius:180px 180px 0 0;background:rgba(255,251,242,.45);padding-top:30px}
+/* unbox */
+.v3 .ub-papers img:first-child{content:url(assets/v3/letter2.png);opacity:.55}
+.v3 .table{border-radius:360px 360px 0 0;overflow:hidden}
+/* about */
+.v3 .about>img{position:absolute;pointer-events:none}
+.ab-music{width:560px;right:-60px;top:120px;opacity:.3;mix-blend-mode:multiply;transform:rotate(6deg)}
+.ab-letter{width:420px;left:-60px;bottom:-40px;opacity:.35;mix-blend-mode:multiply;transform:rotate(-8deg)}
+.ab-lace{width:600px;right:-140px;bottom:-60px;opacity:.9;transform:rotate(-12deg)}
+.ab-chand{width:200px;left:600px;top:70px;opacity:.4;mix-blend-mode:multiply}
+.ab-grid{position:relative;z-index:2;display:grid;grid-template-columns:560px 560px;gap:80px;justify-content:center;align-items:center}
+.ab-art{position:relative;height:680px;display:flex;align-items:flex-end;justify-content:center}
+.dark-arch{position:absolute;left:30px;right:30px;top:0;bottom:0;border-radius:250px 250px 0 0;overflow:hidden;background:radial-gradient(ellipse at 50% 40%,#4a1218,#1c0a0b 80%);box-shadow:0 0 0 8px rgba(255,251,242,.6),0 0 0 9px var(--gold)}
+.dark-arch img{position:absolute;width:520px;left:-20px;top:-40px;opacity:.75}
+.dark-arch .da2{width:420px;left:auto;right:-140px;top:auto;bottom:-60px;transform:rotate(160deg);opacity:.6}
+.fr.artist2{z-index:2;margin-bottom:40px}.fr.artist2 .art{object-position:50% 34%}
+.ab-bow{position:absolute;width:230px;left:-30px;top:330px;z-index:4;transform:rotate(-16deg)}
+.ab-pearls{position:absolute;width:110px;right:20px;top:20px;z-index:4}
+.ab-copy p{font-size:21px;line-height:1.6;margin:18px 0}
+.ab-copy .sig{font-family:Pinyon,cursive;font-size:56px;color:var(--wine);margin:0}
+.ph-note{font-size:13px;font-style:italic;color:#9a7a5c}
+/* testimonials: arched letters */
+.v3 .quote{border-radius:150px 150px 0 0;padding-top:70px}
+.v3 .q-paper{border-radius:150px 150px 0 0;opacity:.5;mix-blend-mode:multiply}
+.v3 .quote{background:rgba(255,251,242,.75)!important;border:1px solid rgba(201,163,92,.6)!important}
+.q-bow{position:absolute;width:150px;left:50%;top:-50px;transform:translateX(-50%);z-index:3}
+/* footer */
+.f-lace{position:absolute;left:-40px;top:0;width:1520px;opacity:.35;z-index:1}
+.f-chand{position:absolute;left:50%;transform:translateX(-50%);top:20px;width:160px;opacity:.25;filter:invert(1) sepia(1);mix-blend-mode:screen;z-index:1}
+.redbar{position:absolute;left:0;right:0;bottom:0;height:8px;background:var(--wine);border-top:1px solid var(--gold)}
+.v3 .cl>.sx-drape,.v3 .cl>.sx-eph,.v3 .cl>.sx-lace,.v3 .cl>.sx-candle{position:absolute!important}
+.v3 .cl>.sx-drape{z-index:1}
+.v3 .hero .drape{height:120px;filter:blur(.6px)}
+.collage-hero .h-lace2{opacity:.6}
+.v3 .tb1{top:770px;left:820px}
+.hem-lace{bottom:-50px}
+.f-lace{top:-70px;opacity:.22}
+.v3 .steps .sx-eph{display:none}
+.v3 .unbox .sx-eph{content:url(assets/v3/letter1.png);width:300px;opacity:.3}
+.v3 .testi .sx-eph{left:auto;right:-60px;top:40px;transform:rotate(7deg)}
+.v3 .testi .sx-candle.r{display:none}
+.v3 .collections .sx-candle.l{left:auto;right:200px;top:170px}

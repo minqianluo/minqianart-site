@@ -1,0 +1,8 @@
+/* v9: hero right side restored to v4 */
+@media (min-width:601px){
+.v9 .hero .bf1{right:540px!important;top:90px!important;bottom:auto!important;left:auto!important;width:104px!important;transform:rotate(-18deg)!important;z-index:4!important;display:block!important;max-height:none!important}
+.v9 .hero .bf2{right:40px!important;top:470px!important;bottom:auto!important;left:auto!important;width:92px!important;transform:rotate(24deg)!important;z-index:5!important;display:block!important;max-height:none!important}
+.v9 .hero .rose-r{right:-50px!important;bottom:-10px!important;top:auto!important;left:auto!important;width:330px!important;transform:rotate(-14deg)!important;z-index:6!important;max-height:none!important;display:block!important}
+.v9 .hero .badge{z-index:7}
+.v9 .hero .wax{z-index:60!important}
+}

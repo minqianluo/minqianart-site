@@ -1,0 +1,7 @@
+@media (max-width:600px){
+ .fborder img.fw{width:110px!important}
+ .fborder img.bf{width:56px!important}
+ .fborder img.l{left:-46px!important}.fborder img.r{right:-46px!important}
+ .v4 .sx-lace{width:280px}
+ .v4 .sx-fl{width:120px;top:-50px}.v4 .sx-fl.l{left:10px}.v4 .sx-fl.r{right:10px}
+}

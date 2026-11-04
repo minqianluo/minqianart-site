@@ -1,0 +1,20 @@
+@media (max-width:600px){
+.collage-hero{display:none}
+.v2 .hero{height:auto}
+.v2 .hero .art-wrap{right:auto;top:auto;width:300px;margin:90px auto 120px}
+.v2 .hero{padding-bottom:150px!important}
+.v2 .hero .art-wrap:before{content:"";position:absolute;left:-40px;right:-40px;top:-10px;bottom:-40px;background:url(assets/collage/doily.png) center 45%/360px no-repeat,url(assets/collage/paper_sepia.png) center/100% 100% no-repeat;transform:rotate(4deg);z-index:-1;filter:drop-shadow(0 5px 6px rgba(60,30,20,.3))}
+.v2.noir .hero .art-wrap:before{opacity:.85}
+.tape.t1{width:130px;left:-30px;top:90px}.tape.t2{width:120px;right:-36px;bottom:70px}
+.nameplate{bottom:-50px;padding:6px 26px 8px}.nameplate .script{font-size:30px}
+.v2 .hero .badge{right:18px;top:auto;bottom:170px}
+.v2 .hero .bf2{top:auto;bottom:520px;right:auto;left:10px}
+.lace-hem{bottom:auto;top:auto;position:relative;display:none}
+.lace-edge{height:26px;background-size:auto 26px}.lace-edge:after{top:24px;height:16px;background-size:32px 16px}
+.corner-fl{width:70px;height:70px;top:46px}.corner-fl.l{left:8px}.corner-fl.r{right:8px}
+.sec-doily{width:300px;right:-120px;top:-60px}
+.torn-strip{width:390px;left:-20px}
+.tape.c1,.tape.c2{width:110px}
+.cd-doily{width:280px}
+.scallop-top{height:20px;background-size:40px 20px}
+}

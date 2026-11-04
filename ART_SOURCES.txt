@@ -1,0 +1,870 @@
+MinqianArt website - art & font sources (merged 2026-11-04 18:30 PT)
+All imagery: public domain or CC0, no AI imagery. Fonts: OFL. Paintings are acrylic.
+The site's assets/ folder keeps the same file names as below; earlier-version notes are kept verbatim for provenance.
+
+===== from ART_SOURCES.txt =====
+Public-domain placeholder artworks (stand-ins for MinqianArt's own hand-painted acrylic portraits):
+fragonard_dog.jpg | Jean Honoré Fragonard, "Marie Emilie Coignet de Courson (1716–1806) with a Dog", ca. 1769 | The Met 436323 | Public domain (Met Open Access, CC0) | https://www.metmuseum.org/art/collection/search/436323
+ceruti_dog.jpg | Giacomo Ceruti, "A Woman with a Dog", 1740s | The Met 435864 | Public domain (Met Open Access, CC0) | https://www.metmuseum.org/art/collection/search/435864
+landseer_deerhound.jpg | Sir Edwin Henry Landseer, "A Deerhound", 1826 | The Met 782306 | Public domain (Met Open Access, CC0) | https://www.metmuseum.org/art/collection/search/782306
+bonheur_hound.jpg | Rosa Bonheur, "A Limier Briquet Hound", ca. 1856 | The Met 435704 | Public domain (Met Open Access, CC0) | https://www.metmuseum.org/art/collection/search/435704
+gainsborough_cat.jpg | Thomas Gainsborough, "A Boy with a Cat—Morning", 1787 | The Met 436433 | Public domain (Met Open Access, CC0) | https://www.metmuseum.org/art/collection/search/436433
+goya_osorio.jpg | Goya (Francisco de Goya y Lucientes), "Manuel Osorio Manrique de Zuñiga (1784–1792)", 1787–88 | The Met 436545 | Public domain (Met Open Access, CC0) | https://www.metmuseum.org/art/collection/search/436545
+lebrun_julie.jpg | Elisabeth Louise Vigée Le Brun, "Julie Le Brun (1780–1819) Looking in a Mirror", 1787 | The Met 438132 | Public domain (Met Open Access, CC0) | https://www.metmuseum.org/art/collection/search/438132
+
+Additional public-domain sources used in brand assets (flowers, butterflies, frames, lace, cartouche):
+- Fragonard (Met 436323) - large copy, CC0 via Met/Wikimedia
+- Flowers: Nicolaes van Veerendael flower still life (Met 437867), Rachel Ruysch bouquet (public domain), Pierre-Joseph Redouté "Les Roses" plates (public domain)
+- Frames: carved giltwood frame (Met 189688, CC0), Rijksmuseum frame/ornament images (public domain)
+- Butterflies: Prang chromolithograph plates and Struyk butterfly drawings (public domain)
+- Lace and cartouche (Hofer): public-domain scans
+Full details: /workspace/thankyou_card/sources.txt and /workspace/final_capM/certificate/back/README_credits.txt
+Everything else (damask, corners, dividers, wax seals, round frames) is drawn in code (SVG/CSS).
+
+===== from v2/ART_SOURCES_v2.txt =====
+v2 uses the same public-domain/CC0 art and brand assets as v1 (see ../ART_SOURCES.txt).
+New in v2, all drawn in code by make_collage.py (numpy/PIL): torn/deckled paper pieces and strips, vellum, lace tapes, doilies, scalloped lace borders, photo placeholder. No AI imagery, no new outside images.
+Hero frame: frame_oval_carved.png (existing public-domain brand asset; source listed in the v1 credits files).
+
+===== from v3/ART_SOURCES_v3.txt =====
+ART_SOURCES_v3 — MinqianArt website mockup v3 (cream)
+
+Public-domain / CC0 scans (Wikimedia Commons; Rijksmuseum CC0 prints, Bach manuscript, DPLA letter), processed in code (make_v3.py) to sepia/gold, partly translucent:
+- chand1: File:Kroonluchter met bloemen 8e Cahier de l'Oeuvre H Cahier de six Lustres (serietitel) Oeuvres de Sculptures en Bronze, Contenant Girandoles, Flambeaux, Feux (serietitel), RP-P-OB-8969.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Kroonluchter_met_bloemen_8e_Cahier_de_l%27Oeuvre_H_Cahier_de_six_Lustres_(serietitel)_Oeuvres_de_Sculptures_en_Bronze,_Contenant_Girandoles,_Flambeaux,_Feux_(serietitel),_RP-P-OB-8969.jpg
+- chand2: File:Kroonluchter met vrouwen 8e Cahier de l'Oeuvre H Cahier de six Lustres (serietitel) Oeuvres de Sculptures en Bronze, Contenant Girandoles, Flambeaux, Feux (serietitel), RP-P-OB-8970.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Kroonluchter_met_vrouwen_8e_Cahier_de_l%27Oeuvre_H_Cahier_de_six_Lustres_(serietitel)_Oeuvres_de_Sculptures_en_Bronze,_Contenant_Girandoles,_Flambeaux,_Feux_(serietitel),_RP-P-OB-8970.jpg
+- chand3: File:Kroonluchter, RP-P-1888-A-13946.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Kroonluchter,_RP-P-1888-A-13946.jpg
+- candle1: File:Kandelaar met drie kaarsen Chandelier a trois lumieres (titel op object) Kandelaars (serietitel) 55e Cahier (serietitel op object), RP-P-1964-4041.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Kandelaar_met_drie_kaarsen_Chandelier_a_trois_lumieres_(titel_op_object)_Kandelaars_(serietitel)_55e_Cahier_(serietitel_op_object),_RP-P-1964-4041.jpg
+- candle2: File:Kandelaar met guirlandes Chandelier a deux branches (titel op object) Kandelaars (serietitel) 55e Cahier (serietitel op object), RP-P-1964-4045.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Kandelaar_met_guirlandes_Chandelier_a_deux_branches_(titel_op_object)_Kandelaars_(serietitel)_55e_Cahier_(serietitel_op_object),_RP-P-1964-4045.jpg
+- music1: File:Bach BWV 22 manuscript Kuhnau.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Bach_BWV_22_manuscript_Kuhnau.jpg
+- letter1: File:Letter to Lord Castlereagh, referring to the Mahrattas - DPLA - aaccda3b12aa5a78a9a16534924a6a15 (page 19).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Letter_to_Lord_Castlereagh,_referring_to_the_Mahrattas_-_DPLA_-_aaccda3b12aa5a78a9a16534924a6a15_(page_19).jpg
+  (chand1/chand2: Delafosse-school 'Cahier de six Lustres' plates; candle1/candle2: 'Kandelaars, 55e Cahier' plates — Rijksmuseum, CC0)
+
+Placeholder paintings, brand cut-outs (roses, butterflies, gilt frames, emblem, seals): same public-domain/CC0 sources as v1 — see ../ART_SOURCES.txt, /workspace/thankyou_card/sources.txt, /workspace/final_capM/certificate/back/README_credits.txt
+
+Code-drawn (numpy/PIL, no AI): sheer irregular lace scraps, draped lace, lace ribbon bows, pearl strings, velvet drape, torn paper/vellum, orbit rings, arches/keyhole (CSS/SVG).
+Artist photo: assets/artist_photo.jpg — supplied by the artist (read-only, not altered).
+Reference images in refs/ are mood references only and are NOT used in the design.
+
+===== from v4/ART_SOURCES_v4.txt =====
+MinqianArt website mockup v4 — art sources (all public domain / CC0; no AI imagery). Fonts unchanged from v3 (OFL).
+
+NEW in v4 (assets/pd4 originals -> assets/v4 cut-outs via make_v4.py):
+Needle-lace scans, Rijksmuseum CC0 (lace_a-d -> lace_panel1/2, lace_corner1/2, lace_frag1-3, lace_strip_long, lace_strip_c):
+lace_a: File:Strook machinale kant met een rococorand van naaldkant, BK-1970-241-A.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Strook_machinale_kant_met_een_rococorand_van_naaldkant,_BK-1970-241-A.jpg
+lace_b: File:Strook naaldkant met kronkelende bloemslinger, BK-NM-8590-A.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Strook_naaldkant_met_kronkelende_bloemslinger,_BK-NM-8590-A.jpg
+lace_c: File:Strook naaldkant met bloemenranken, BK-1954-63.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Strook_naaldkant_met_bloemenranken,_BK-1954-63.jpg
+lace_d: File:Strook naaldkant met kelkbloemen, BK-BR-359-B.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Strook_naaldkant_met_kelkbloemen,_BK-BR-359-B.jpg
+Flower paintings, background keyed out (fl_rose_cluster, fl_blue from Seghers; fl_bouquet, fl_roses_red, fl_carnation from Adriaenssen; fl_peony from A. Ruysch; fl_tulip cut but unused):
+fl_seghers: File:Gerard Seghers - Still Life of Flowers in a Glass Vase.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_Still_Life_of_Flowers_in_a_Glass_Vase.jpg
+fl_adriaenssen: File:Alexander Adriaenssen - Still Life with Flowers in a Glass Vase.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Alexander_Adriaenssen_-_Still_Life_with_Flowers_in_a_Glass_Vase.jpg
+fl_aruysch: File:Anna Ruysch - Still Life of Flowers in a Glass Vase on a Stone Table Ledge.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Anna_Ruysch_-_Still_Life_of_Flowers_in_a_Glass_Vase_on_a_Stone_Table_Ledge.jpg
+(fl_huysum downloaded, NGA CC0, not used.)
+
+Reused from v1-v3 (see v3/ART_SOURCES_v3.txt): Redouté roses (rose_provence, rose_pompon, rose_redoute), Veerendael/Ruysch bouquets (veer_top, veer_center, veer_rose_low, ruysch_bouquet), butterflies (bf_*), chandeliers/candelabra, letters, music manuscripts, frames, placeholder portraits.
+Removed: all pearl assets; v3 sheer lace scraps, drapes and bows are no longer referenced.
+
+===== from v5/ART_SOURCES_v5.txt =====
+MinqianArt website mockup v5 — art sources. All public domain or CC0; no AI imagery; fonts OFL (unchanged).
+
+NEW in v5: every flower and butterfly on a page is a different cut-out (no repeats, mirrors or recolours). Cut by make_v5.py from light-background plates in assets/pd5 -> assets/v5.
+
+home_v5.html: 36 unique flower pieces, 11 unique butterflies
+  p_ch045: Choix des plus belles fleurs (Plate 91) (7851479456).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_91)_(7851479456).jpg
+  ruysch_bouquet: reused v1-v3 brand cut-out (see v3/ART_SOURCES_v3.txt), used once on this page
+  b_bf10_221: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  b_bf05_5: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 069.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_069.jpg
+  p_ro17: Redoute - Rosa gallica regalis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_regalis.jpg
+  p_ch054: Choix des plus belles fleurs (Plate 109) (7851495934).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_109)_(7851495934).jpg
+  p_ro09: Henry Joseph Redouté - Rosa Indica Stelligera - 1943.140 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Rosa_Indica_Stelligera_-_1943.140_-_Cleveland_Museum_of_Art.jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ro18: Redoute flowers01.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_flowers01.jpg
+  p_ch049: Choix des plus belles fleurs (Plate 99) (7851486910).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_99)_(7851486910).jpg
+  p_ch056: Choix des plus belles fleurs (Plate 113) (7851499240).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_113)_(7851499240).jpg
+  p_ch020: Choix des plus belles fleurs (Plate 41) (7851436100).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_41)_(7851436100).jpg
+  p_ch019: Choix des plus belles fleurs (Plate 39) (7851434004).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_39)_(7851434004).jpg
+  p_ro11: Pierre-Joseph Redouté - Rosa Bifera Macrocarpa - WGA19030.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Pierre-Joseph_Redout%C3%A9_-_Rosa_Bifera_Macrocarpa_-_WGA19030.jpg
+  p_ch047: Choix des plus belles fleurs (Plate 95) (7851483082).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_95)_(7851483082).jpg
+  b_bf00_105: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 017.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_017.jpg
+  veer_center: reused v1-v3 brand cut-out (see v3/ART_SOURCES_v3.txt), used once on this page
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  p_ch060: Choix des plus belles fleurs (Plate 121) (7851506402).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_121)_(7851506402).jpg
+  p_ro03: Henry Joseph Redouté - Les Roses- Rosa Hudsoniana Salicifolia - 1965.292 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Les_Roses-_Rosa_Hudsoniana_Salicifolia_-_1965.292_-_Cleveland_Museum_of_Art.jpg
+  p_ch010: Choix des plus belles fleurs (Plate 21) (7851415504).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_21)_(7851415504).jpg
+  p_ro12: Redoute - Rosa centifolia foliacea.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_centifolia_foliacea.jpg
+  p_ch030: Choix des plus belles fleurs (Plate 61) (7851454378).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_61)_(7851454378).jpg
+  p_ch017: Choix des plus belles fleurs (Plate 35) (7851429834).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_35)_(7851429834).jpg
+  b_bf01_40: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 023.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_023.jpg
+  p_ch008: Choix des plus belles fleurs (Plate 17) (7851412142).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_17)_(7851412142).jpg
+  p_ch053: Choix des plus belles fleurs (Plate 107) (7851493962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_107)_(7851493962).jpg
+  b_bf11_197: CramerAndStoll-uitlandsche kapellen vol. 2- plate 145.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_145.jpg
+  p_ch003: Choix des plus belles fleurs (Plate 7) (7851402370).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_7)_(7851402370).jpg
+  p_ch041: Choix des plus belles fleurs (Plate 83) (7851472124).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_83)_(7851472124).jpg
+  b_bf02_7: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 040.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_040.jpg
+  p_ch066: Choix des plus belles fleurs (Plate 134) (7851516250).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_134)_(7851516250).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+  b_bf07_167: CramerAndStoll-uitlandsche kapellen vol. 2- plate 141.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_141.jpg
+  p_ch000: Choix des plus belles fleurs (Plate 1) (7851396238).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_1)_(7851396238).jpg
+  p_ch042: Choix des plus belles fleurs (Plate 85) (7851473730).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_85)_(7851473730).jpg
+  b_bf11_218: CramerAndStoll-uitlandsche kapellen vol. 2- plate 145.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_145.jpg
+  p_ch025: Choix des plus belles fleurs (Plate 51) (7851445264).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_51)_(7851445264).jpg
+  p_ro16: Redoute - Rosa gallica purpuro-violacea magna.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_purpuro-violacea_magna.jpg
+  b_bf00_100: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 017.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_017.jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  p_ch043: Choix des plus belles fleurs (Plate 87) (7851475280).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_87)_(7851475280).jpg
+  b_bf04_22: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 059.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_059.jpg
+  p_ch063: Choix des plus belles fleurs (Plate 128) (7851511328).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_128)_(7851511328).jpg
+  p_ch012: Choix des plus belles fleurs (Plate 25) (7851419168).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_25)_(7851419168).jpg
+  b_bf00_12: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 017.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_017.jpg
+  p_ch065: Choix des plus belles fleurs (Plate 132) (7851514550).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_132)_(7851514550).jpg
+
+product_6in_oval_v5.html: 8 unique flower pieces, 2 unique butterflies
+  veer_center: reused v1-v3 brand cut-out (see v3/ART_SOURCES_v3.txt), used once on this page
+  b_bf07_4: CramerAndStoll-uitlandsche kapellen vol. 2- plate 141.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_141.jpg
+  p_ch026: Choix des plus belles fleurs (Plate 53) (7851447106).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_53)_(7851447106).jpg
+  p_ro15: Redoute - Rosa gallica pontiana.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_pontiana.jpg
+  p_ch058: Choix des plus belles fleurs (Plate 117) (7851502442).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_117)_(7851502442).jpg
+  p_ch050: Choix des plus belles fleurs (Plate 101) (7851488402).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_101)_(7851488402).jpg
+  p_ch064: Choix des plus belles fleurs (Plate 130) (7851512998).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_130)_(7851512998).jpg
+  b_bf12_82: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch015: Choix des plus belles fleurs (Plate 31) (7851425290).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_31)_(7851425290).jpg
+  p_ch004: Choix des plus belles fleurs (Plate 9) (7851404126).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_9)_(7851404126).jpg
+
+Plate series: Redouté, 'Choix des plus belles fleurs' (1827-33), Biodiversity Heritage Library scans via Commons; Redouté, 'Les Roses' (Cleveland Museum of Art CC0 and others via Commons); Cramer & Stoll, 'De uitlandsche kapellen' (1779-82), public domain via Commons.
+Kept from v4: Rijksmuseum CC0 needle-lace pieces (assets/v4/lace_*; sources in v4/ART_SOURCES_v4.txt), chandeliers, letters, music, frames, placeholder portraits from v3.
+No longer used in v5: v4 painted-still-life cut-outs (fl_*) and v1-v3 Redouté/butterfly brand cut-outs in the border.
+
+===== from v6/ART_SOURCES_v6.txt =====
+MinqianArt website mockup v6 — art sources. All public domain or CC0; no AI imagery; fonts OFL (unchanged).
+
+v6: warm-only palette. Blue, purple and cool flowers and blue butterflies removed. Every piece is used once per page, with no mirrored copies. Cut-outs are in assets/v5 (made by make_v5.py from assets/pd5).
+
+home_v6.html: 37 flower pieces, 11 butterflies
+  p_ro16: Redoute - Rosa gallica purpuro-violacea magna.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_purpuro-violacea_magna.jpg
+  ruysch_bouquet: v1-v3 brand cut-out of a Rachel Ruysch still life (see v3/ART_SOURCES_v3.txt), used once
+  b_bf03_10: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  b_bf10_221: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro12: Redoute - Rosa centifolia foliacea.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_centifolia_foliacea.jpg
+  p_ch043: Choix des plus belles fleurs (Plate 87) (7851475280).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_87)_(7851475280).jpg
+  p_ch063: Choix des plus belles fleurs (Plate 128) (7851511328).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_128)_(7851511328).jpg
+  p_ch022: Choix des plus belles fleurs (Plate 45) (7851440152).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_45)_(7851440152).jpg
+  p_ch026: Choix des plus belles fleurs (Plate 53) (7851447106).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_53)_(7851447106).jpg
+  p_ch000: Choix des plus belles fleurs (Plate 1) (7851396238).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_1)_(7851396238).jpg
+  p_ch025: Choix des plus belles fleurs (Plate 51) (7851445264).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_51)_(7851445264).jpg
+  p_ch040: Choix des plus belles fleurs (Plate 81) (7851470352).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_81)_(7851470352).jpg
+  p_ch020: Choix des plus belles fleurs (Plate 41) (7851436100).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_41)_(7851436100).jpg
+  p_ch055: Choix des plus belles fleurs (Plate 111) (7851497552).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_111)_(7851497552).jpg
+  p_ch039: Choix des plus belles fleurs (Plate 79) (7851468806).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_79)_(7851468806).jpg
+  b_bf10_21: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro17: Redoute - Rosa gallica regalis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_regalis.jpg
+  p_ch049: Choix des plus belles fleurs (Plate 99) (7851486910).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_99)_(7851486910).jpg
+  p_ch019: Choix des plus belles fleurs (Plate 39) (7851434004).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_39)_(7851434004).jpg
+  p_ro18: Redoute flowers01.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_flowers01.jpg
+  p_ro11: Pierre-Joseph Redouté - Rosa Bifera Macrocarpa - WGA19030.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Pierre-Joseph_Redout%C3%A9_-_Rosa_Bifera_Macrocarpa_-_WGA19030.jpg
+  p_ch010: Choix des plus belles fleurs (Plate 21) (7851415504).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_21)_(7851415504).jpg
+  p_ro07: Henry Joseph Redouté - Pompon Rose - 1943.142 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Pompon_Rose_-_1943.142_-_Cleveland_Museum_of_Art.jpg
+  p_ro13: Redoute - Rosa gallica flore giganteo - brighter.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_flore_giganteo_-_brighter.jpg
+  b_bf03_45: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  p_ch065: Choix des plus belles fleurs (Plate 132) (7851514550).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_132)_(7851514550).jpg
+  p_ro09: Henry Joseph Redouté - Rosa Indica Stelligera - 1943.140 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Rosa_Indica_Stelligera_-_1943.140_-_Cleveland_Museum_of_Art.jpg
+  b_bf12_8: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch015: Choix des plus belles fleurs (Plate 31) (7851425290).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_31)_(7851425290).jpg
+  p_ro03: Henry Joseph Redouté - Les Roses- Rosa Hudsoniana Salicifolia - 1965.292 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Les_Roses-_Rosa_Hudsoniana_Salicifolia_-_1965.292_-_Cleveland_Museum_of_Art.jpg
+  b_bf13_7: CramerAndStoll-uitlandsche kapellen vol. 2- plate 153.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_153.jpg
+  p_ch008: Choix des plus belles fleurs (Plate 17) (7851412142).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_17)_(7851412142).jpg
+  p_ch064: Choix des plus belles fleurs (Plate 130) (7851512998).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_130)_(7851512998).jpg
+  b_bf06_80: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 089.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_089.jpg
+  p_ro15: Redoute - Rosa gallica pontiana.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_pontiana.jpg
+  p_ch032: Choix des plus belles fleurs (Plate 65) (7851457454).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_65)_(7851457454).jpg
+  b_bf05_0: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 069.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_069.jpg
+  p_ch003: Choix des plus belles fleurs (Plate 7) (7851402370).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_7)_(7851402370).jpg
+  p_ch071: Choix des plus belles fleurs (Plate 144) (7851523856).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_144)_(7851523856).jpg
+  b_bf07_4: CramerAndStoll-uitlandsche kapellen vol. 2- plate 141.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_141.jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  b_bf11_11: CramerAndStoll-uitlandsche kapellen vol. 2- plate 145.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_145.jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  b_bf12_82: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+
+product_6in_oval_v6.html: 8 flower pieces, 2 butterflies
+  p_ch042: Choix des plus belles fleurs (Plate 85) (7851473730).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_85)_(7851473730).jpg
+  b_bf09_6: CramerAndStoll-uitlandsche kapellen vol. 2- plate 143.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_143.jpg
+  p_ch004: Choix des plus belles fleurs (Plate 9) (7851404126).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_9)_(7851404126).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  b_bf02_7: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 040.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_040.jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+
+Kept from v4: Rijksmuseum CC0 needle lace (assets/v4/lace_*). Kept from v3: chandeliers, letters, music and frames.
+
+===== from v7/ART_SOURCES_v7.txt =====
+MinqianArt mockup v7 - art sources (all public domain / CC0; no AI imagery; fonts OFL as in v6)
+Built 2026-11-03 PT. v6 left unchanged.
+
+NEW IN v7 - Dutch Golden Age and Biedermeier still-life cut-outs (assets/v7, originals in assets/pd7)
+dh_gap: Jan Davidsz de Heem - Vase of Flowers - Google Art Project.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_-_Vase_of_Flowers_-_Google_Art_Project.jpg
+dh_mh1099: Vase of Flowers painting by Jan Davidsz. de Heem Mauritshuis 1099.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Vase_of_Flowers_painting_by_Jan_Davidsz._de_Heem_Mauritshuis_1099.jpg
+dh_nga: Jan Davidsz de Heem, Vase of Flowers, c. 1660, NGA 46097.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem,_Vase_of_Flowers,_c._1660,_NGA_46097.jpg
+dh_rijks138: Festoen van vruchten en bloemen Rijksmuseum SK-A-138.jpeg | Public domain | https://commons.wikimedia.org/wiki/File:Festoen_van_vruchten_en_bloemen_Rijksmuseum_SK-A-138.jpeg
+dh_002: Jan Davidsz de Heem 002.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_002.jpg
+dh_mh49: Jan Davidsz de Heem - Garland of Fruit and Flowers - 49 - Mauritshuis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_-_Garland_of_Fruit_and_Flowers_-_49_-_Mauritshuis.jpg
+gr_khm3043: Franz Xaver Gruber - Blumenstück - 3043 - Kunsthistorisches Museum.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Franz_Xaver_Gruber_-_Blumenst%C3%BCck_-_3043_-_Kunsthistorisches_Museum.jpg
+gr_roses: Franz Xaver Gruber - Orangegelbe Rosen.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Franz_Xaver_Gruber_-_Orangegelbe_Rosen.jpg
+
+Jan Davidsz de Heem paintings used:
+ - Vase of Flowers, c.1670, Mauritshuis inv. 1099 (PD): white lilies x2, orange lily, striped tulip, two pink roses, red rose bud, red flower, peach
+ - Vase of Flowers, c.1660, National Gallery of Art, Washington (Commons file "NGA 46097") (CC0): white peony, red-striped tulip
+ - Garland of Fruit and Flowers, Mauritshuis inv. 49 (PD): two red carnations
+ (Rijksmuseum SK-A-138 was downloaded and cut but no piece passed the edge check.)
+Franz Xaver Gruber paintings used:
+ - Blumenstück, KHM Vienna inv. 3043 (PD): orange lilies, striped tulip, yellow primulas, two red poppies
+ - Orangegelbe Rosen, watercolour (PD): orange rose spray
+Product crown (assets/v7/crown_v7.png) is a composite of 10 of those pieces: gr_khm3043_lilies, dh_mh1099_wlily, dh_mh1099_olily, dh_mh1099_tulip, gr_khm3043_stulip, gr_khm3043_prim, gr_khm3043_poppyL, dh_mh1099_rose1, dh_mh1099_rose2, dh_mh1099_bud
+Masking: dark ground keyed out, 1 px erosion to remove the dark halo, 1.2 px feather; blue blooms removed; blurry or ragged pieces rejected.
+
+Pieces used: home ["dh_mh1099_rose2", "gr_roses_wreath", "b_bf11_13", "b_bf03_10", "p_ro12", "dh_mh1099_wlily", "p_ch043", "gr_khm3043_prim", "p_ro18", "gr_khm3043_stulip", "p_ch063", "dh_mh1099_tulip", "p_ch022", "dh_mh1099_redfl", "p_ch065", "b_bf09_6", "dh_mh1099_bud", "p_ch000", "dh_nga_rtulip", "p_ch064", "dh_mh49_carnA", "p_ro11", "gr_khm3043_poppy2", "dh_mh49_carnB", "b_bf10_221", "dh_nga_peony", "p_ch039", "b_bf11_11", "dh_mh1099_olily", "p_ro09", "b_bf05_5", "dh_mh1099_wlily2", "p_ch023", "b_bf07_4", "gr_khm3043_poppyL", "p_ch061", "b_bf05_33", "dh_mh1099_rose1", "p_ch002", "b_bf06_80", "gr_khm3043_lilies", "p_ch018", "b_bf00_105", "dh_mh1099_peach", "p_ch003", "b_bf02_7", "p_ch046", "p_ch071", "b_bf03_45", "p_ch004", "p_ch042", "b_bf05_110", "p_ro15", "p_ro17", "b_bf12_8", "p_ch026", "p_ch019"]
+product ["gr_khm3043_lilies", "dh_mh1099_wlily", "dh_mh1099_olily", "dh_mh1099_tulip", "gr_khm3043_stulip", "gr_khm3043_prim", "gr_khm3043_poppyL", "dh_mh1099_rose1", "dh_mh1099_rose2", "dh_mh1099_bud", "b_bf05_0", "rose_pompon", "p_ch055", "dh_mh1099_peach", "p_ch008", "dh_mh1099_wlily2", "b_bf10_21", "p_ch020", "dh_nga_peony", "b_bf13_7", "p_ro03", "dh_mh49_carnA"]
+
+---- carried over from v6 ----
+MinqianArt website mockup v6 — art sources. All public domain or CC0; no AI imagery; fonts OFL (unchanged).
+
+v6: warm-only palette. Blue, purple and cool flowers and blue butterflies removed. Every piece is used once per page, with no mirrored copies. Cut-outs are in assets/v5 (made by make_v5.py from assets/pd5).
+
+home_v6.html: 37 flower pieces, 11 butterflies
+  p_ro16: Redoute - Rosa gallica purpuro-violacea magna.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_purpuro-violacea_magna.jpg
+  ruysch_bouquet: v1-v3 brand cut-out of a Rachel Ruysch still life (see v3/ART_SOURCES_v3.txt), used once
+  b_bf03_10: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  b_bf10_221: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro12: Redoute - Rosa centifolia foliacea.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_centifolia_foliacea.jpg
+  p_ch043: Choix des plus belles fleurs (Plate 87) (7851475280).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_87)_(7851475280).jpg
+  p_ch063: Choix des plus belles fleurs (Plate 128) (7851511328).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_128)_(7851511328).jpg
+  p_ch022: Choix des plus belles fleurs (Plate 45) (7851440152).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_45)_(7851440152).jpg
+  p_ch026: Choix des plus belles fleurs (Plate 53) (7851447106).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_53)_(7851447106).jpg
+  p_ch000: Choix des plus belles fleurs (Plate 1) (7851396238).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_1)_(7851396238).jpg
+  p_ch025: Choix des plus belles fleurs (Plate 51) (7851445264).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_51)_(7851445264).jpg
+  p_ch040: Choix des plus belles fleurs (Plate 81) (7851470352).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_81)_(7851470352).jpg
+  p_ch020: Choix des plus belles fleurs (Plate 41) (7851436100).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_41)_(7851436100).jpg
+  p_ch055: Choix des plus belles fleurs (Plate 111) (7851497552).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_111)_(7851497552).jpg
+  p_ch039: Choix des plus belles fleurs (Plate 79) (7851468806).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_79)_(7851468806).jpg
+  b_bf10_21: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro17: Redoute - Rosa gallica regalis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_regalis.jpg
+  p_ch049: Choix des plus belles fleurs (Plate 99) (7851486910).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_99)_(7851486910).jpg
+  p_ch019: Choix des plus belles fleurs (Plate 39) (7851434004).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_39)_(7851434004).jpg
+  p_ro18: Redoute flowers01.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_flowers01.jpg
+  p_ro11: Pierre-Joseph Redouté - Rosa Bifera Macrocarpa - WGA19030.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Pierre-Joseph_Redout%C3%A9_-_Rosa_Bifera_Macrocarpa_-_WGA19030.jpg
+  p_ch010: Choix des plus belles fleurs (Plate 21) (7851415504).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_21)_(7851415504).jpg
+  p_ro07: Henry Joseph Redouté - Pompon Rose - 1943.142 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Pompon_Rose_-_1943.142_-_Cleveland_Museum_of_Art.jpg
+  p_ro13: Redoute - Rosa gallica flore giganteo - brighter.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_flore_giganteo_-_brighter.jpg
+  b_bf03_45: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  p_ch065: Choix des plus belles fleurs (Plate 132) (7851514550).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_132)_(7851514550).jpg
+  p_ro09: Henry Joseph Redouté - Rosa Indica Stelligera - 1943.140 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Rosa_Indica_Stelligera_-_1943.140_-_Cleveland_Museum_of_Art.jpg
+  b_bf12_8: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch015: Choix des plus belles fleurs (Plate 31) (7851425290).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_31)_(7851425290).jpg
+  p_ro03: Henry Joseph Redouté - Les Roses- Rosa Hudsoniana Salicifolia - 1965.292 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Les_Roses-_Rosa_Hudsoniana_Salicifolia_-_1965.292_-_Cleveland_Museum_of_Art.jpg
+  b_bf13_7: CramerAndStoll-uitlandsche kapellen vol. 2- plate 153.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_153.jpg
+  p_ch008: Choix des plus belles fleurs (Plate 17) (7851412142).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_17)_(7851412142).jpg
+  p_ch064: Choix des plus belles fleurs (Plate 130) (7851512998).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_130)_(7851512998).jpg
+  b_bf06_80: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 089.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_089.jpg
+  p_ro15: Redoute - Rosa gallica pontiana.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_pontiana.jpg
+  p_ch032: Choix des plus belles fleurs (Plate 65) (7851457454).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_65)_(7851457454).jpg
+  b_bf05_0: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 069.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_069.jpg
+  p_ch003: Choix des plus belles fleurs (Plate 7) (7851402370).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_7)_(7851402370).jpg
+  p_ch071: Choix des plus belles fleurs (Plate 144) (7851523856).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_144)_(7851523856).jpg
+  b_bf07_4: CramerAndStoll-uitlandsche kapellen vol. 2- plate 141.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_141.jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  b_bf11_11: CramerAndStoll-uitlandsche kapellen vol. 2- plate 145.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_145.jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  b_bf12_82: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+
+product_6in_oval_v6.html: 8 flower pieces, 2 butterflies
+  p_ch042: Choix des plus belles fleurs (Plate 85) (7851473730).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_85)_(7851473730).jpg
+  b_bf09_6: CramerAndStoll-uitlandsche kapellen vol. 2- plate 143.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_143.jpg
+  p_ch004: Choix des plus belles fleurs (Plate 9) (7851404126).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_9)_(7851404126).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  b_bf02_7: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 040.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_040.jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+
+Kept from v4: Rijksmuseum CC0 needle lace (assets/v4/lace_*). Kept from v3: chandeliers, letters, music and frames.
+
+===== from v8/ART_SOURCES_v8.txt =====
+v8 CHANGES (2026-11-04 PT)
+- de Heem peach removed from every page (moved to assets/v7_rejected).
+- Product page = v3 product page unchanged (v8/product/, v3 CSS + assets copied), pearls (pearls_swag.png) removed. Its art sources are those in v3/ART_SOURCES_v3.txt.
+- Lace strips over the 3 Collections cards (cl-lace, lace_frag3) removed; all other lace kept.
+- Mobile: own flower border (.mborder) down both edges for the full page; desktop border hidden on mobile.
+- Hero wax seal is a keep-clear zone (desktop + mobile); hero rose sprays moved off it.
+Home desktop pieces: ["dh_mh1099_rose2", "gr_roses_wreath", "b_bf11_13", "b_bf03_10", "p_ro12", "dh_mh1099_wlily2", "p_ch043", "gr_khm3043_prim", "p_ro18", "gr_khm3043_stulip", "p_ch063", "dh_mh1099_rose1", "p_ch022", "dh_mh1099_bud", "p_ch065", "b_bf09_6", "dh_nga_rtulip", "p_ch000", "dh_mh49_carnA", "p_ch064", "dh_mh1099_tulip", "p_ro11", "gr_khm3043_poppy2", "dh_mh49_carnB", "b_bf10_221", "dh_nga_peony", "p_ch039", "b_bf11_11", "dh_mh1099_olily", "p_ro09", "b_bf05_5", "gr_khm3043_poppyL", "p_ch023", "b_bf07_4", "dh_mh1099_wlily", "p_ch061", "b_bf05_33", "gr_khm3043_lilies", "p_ch002", "b_bf06_80", "dh_mh1099_redfl", "p_ch018", "b_bf00_105", "p_ch003", "p_ch046", "b_bf02_7", "p_ch071", "p_ch004", "b_bf03_45", "p_ch042", "p_ro15", "b_bf05_110", "p_ro17", "p_ch026", "b_bf12_8", "p_ch019", "p_ch069"]
+Home mobile visible pieces: ["dh_mh1099_rose2", "gr_roses_wreath", "b_bf11_13", "b_bf03_10", "p_ro12", "dh_mh1099_wlily2", "p_ch043", "gr_khm3043_prim", "p_ro18", "gr_khm3043_stulip", "p_ch063", "dh_mh1099_rose1", "p_ch022", "dh_mh1099_bud", "p_ch065", "b_bf09_6", "dh_nga_rtulip", "p_ch000", "dh_mh49_carnA", "p_ch064", "dh_mh1099_tulip", "p_ro11", "p_ch055", "p_ch023", "b_bf12_8", "p_ch015", "p_ch046", "b_bf10_221", "p_ch032", "p_ch020", "b_bf11_11", "p_ch025", "p_ro03", "b_bf02_7", "dh_mh1099_olily", "gr_khm3043_poppy2", "b_bf00_105", "p_ch042", "p_ch071", "b_bf03_45", "dh_mh49_carnB", "p_ch039", "b_bf10_21", "p_ch008", "p_ro15", "b_bf05_33", "p_ch003", "p_ch004", "b_bf08_0", "p_ch018", "p_ch002", "b_bf12_82", "p_ch019", "dh_mh1099_wlily"]
+
+MinqianArt mockup v8 - art sources (all public domain / CC0; no AI imagery; fonts OFL as in v6)
+Built 2026-11-03 PT. v6 left unchanged.
+
+NEW IN v7 - Dutch Golden Age and Biedermeier still-life cut-outs (assets/v7, originals in assets/pd7)
+dh_gap: Jan Davidsz de Heem - Vase of Flowers - Google Art Project.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_-_Vase_of_Flowers_-_Google_Art_Project.jpg
+dh_mh1099: Vase of Flowers painting by Jan Davidsz. de Heem Mauritshuis 1099.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Vase_of_Flowers_painting_by_Jan_Davidsz._de_Heem_Mauritshuis_1099.jpg
+dh_nga: Jan Davidsz de Heem, Vase of Flowers, c. 1660, NGA 46097.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem,_Vase_of_Flowers,_c._1660,_NGA_46097.jpg
+dh_rijks138: Festoen van vruchten en bloemen Rijksmuseum SK-A-138.jpeg | Public domain | https://commons.wikimedia.org/wiki/File:Festoen_van_vruchten_en_bloemen_Rijksmuseum_SK-A-138.jpeg
+dh_002: Jan Davidsz de Heem 002.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_002.jpg
+dh_mh49: Jan Davidsz de Heem - Garland of Fruit and Flowers - 49 - Mauritshuis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_-_Garland_of_Fruit_and_Flowers_-_49_-_Mauritshuis.jpg
+gr_khm3043: Franz Xaver Gruber - Blumenstück - 3043 - Kunsthistorisches Museum.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Franz_Xaver_Gruber_-_Blumenst%C3%BCck_-_3043_-_Kunsthistorisches_Museum.jpg
+gr_roses: Franz Xaver Gruber - Orangegelbe Rosen.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Franz_Xaver_Gruber_-_Orangegelbe_Rosen.jpg
+
+Jan Davidsz de Heem paintings used:
+ - Vase of Flowers, c.1670, Mauritshuis inv. 1099 (PD): white lilies x2, orange lily, striped tulip, two pink roses, red rose bud, red flower
+ - Vase of Flowers, c.1660, National Gallery of Art, Washington (Commons file "NGA 46097") (CC0): white peony, red-striped tulip
+ - Garland of Fruit and Flowers, Mauritshuis inv. 49 (PD): two red carnations
+ (Rijksmuseum SK-A-138 was downloaded and cut but no piece passed the edge check.)
+Franz Xaver Gruber paintings used:
+ - Blumenstück, KHM Vienna inv. 3043 (PD): orange lilies, striped tulip, yellow primulas, two red poppies
+ - Orangegelbe Rosen, watercolour (PD): orange rose spray
+Product crown (assets/v7/crown_v7.png) is a composite of 10 of those pieces: gr_khm3043_lilies, dh_mh1099_wlily, dh_mh1099_olily, dh_mh1099_tulip, gr_khm3043_stulip, gr_khm3043_prim, gr_khm3043_poppyL, dh_mh1099_rose1, dh_mh1099_rose2, dh_mh1099_bud
+Masking: dark ground keyed out, 1 px erosion to remove the dark halo, 1.2 px feather; blue blooms removed; blurry or ragged pieces rejected.
+
+
+---- carried over from v6 ----
+MinqianArt website mockup v6 — art sources. All public domain or CC0; no AI imagery; fonts OFL (unchanged).
+
+v6: warm-only palette. Blue, purple and cool flowers and blue butterflies removed. Every piece is used once per page, with no mirrored copies. Cut-outs are in assets/v5 (made by make_v5.py from assets/pd5).
+
+home_v6.html: 37 flower pieces, 11 butterflies
+  p_ro16: Redoute - Rosa gallica purpuro-violacea magna.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_purpuro-violacea_magna.jpg
+  ruysch_bouquet: v1-v3 brand cut-out of a Rachel Ruysch still life (see v3/ART_SOURCES_v3.txt), used once
+  b_bf03_10: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  b_bf10_221: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro12: Redoute - Rosa centifolia foliacea.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_centifolia_foliacea.jpg
+  p_ch043: Choix des plus belles fleurs (Plate 87) (7851475280).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_87)_(7851475280).jpg
+  p_ch063: Choix des plus belles fleurs (Plate 128) (7851511328).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_128)_(7851511328).jpg
+  p_ch022: Choix des plus belles fleurs (Plate 45) (7851440152).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_45)_(7851440152).jpg
+  p_ch026: Choix des plus belles fleurs (Plate 53) (7851447106).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_53)_(7851447106).jpg
+  p_ch000: Choix des plus belles fleurs (Plate 1) (7851396238).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_1)_(7851396238).jpg
+  p_ch025: Choix des plus belles fleurs (Plate 51) (7851445264).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_51)_(7851445264).jpg
+  p_ch040: Choix des plus belles fleurs (Plate 81) (7851470352).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_81)_(7851470352).jpg
+  p_ch020: Choix des plus belles fleurs (Plate 41) (7851436100).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_41)_(7851436100).jpg
+  p_ch055: Choix des plus belles fleurs (Plate 111) (7851497552).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_111)_(7851497552).jpg
+  p_ch039: Choix des plus belles fleurs (Plate 79) (7851468806).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_79)_(7851468806).jpg
+  b_bf10_21: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro17: Redoute - Rosa gallica regalis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_regalis.jpg
+  p_ch049: Choix des plus belles fleurs (Plate 99) (7851486910).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_99)_(7851486910).jpg
+  p_ch019: Choix des plus belles fleurs (Plate 39) (7851434004).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_39)_(7851434004).jpg
+  p_ro18: Redoute flowers01.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_flowers01.jpg
+  p_ro11: Pierre-Joseph Redouté - Rosa Bifera Macrocarpa - WGA19030.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Pierre-Joseph_Redout%C3%A9_-_Rosa_Bifera_Macrocarpa_-_WGA19030.jpg
+  p_ch010: Choix des plus belles fleurs (Plate 21) (7851415504).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_21)_(7851415504).jpg
+  p_ro07: Henry Joseph Redouté - Pompon Rose - 1943.142 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Pompon_Rose_-_1943.142_-_Cleveland_Museum_of_Art.jpg
+  p_ro13: Redoute - Rosa gallica flore giganteo - brighter.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_flore_giganteo_-_brighter.jpg
+  b_bf03_45: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  p_ch065: Choix des plus belles fleurs (Plate 132) (7851514550).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_132)_(7851514550).jpg
+  p_ro09: Henry Joseph Redouté - Rosa Indica Stelligera - 1943.140 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Rosa_Indica_Stelligera_-_1943.140_-_Cleveland_Museum_of_Art.jpg
+  b_bf12_8: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch015: Choix des plus belles fleurs (Plate 31) (7851425290).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_31)_(7851425290).jpg
+  p_ro03: Henry Joseph Redouté - Les Roses- Rosa Hudsoniana Salicifolia - 1965.292 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Les_Roses-_Rosa_Hudsoniana_Salicifolia_-_1965.292_-_Cleveland_Museum_of_Art.jpg
+  b_bf13_7: CramerAndStoll-uitlandsche kapellen vol. 2- plate 153.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_153.jpg
+  p_ch008: Choix des plus belles fleurs (Plate 17) (7851412142).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_17)_(7851412142).jpg
+  p_ch064: Choix des plus belles fleurs (Plate 130) (7851512998).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_130)_(7851512998).jpg
+  b_bf06_80: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 089.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_089.jpg
+  p_ro15: Redoute - Rosa gallica pontiana.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_pontiana.jpg
+  p_ch032: Choix des plus belles fleurs (Plate 65) (7851457454).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_65)_(7851457454).jpg
+  b_bf05_0: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 069.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_069.jpg
+  p_ch003: Choix des plus belles fleurs (Plate 7) (7851402370).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_7)_(7851402370).jpg
+  p_ch071: Choix des plus belles fleurs (Plate 144) (7851523856).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_144)_(7851523856).jpg
+  b_bf07_4: CramerAndStoll-uitlandsche kapellen vol. 2- plate 141.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_141.jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  b_bf11_11: CramerAndStoll-uitlandsche kapellen vol. 2- plate 145.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_145.jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  b_bf12_82: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+
+product_6in_oval_v6.html: 8 flower pieces, 2 butterflies
+  p_ch042: Choix des plus belles fleurs (Plate 85) (7851473730).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_85)_(7851473730).jpg
+  b_bf09_6: CramerAndStoll-uitlandsche kapellen vol. 2- plate 143.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_143.jpg
+  p_ch004: Choix des plus belles fleurs (Plate 9) (7851404126).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_9)_(7851404126).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  b_bf02_7: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 040.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_040.jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+
+Kept from v4: Rijksmuseum CC0 needle lace (assets/v4/lace_*). Kept from v3: chandeliers, letters, music and frames.
+
+===== from v9/ART_SOURCES_v9.txt =====
+v8 CHANGES (2026-11-04 PT)
+- de Heem peach removed from every page (moved to assets/v7_rejected).
+- Product page = v3 product page unchanged (v8/product/, v3 CSS + assets copied), pearls (pearls_swag.png) removed. Its art sources are those in v3/ART_SOURCES_v3.txt.
+- Lace strips over the 3 Collections cards (cl-lace, lace_frag3) removed; all other lace kept.
+- Mobile: own flower border (.mborder) down both edges for the full page; desktop border hidden on mobile.
+- Hero wax seal is a keep-clear zone (desktop + mobile); hero rose sprays moved off it.
+Home desktop pieces: ["dh_mh1099_rose2", "gr_roses_wreath", "b_bf11_13", "b_bf03_10", "p_ro12", "dh_mh1099_wlily2", "p_ch043", "gr_khm3043_prim", "p_ro18", "gr_khm3043_stulip", "p_ch063", "dh_mh1099_rose1", "p_ch022", "dh_mh1099_bud", "p_ch065", "b_bf09_6", "dh_nga_rtulip", "p_ch000", "dh_mh49_carnA", "p_ch064", "dh_mh1099_tulip", "p_ro11", "gr_khm3043_poppy2", "dh_mh49_carnB", "b_bf10_221", "dh_nga_peony", "p_ch039", "b_bf11_11", "dh_mh1099_olily", "p_ro09", "b_bf05_5", "gr_khm3043_poppyL", "p_ch023", "b_bf07_4", "dh_mh1099_wlily", "p_ch061", "b_bf05_33", "gr_khm3043_lilies", "p_ch002", "b_bf06_80", "dh_mh1099_redfl", "p_ch018", "b_bf00_105", "p_ch003", "p_ch046", "b_bf02_7", "p_ch071", "p_ch004", "b_bf03_45", "p_ch042", "p_ro15", "b_bf05_110", "p_ro17", "p_ch026", "b_bf12_8", "p_ch019", "p_ch069"]
+Home mobile visible pieces: ["dh_mh1099_rose2", "gr_roses_wreath", "b_bf11_13", "b_bf03_10", "p_ro12", "dh_mh1099_wlily2", "p_ch043", "gr_khm3043_prim", "p_ro18", "gr_khm3043_stulip", "p_ch063", "dh_mh1099_rose1", "p_ch022", "dh_mh1099_bud", "p_ch065", "b_bf09_6", "dh_nga_rtulip", "p_ch000", "dh_mh49_carnA", "p_ch064", "dh_mh1099_tulip", "p_ro11", "p_ch055", "p_ch023", "b_bf12_8", "p_ch015", "p_ch046", "b_bf10_221", "p_ch032", "p_ch020", "b_bf11_11", "p_ch025", "p_ro03", "b_bf02_7", "dh_mh1099_olily", "gr_khm3043_poppy2", "b_bf00_105", "p_ch042", "p_ch071", "b_bf03_45", "dh_mh49_carnB", "p_ch039", "b_bf10_21", "p_ch008", "p_ro15", "b_bf05_33", "p_ch003", "p_ch004", "b_bf08_0", "p_ch018", "p_ch002", "b_bf12_82", "p_ch019", "dh_mh1099_wlily"]
+
+MinqianArt mockup v8 - art sources (all public domain / CC0; no AI imagery; fonts OFL as in v6)
+Built 2026-11-03 PT. v6 left unchanged.
+
+NEW IN v7 - Dutch Golden Age and Biedermeier still-life cut-outs (assets/v7, originals in assets/pd7)
+dh_gap: Jan Davidsz de Heem - Vase of Flowers - Google Art Project.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_-_Vase_of_Flowers_-_Google_Art_Project.jpg
+dh_mh1099: Vase of Flowers painting by Jan Davidsz. de Heem Mauritshuis 1099.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Vase_of_Flowers_painting_by_Jan_Davidsz._de_Heem_Mauritshuis_1099.jpg
+dh_nga: Jan Davidsz de Heem, Vase of Flowers, c. 1660, NGA 46097.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem,_Vase_of_Flowers,_c._1660,_NGA_46097.jpg
+dh_rijks138: Festoen van vruchten en bloemen Rijksmuseum SK-A-138.jpeg | Public domain | https://commons.wikimedia.org/wiki/File:Festoen_van_vruchten_en_bloemen_Rijksmuseum_SK-A-138.jpeg
+dh_002: Jan Davidsz de Heem 002.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_002.jpg
+dh_mh49: Jan Davidsz de Heem - Garland of Fruit and Flowers - 49 - Mauritshuis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_-_Garland_of_Fruit_and_Flowers_-_49_-_Mauritshuis.jpg
+gr_khm3043: Franz Xaver Gruber - Blumenstück - 3043 - Kunsthistorisches Museum.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Franz_Xaver_Gruber_-_Blumenst%C3%BCck_-_3043_-_Kunsthistorisches_Museum.jpg
+gr_roses: Franz Xaver Gruber - Orangegelbe Rosen.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Franz_Xaver_Gruber_-_Orangegelbe_Rosen.jpg
+
+Jan Davidsz de Heem paintings used:
+ - Vase of Flowers, c.1670, Mauritshuis inv. 1099 (PD): white lilies x2, orange lily, striped tulip, two pink roses, red rose bud, red flower
+ - Vase of Flowers, c.1660, National Gallery of Art, Washington (Commons file "NGA 46097") (CC0): white peony, red-striped tulip
+ - Garland of Fruit and Flowers, Mauritshuis inv. 49 (PD): two red carnations
+ (Rijksmuseum SK-A-138 was downloaded and cut but no piece passed the edge check.)
+Franz Xaver Gruber paintings used:
+ - Blumenstück, KHM Vienna inv. 3043 (PD): orange lilies, striped tulip, yellow primulas, two red poppies
+ - Orangegelbe Rosen, watercolour (PD): orange rose spray
+Product crown (assets/v7/crown_v7.png) is a composite of 10 of those pieces: gr_khm3043_lilies, dh_mh1099_wlily, dh_mh1099_olily, dh_mh1099_tulip, gr_khm3043_stulip, gr_khm3043_prim, gr_khm3043_poppyL, dh_mh1099_rose1, dh_mh1099_rose2, dh_mh1099_bud
+Masking: dark ground keyed out, 1 px erosion to remove the dark halo, 1.2 px feather; blue blooms removed; blurry or ragged pieces rejected.
+
+
+---- carried over from v6 ----
+MinqianArt website mockup v6 — art sources. All public domain or CC0; no AI imagery; fonts OFL (unchanged).
+
+v6: warm-only palette. Blue, purple and cool flowers and blue butterflies removed. Every piece is used once per page, with no mirrored copies. Cut-outs are in assets/v5 (made by make_v5.py from assets/pd5).
+
+home_v6.html: 37 flower pieces, 11 butterflies
+  p_ro16: Redoute - Rosa gallica purpuro-violacea magna.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_purpuro-violacea_magna.jpg
+  ruysch_bouquet: v1-v3 brand cut-out of a Rachel Ruysch still life (see v3/ART_SOURCES_v3.txt), used once
+  b_bf03_10: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  b_bf10_221: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro12: Redoute - Rosa centifolia foliacea.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_centifolia_foliacea.jpg
+  p_ch043: Choix des plus belles fleurs (Plate 87) (7851475280).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_87)_(7851475280).jpg
+  p_ch063: Choix des plus belles fleurs (Plate 128) (7851511328).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_128)_(7851511328).jpg
+  p_ch022: Choix des plus belles fleurs (Plate 45) (7851440152).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_45)_(7851440152).jpg
+  p_ch026: Choix des plus belles fleurs (Plate 53) (7851447106).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_53)_(7851447106).jpg
+  p_ch000: Choix des plus belles fleurs (Plate 1) (7851396238).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_1)_(7851396238).jpg
+  p_ch025: Choix des plus belles fleurs (Plate 51) (7851445264).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_51)_(7851445264).jpg
+  p_ch040: Choix des plus belles fleurs (Plate 81) (7851470352).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_81)_(7851470352).jpg
+  p_ch020: Choix des plus belles fleurs (Plate 41) (7851436100).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_41)_(7851436100).jpg
+  p_ch055: Choix des plus belles fleurs (Plate 111) (7851497552).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_111)_(7851497552).jpg
+  p_ch039: Choix des plus belles fleurs (Plate 79) (7851468806).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_79)_(7851468806).jpg
+  b_bf10_21: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro17: Redoute - Rosa gallica regalis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_regalis.jpg
+  p_ch049: Choix des plus belles fleurs (Plate 99) (7851486910).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_99)_(7851486910).jpg
+  p_ch019: Choix des plus belles fleurs (Plate 39) (7851434004).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_39)_(7851434004).jpg
+  p_ro18: Redoute flowers01.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_flowers01.jpg
+  p_ro11: Pierre-Joseph Redouté - Rosa Bifera Macrocarpa - WGA19030.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Pierre-Joseph_Redout%C3%A9_-_Rosa_Bifera_Macrocarpa_-_WGA19030.jpg
+  p_ch010: Choix des plus belles fleurs (Plate 21) (7851415504).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_21)_(7851415504).jpg
+  p_ro07: Henry Joseph Redouté - Pompon Rose - 1943.142 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Pompon_Rose_-_1943.142_-_Cleveland_Museum_of_Art.jpg
+  p_ro13: Redoute - Rosa gallica flore giganteo - brighter.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_flore_giganteo_-_brighter.jpg
+  b_bf03_45: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  p_ch065: Choix des plus belles fleurs (Plate 132) (7851514550).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_132)_(7851514550).jpg
+  p_ro09: Henry Joseph Redouté - Rosa Indica Stelligera - 1943.140 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Rosa_Indica_Stelligera_-_1943.140_-_Cleveland_Museum_of_Art.jpg
+  b_bf12_8: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch015: Choix des plus belles fleurs (Plate 31) (7851425290).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_31)_(7851425290).jpg
+  p_ro03: Henry Joseph Redouté - Les Roses- Rosa Hudsoniana Salicifolia - 1965.292 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Les_Roses-_Rosa_Hudsoniana_Salicifolia_-_1965.292_-_Cleveland_Museum_of_Art.jpg
+  b_bf13_7: CramerAndStoll-uitlandsche kapellen vol. 2- plate 153.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_153.jpg
+  p_ch008: Choix des plus belles fleurs (Plate 17) (7851412142).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_17)_(7851412142).jpg
+  p_ch064: Choix des plus belles fleurs (Plate 130) (7851512998).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_130)_(7851512998).jpg
+  b_bf06_80: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 089.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_089.jpg
+  p_ro15: Redoute - Rosa gallica pontiana.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_pontiana.jpg
+  p_ch032: Choix des plus belles fleurs (Plate 65) (7851457454).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_65)_(7851457454).jpg
+  b_bf05_0: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 069.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_069.jpg
+  p_ch003: Choix des plus belles fleurs (Plate 7) (7851402370).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_7)_(7851402370).jpg
+  p_ch071: Choix des plus belles fleurs (Plate 144) (7851523856).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_144)_(7851523856).jpg
+  b_bf07_4: CramerAndStoll-uitlandsche kapellen vol. 2- plate 141.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_141.jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  b_bf11_11: CramerAndStoll-uitlandsche kapellen vol. 2- plate 145.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_145.jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  b_bf12_82: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+
+product_6in_oval_v6.html: 8 flower pieces, 2 butterflies
+  p_ch042: Choix des plus belles fleurs (Plate 85) (7851473730).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_85)_(7851473730).jpg
+  b_bf09_6: CramerAndStoll-uitlandsche kapellen vol. 2- plate 143.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_143.jpg
+  p_ch004: Choix des plus belles fleurs (Plate 9) (7851404126).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_9)_(7851404126).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  b_bf02_7: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 040.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_040.jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+
+Kept from v4: Rijksmuseum CC0 needle lace (assets/v4/lace_*). Kept from v3: chandeliers, letters, music and frames.
+
+== v9 changes ==
+Hero right restored to v4 (warm-only rule waived by owner for these):
+- assets/v4keep/bf_callithea.png (blue butterfly, top of oval), bf_painted_lady.png, rose_redoute.png (rose by seal) - same public-domain sources as listed for brand/ in earlier versions (Redouté, Les Roses; butterfly plates as in v4).
+- assets/v4keep/fl_peony.png (pink/lilac roses cluster, right edge) - as listed for assets/v4 previously.
+- Top-right spray: assets/v5/p_ro12.png (Redouté rose plate, public domain, see v5 list) replaces the v4 duplicate rose_redoute spray.
+Mobile pieces: assets/v5 and assets/v7 pool (sources unchanged, see above).
+- Hero top-left (v9 rev): assets/v5/p_ro15.png, a single red Redouté rose spray (public domain, see v5 list), replaces the poppy + pink rose stack (gr_khm3043_poppy2 border piece + dh_mh1099_rose2 veer-tl, both removed).
+
+===== from v10/ART_SOURCES_v10.txt =====
+v8 CHANGES (2026-11-04 PT)
+- de Heem peach removed from every page (moved to assets/v7_rejected).
+- Product page = v3 product page unchanged (v8/product/, v3 CSS + assets copied), pearls (pearls_swag.png) removed. Its art sources are those in v3/ART_SOURCES_v3.txt.
+- Lace strips over the 3 Collections cards (cl-lace, lace_frag3) removed; all other lace kept.
+- Mobile: own flower border (.mborder) down both edges for the full page; desktop border hidden on mobile.
+- Hero wax seal is a keep-clear zone (desktop + mobile); hero rose sprays moved off it.
+Home desktop pieces: ["dh_mh1099_rose2", "gr_roses_wreath", "b_bf11_13", "b_bf03_10", "p_ro12", "dh_mh1099_wlily2", "p_ch043", "gr_khm3043_prim", "p_ro18", "gr_khm3043_stulip", "p_ch063", "dh_mh1099_rose1", "p_ch022", "dh_mh1099_bud", "p_ch065", "b_bf09_6", "dh_nga_rtulip", "p_ch000", "dh_mh49_carnA", "p_ch064", "dh_mh1099_tulip", "p_ro11", "gr_khm3043_poppy2", "dh_mh49_carnB", "b_bf10_221", "dh_nga_peony", "p_ch039", "b_bf11_11", "dh_mh1099_olily", "p_ro09", "b_bf05_5", "gr_khm3043_poppyL", "p_ch023", "b_bf07_4", "dh_mh1099_wlily", "p_ch061", "b_bf05_33", "gr_khm3043_lilies", "p_ch002", "b_bf06_80", "dh_mh1099_redfl", "p_ch018", "b_bf00_105", "p_ch003", "p_ch046", "b_bf02_7", "p_ch071", "p_ch004", "b_bf03_45", "p_ch042", "p_ro15", "b_bf05_110", "p_ro17", "p_ch026", "b_bf12_8", "p_ch019", "p_ch069"]
+Home mobile visible pieces: ["dh_mh1099_rose2", "gr_roses_wreath", "b_bf11_13", "b_bf03_10", "p_ro12", "dh_mh1099_wlily2", "p_ch043", "gr_khm3043_prim", "p_ro18", "gr_khm3043_stulip", "p_ch063", "dh_mh1099_rose1", "p_ch022", "dh_mh1099_bud", "p_ch065", "b_bf09_6", "dh_nga_rtulip", "p_ch000", "dh_mh49_carnA", "p_ch064", "dh_mh1099_tulip", "p_ro11", "p_ch055", "p_ch023", "b_bf12_8", "p_ch015", "p_ch046", "b_bf10_221", "p_ch032", "p_ch020", "b_bf11_11", "p_ch025", "p_ro03", "b_bf02_7", "dh_mh1099_olily", "gr_khm3043_poppy2", "b_bf00_105", "p_ch042", "p_ch071", "b_bf03_45", "dh_mh49_carnB", "p_ch039", "b_bf10_21", "p_ch008", "p_ro15", "b_bf05_33", "p_ch003", "p_ch004", "b_bf08_0", "p_ch018", "p_ch002", "b_bf12_82", "p_ch019", "dh_mh1099_wlily"]
+
+MinqianArt mockup v8 - art sources (all public domain / CC0; no AI imagery; fonts OFL as in v6)
+Built 2026-11-03 PT. v6 left unchanged.
+
+NEW IN v7 - Dutch Golden Age and Biedermeier still-life cut-outs (assets/v7, originals in assets/pd7)
+dh_gap: Jan Davidsz de Heem - Vase of Flowers - Google Art Project.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_-_Vase_of_Flowers_-_Google_Art_Project.jpg
+dh_mh1099: Vase of Flowers painting by Jan Davidsz. de Heem Mauritshuis 1099.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Vase_of_Flowers_painting_by_Jan_Davidsz._de_Heem_Mauritshuis_1099.jpg
+dh_nga: Jan Davidsz de Heem, Vase of Flowers, c. 1660, NGA 46097.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem,_Vase_of_Flowers,_c._1660,_NGA_46097.jpg
+dh_rijks138: Festoen van vruchten en bloemen Rijksmuseum SK-A-138.jpeg | Public domain | https://commons.wikimedia.org/wiki/File:Festoen_van_vruchten_en_bloemen_Rijksmuseum_SK-A-138.jpeg
+dh_002: Jan Davidsz de Heem 002.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_002.jpg
+dh_mh49: Jan Davidsz de Heem - Garland of Fruit and Flowers - 49 - Mauritshuis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_-_Garland_of_Fruit_and_Flowers_-_49_-_Mauritshuis.jpg
+gr_khm3043: Franz Xaver Gruber - Blumenstück - 3043 - Kunsthistorisches Museum.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Franz_Xaver_Gruber_-_Blumenst%C3%BCck_-_3043_-_Kunsthistorisches_Museum.jpg
+gr_roses: Franz Xaver Gruber - Orangegelbe Rosen.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Franz_Xaver_Gruber_-_Orangegelbe_Rosen.jpg
+
+Jan Davidsz de Heem paintings used:
+ - Vase of Flowers, c.1670, Mauritshuis inv. 1099 (PD): white lilies x2, orange lily, striped tulip, two pink roses, red rose bud, red flower
+ - Vase of Flowers, c.1660, National Gallery of Art, Washington (Commons file "NGA 46097") (CC0): white peony, red-striped tulip
+ - Garland of Fruit and Flowers, Mauritshuis inv. 49 (PD): two red carnations
+ (Rijksmuseum SK-A-138 was downloaded and cut but no piece passed the edge check.)
+Franz Xaver Gruber paintings used:
+ - Blumenstück, KHM Vienna inv. 3043 (PD): orange lilies, striped tulip, yellow primulas, two red poppies
+ - Orangegelbe Rosen, watercolour (PD): orange rose spray
+Product crown (assets/v7/crown_v7.png) is a composite of 10 of those pieces: gr_khm3043_lilies, dh_mh1099_wlily, dh_mh1099_olily, dh_mh1099_tulip, gr_khm3043_stulip, gr_khm3043_prim, gr_khm3043_poppyL, dh_mh1099_rose1, dh_mh1099_rose2, dh_mh1099_bud
+Masking: dark ground keyed out, 1 px erosion to remove the dark halo, 1.2 px feather; blue blooms removed; blurry or ragged pieces rejected.
+
+
+---- carried over from v6 ----
+MinqianArt website mockup v6 — art sources. All public domain or CC0; no AI imagery; fonts OFL (unchanged).
+
+v6: warm-only palette. Blue, purple and cool flowers and blue butterflies removed. Every piece is used once per page, with no mirrored copies. Cut-outs are in assets/v5 (made by make_v5.py from assets/pd5).
+
+home_v6.html: 37 flower pieces, 11 butterflies
+  p_ro16: Redoute - Rosa gallica purpuro-violacea magna.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_purpuro-violacea_magna.jpg
+  ruysch_bouquet: v1-v3 brand cut-out of a Rachel Ruysch still life (see v3/ART_SOURCES_v3.txt), used once
+  b_bf03_10: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  b_bf10_221: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro12: Redoute - Rosa centifolia foliacea.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_centifolia_foliacea.jpg
+  p_ch043: Choix des plus belles fleurs (Plate 87) (7851475280).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_87)_(7851475280).jpg
+  p_ch063: Choix des plus belles fleurs (Plate 128) (7851511328).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_128)_(7851511328).jpg
+  p_ch022: Choix des plus belles fleurs (Plate 45) (7851440152).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_45)_(7851440152).jpg
+  p_ch026: Choix des plus belles fleurs (Plate 53) (7851447106).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_53)_(7851447106).jpg
+  p_ch000: Choix des plus belles fleurs (Plate 1) (7851396238).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_1)_(7851396238).jpg
+  p_ch025: Choix des plus belles fleurs (Plate 51) (7851445264).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_51)_(7851445264).jpg
+  p_ch040: Choix des plus belles fleurs (Plate 81) (7851470352).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_81)_(7851470352).jpg
+  p_ch020: Choix des plus belles fleurs (Plate 41) (7851436100).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_41)_(7851436100).jpg
+  p_ch055: Choix des plus belles fleurs (Plate 111) (7851497552).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_111)_(7851497552).jpg
+  p_ch039: Choix des plus belles fleurs (Plate 79) (7851468806).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_79)_(7851468806).jpg
+  b_bf10_21: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro17: Redoute - Rosa gallica regalis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_regalis.jpg
+  p_ch049: Choix des plus belles fleurs (Plate 99) (7851486910).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_99)_(7851486910).jpg
+  p_ch019: Choix des plus belles fleurs (Plate 39) (7851434004).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_39)_(7851434004).jpg
+  p_ro18: Redoute flowers01.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_flowers01.jpg
+  p_ro11: Pierre-Joseph Redouté - Rosa Bifera Macrocarpa - WGA19030.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Pierre-Joseph_Redout%C3%A9_-_Rosa_Bifera_Macrocarpa_-_WGA19030.jpg
+  p_ch010: Choix des plus belles fleurs (Plate 21) (7851415504).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_21)_(7851415504).jpg
+  p_ro07: Henry Joseph Redouté - Pompon Rose - 1943.142 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Pompon_Rose_-_1943.142_-_Cleveland_Museum_of_Art.jpg
+  p_ro13: Redoute - Rosa gallica flore giganteo - brighter.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_flore_giganteo_-_brighter.jpg
+  b_bf03_45: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  p_ch065: Choix des plus belles fleurs (Plate 132) (7851514550).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_132)_(7851514550).jpg
+  p_ro09: Henry Joseph Redouté - Rosa Indica Stelligera - 1943.140 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Rosa_Indica_Stelligera_-_1943.140_-_Cleveland_Museum_of_Art.jpg
+  b_bf12_8: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch015: Choix des plus belles fleurs (Plate 31) (7851425290).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_31)_(7851425290).jpg
+  p_ro03: Henry Joseph Redouté - Les Roses- Rosa Hudsoniana Salicifolia - 1965.292 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Les_Roses-_Rosa_Hudsoniana_Salicifolia_-_1965.292_-_Cleveland_Museum_of_Art.jpg
+  b_bf13_7: CramerAndStoll-uitlandsche kapellen vol. 2- plate 153.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_153.jpg
+  p_ch008: Choix des plus belles fleurs (Plate 17) (7851412142).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_17)_(7851412142).jpg
+  p_ch064: Choix des plus belles fleurs (Plate 130) (7851512998).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_130)_(7851512998).jpg
+  b_bf06_80: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 089.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_089.jpg
+  p_ro15: Redoute - Rosa gallica pontiana.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_pontiana.jpg
+  p_ch032: Choix des plus belles fleurs (Plate 65) (7851457454).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_65)_(7851457454).jpg
+  b_bf05_0: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 069.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_069.jpg
+  p_ch003: Choix des plus belles fleurs (Plate 7) (7851402370).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_7)_(7851402370).jpg
+  p_ch071: Choix des plus belles fleurs (Plate 144) (7851523856).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_144)_(7851523856).jpg
+  b_bf07_4: CramerAndStoll-uitlandsche kapellen vol. 2- plate 141.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_141.jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  b_bf11_11: CramerAndStoll-uitlandsche kapellen vol. 2- plate 145.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_145.jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  b_bf12_82: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+
+product_6in_oval_v6.html: 8 flower pieces, 2 butterflies
+  p_ch042: Choix des plus belles fleurs (Plate 85) (7851473730).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_85)_(7851473730).jpg
+  b_bf09_6: CramerAndStoll-uitlandsche kapellen vol. 2- plate 143.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_143.jpg
+  p_ch004: Choix des plus belles fleurs (Plate 9) (7851404126).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_9)_(7851404126).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  b_bf02_7: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 040.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_040.jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+
+Kept from v4: Rijksmuseum CC0 needle lace (assets/v4/lace_*). Kept from v3: chandeliers, letters, music and frames.
+
+== v9 changes ==
+Hero right restored to v4 (warm-only rule waived by owner for these):
+- assets/v4keep/bf_callithea.png (blue butterfly, top of oval), bf_painted_lady.png, rose_redoute.png (rose by seal) - same public-domain sources as listed for brand/ in earlier versions (Redouté, Les Roses; butterfly plates as in v4).
+- assets/v4keep/fl_peony.png (pink/lilac roses cluster, right edge) - as listed for assets/v4 previously.
+- Top-right spray: assets/v5/p_ro12.png (Redouté rose plate, public domain, see v5 list) replaces the v4 duplicate rose_redoute spray.
+Mobile pieces: assets/v5 and assets/v7 pool (sources unchanged, see above).
+- Hero top-left (v9 rev): assets/v5/p_ro15.png, a single red Redouté rose spray (public domain, see v5 list), replaces the poppy + pink rose stack (gr_khm3043_poppy2 border piece + dh_mh1099_rose2 veer-tl, both removed).
+
+== v10 ==
+No new artwork. Mobile edge flowers re-flowed from the same assets/v5 + assets/v7 pools (sources above). Desktop identical to v9.
+
+===== from v11/ART_SOURCES_v11.txt =====
+v8 CHANGES (2026-11-04 PT)
+- de Heem peach removed from every page (moved to assets/v7_rejected).
+- Product page = v3 product page unchanged (v8/product/, v3 CSS + assets copied), pearls (pearls_swag.png) removed. Its art sources are those in v3/ART_SOURCES_v3.txt.
+- Lace strips over the 3 Collections cards (cl-lace, lace_frag3) removed; all other lace kept.
+- Mobile: own flower border (.mborder) down both edges for the full page; desktop border hidden on mobile.
+- Hero wax seal is a keep-clear zone (desktop + mobile); hero rose sprays moved off it.
+Home desktop pieces: ["dh_mh1099_rose2", "gr_roses_wreath", "b_bf11_13", "b_bf03_10", "p_ro12", "dh_mh1099_wlily2", "p_ch043", "gr_khm3043_prim", "p_ro18", "gr_khm3043_stulip", "p_ch063", "dh_mh1099_rose1", "p_ch022", "dh_mh1099_bud", "p_ch065", "b_bf09_6", "dh_nga_rtulip", "p_ch000", "dh_mh49_carnA", "p_ch064", "dh_mh1099_tulip", "p_ro11", "gr_khm3043_poppy2", "dh_mh49_carnB", "b_bf10_221", "dh_nga_peony", "p_ch039", "b_bf11_11", "dh_mh1099_olily", "p_ro09", "b_bf05_5", "gr_khm3043_poppyL", "p_ch023", "b_bf07_4", "dh_mh1099_wlily", "p_ch061", "b_bf05_33", "gr_khm3043_lilies", "p_ch002", "b_bf06_80", "dh_mh1099_redfl", "p_ch018", "b_bf00_105", "p_ch003", "p_ch046", "b_bf02_7", "p_ch071", "p_ch004", "b_bf03_45", "p_ch042", "p_ro15", "b_bf05_110", "p_ro17", "p_ch026", "b_bf12_8", "p_ch019", "p_ch069"]
+Home mobile visible pieces: ["dh_mh1099_rose2", "gr_roses_wreath", "b_bf11_13", "b_bf03_10", "p_ro12", "dh_mh1099_wlily2", "p_ch043", "gr_khm3043_prim", "p_ro18", "gr_khm3043_stulip", "p_ch063", "dh_mh1099_rose1", "p_ch022", "dh_mh1099_bud", "p_ch065", "b_bf09_6", "dh_nga_rtulip", "p_ch000", "dh_mh49_carnA", "p_ch064", "dh_mh1099_tulip", "p_ro11", "p_ch055", "p_ch023", "b_bf12_8", "p_ch015", "p_ch046", "b_bf10_221", "p_ch032", "p_ch020", "b_bf11_11", "p_ch025", "p_ro03", "b_bf02_7", "dh_mh1099_olily", "gr_khm3043_poppy2", "b_bf00_105", "p_ch042", "p_ch071", "b_bf03_45", "dh_mh49_carnB", "p_ch039", "b_bf10_21", "p_ch008", "p_ro15", "b_bf05_33", "p_ch003", "p_ch004", "b_bf08_0", "p_ch018", "p_ch002", "b_bf12_82", "p_ch019", "dh_mh1099_wlily"]
+
+MinqianArt mockup v8 - art sources (all public domain / CC0; no AI imagery; fonts OFL as in v6)
+Built 2026-11-03 PT. v6 left unchanged.
+
+NEW IN v7 - Dutch Golden Age and Biedermeier still-life cut-outs (assets/v7, originals in assets/pd7)
+dh_gap: Jan Davidsz de Heem - Vase of Flowers - Google Art Project.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_-_Vase_of_Flowers_-_Google_Art_Project.jpg
+dh_mh1099: Vase of Flowers painting by Jan Davidsz. de Heem Mauritshuis 1099.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Vase_of_Flowers_painting_by_Jan_Davidsz._de_Heem_Mauritshuis_1099.jpg
+dh_nga: Jan Davidsz de Heem, Vase of Flowers, c. 1660, NGA 46097.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem,_Vase_of_Flowers,_c._1660,_NGA_46097.jpg
+dh_rijks138: Festoen van vruchten en bloemen Rijksmuseum SK-A-138.jpeg | Public domain | https://commons.wikimedia.org/wiki/File:Festoen_van_vruchten_en_bloemen_Rijksmuseum_SK-A-138.jpeg
+dh_002: Jan Davidsz de Heem 002.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_002.jpg
+dh_mh49: Jan Davidsz de Heem - Garland of Fruit and Flowers - 49 - Mauritshuis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_-_Garland_of_Fruit_and_Flowers_-_49_-_Mauritshuis.jpg
+gr_khm3043: Franz Xaver Gruber - Blumenstück - 3043 - Kunsthistorisches Museum.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Franz_Xaver_Gruber_-_Blumenst%C3%BCck_-_3043_-_Kunsthistorisches_Museum.jpg
+gr_roses: Franz Xaver Gruber - Orangegelbe Rosen.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Franz_Xaver_Gruber_-_Orangegelbe_Rosen.jpg
+
+Jan Davidsz de Heem paintings used:
+ - Vase of Flowers, c.1670, Mauritshuis inv. 1099 (PD): white lilies x2, orange lily, striped tulip, two pink roses, red rose bud, red flower
+ - Vase of Flowers, c.1660, National Gallery of Art, Washington (Commons file "NGA 46097") (CC0): white peony, red-striped tulip
+ - Garland of Fruit and Flowers, Mauritshuis inv. 49 (PD): two red carnations
+ (Rijksmuseum SK-A-138 was downloaded and cut but no piece passed the edge check.)
+Franz Xaver Gruber paintings used:
+ - Blumenstück, KHM Vienna inv. 3043 (PD): orange lilies, striped tulip, yellow primulas, two red poppies
+ - Orangegelbe Rosen, watercolour (PD): orange rose spray
+Product crown (assets/v7/crown_v7.png) is a composite of 10 of those pieces: gr_khm3043_lilies, dh_mh1099_wlily, dh_mh1099_olily, dh_mh1099_tulip, gr_khm3043_stulip, gr_khm3043_prim, gr_khm3043_poppyL, dh_mh1099_rose1, dh_mh1099_rose2, dh_mh1099_bud
+Masking: dark ground keyed out, 1 px erosion to remove the dark halo, 1.2 px feather; blue blooms removed; blurry or ragged pieces rejected.
+
+
+---- carried over from v6 ----
+MinqianArt website mockup v6 — art sources. All public domain or CC0; no AI imagery; fonts OFL (unchanged).
+
+v6: warm-only palette. Blue, purple and cool flowers and blue butterflies removed. Every piece is used once per page, with no mirrored copies. Cut-outs are in assets/v5 (made by make_v5.py from assets/pd5).
+
+home_v6.html: 37 flower pieces, 11 butterflies
+  p_ro16: Redoute - Rosa gallica purpuro-violacea magna.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_purpuro-violacea_magna.jpg
+  ruysch_bouquet: v1-v3 brand cut-out of a Rachel Ruysch still life (see v3/ART_SOURCES_v3.txt), used once
+  b_bf03_10: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  b_bf10_221: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro12: Redoute - Rosa centifolia foliacea.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_centifolia_foliacea.jpg
+  p_ch043: Choix des plus belles fleurs (Plate 87) (7851475280).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_87)_(7851475280).jpg
+  p_ch063: Choix des plus belles fleurs (Plate 128) (7851511328).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_128)_(7851511328).jpg
+  p_ch022: Choix des plus belles fleurs (Plate 45) (7851440152).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_45)_(7851440152).jpg
+  p_ch026: Choix des plus belles fleurs (Plate 53) (7851447106).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_53)_(7851447106).jpg
+  p_ch000: Choix des plus belles fleurs (Plate 1) (7851396238).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_1)_(7851396238).jpg
+  p_ch025: Choix des plus belles fleurs (Plate 51) (7851445264).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_51)_(7851445264).jpg
+  p_ch040: Choix des plus belles fleurs (Plate 81) (7851470352).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_81)_(7851470352).jpg
+  p_ch020: Choix des plus belles fleurs (Plate 41) (7851436100).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_41)_(7851436100).jpg
+  p_ch055: Choix des plus belles fleurs (Plate 111) (7851497552).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_111)_(7851497552).jpg
+  p_ch039: Choix des plus belles fleurs (Plate 79) (7851468806).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_79)_(7851468806).jpg
+  b_bf10_21: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro17: Redoute - Rosa gallica regalis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_regalis.jpg
+  p_ch049: Choix des plus belles fleurs (Plate 99) (7851486910).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_99)_(7851486910).jpg
+  p_ch019: Choix des plus belles fleurs (Plate 39) (7851434004).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_39)_(7851434004).jpg
+  p_ro18: Redoute flowers01.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_flowers01.jpg
+  p_ro11: Pierre-Joseph Redouté - Rosa Bifera Macrocarpa - WGA19030.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Pierre-Joseph_Redout%C3%A9_-_Rosa_Bifera_Macrocarpa_-_WGA19030.jpg
+  p_ch010: Choix des plus belles fleurs (Plate 21) (7851415504).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_21)_(7851415504).jpg
+  p_ro07: Henry Joseph Redouté - Pompon Rose - 1943.142 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Pompon_Rose_-_1943.142_-_Cleveland_Museum_of_Art.jpg
+  p_ro13: Redoute - Rosa gallica flore giganteo - brighter.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_flore_giganteo_-_brighter.jpg
+  b_bf03_45: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  p_ch065: Choix des plus belles fleurs (Plate 132) (7851514550).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_132)_(7851514550).jpg
+  p_ro09: Henry Joseph Redouté - Rosa Indica Stelligera - 1943.140 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Rosa_Indica_Stelligera_-_1943.140_-_Cleveland_Museum_of_Art.jpg
+  b_bf12_8: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch015: Choix des plus belles fleurs (Plate 31) (7851425290).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_31)_(7851425290).jpg
+  p_ro03: Henry Joseph Redouté - Les Roses- Rosa Hudsoniana Salicifolia - 1965.292 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Les_Roses-_Rosa_Hudsoniana_Salicifolia_-_1965.292_-_Cleveland_Museum_of_Art.jpg
+  b_bf13_7: CramerAndStoll-uitlandsche kapellen vol. 2- plate 153.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_153.jpg
+  p_ch008: Choix des plus belles fleurs (Plate 17) (7851412142).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_17)_(7851412142).jpg
+  p_ch064: Choix des plus belles fleurs (Plate 130) (7851512998).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_130)_(7851512998).jpg
+  b_bf06_80: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 089.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_089.jpg
+  p_ro15: Redoute - Rosa gallica pontiana.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_pontiana.jpg
+  p_ch032: Choix des plus belles fleurs (Plate 65) (7851457454).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_65)_(7851457454).jpg
+  b_bf05_0: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 069.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_069.jpg
+  p_ch003: Choix des plus belles fleurs (Plate 7) (7851402370).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_7)_(7851402370).jpg
+  p_ch071: Choix des plus belles fleurs (Plate 144) (7851523856).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_144)_(7851523856).jpg
+  b_bf07_4: CramerAndStoll-uitlandsche kapellen vol. 2- plate 141.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_141.jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  b_bf11_11: CramerAndStoll-uitlandsche kapellen vol. 2- plate 145.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_145.jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  b_bf12_82: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+
+product_6in_oval_v6.html: 8 flower pieces, 2 butterflies
+  p_ch042: Choix des plus belles fleurs (Plate 85) (7851473730).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_85)_(7851473730).jpg
+  b_bf09_6: CramerAndStoll-uitlandsche kapellen vol. 2- plate 143.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_143.jpg
+  p_ch004: Choix des plus belles fleurs (Plate 9) (7851404126).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_9)_(7851404126).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  b_bf02_7: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 040.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_040.jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+
+Kept from v4: Rijksmuseum CC0 needle lace (assets/v4/lace_*). Kept from v3: chandeliers, letters, music and frames.
+
+== v9 changes ==
+Hero right restored to v4 (warm-only rule waived by owner for these):
+- assets/v4keep/bf_callithea.png (blue butterfly, top of oval), bf_painted_lady.png, rose_redoute.png (rose by seal) - same public-domain sources as listed for brand/ in earlier versions (Redouté, Les Roses; butterfly plates as in v4).
+- assets/v4keep/fl_peony.png (pink/lilac roses cluster, right edge) - as listed for assets/v4 previously.
+- Top-right spray: assets/v5/p_ro12.png (Redouté rose plate, public domain, see v5 list) replaces the v4 duplicate rose_redoute spray.
+Mobile pieces: assets/v5 and assets/v7 pool (sources unchanged, see above).
+- Hero top-left (v9 rev): assets/v5/p_ro15.png, a single red Redouté rose spray (public domain, see v5 list), replaces the poppy + pink rose stack (gr_khm3043_poppy2 border piece + dh_mh1099_rose2 veer-tl, both removed).
+
+== v10 ==
+No new artwork. Mobile edge flowers re-flowed from the same assets/v5 + assets/v7 pools (sources above). Desktop identical to v9.
+
+== v11 ==
+No new artwork; mobile edge flowers re-flowed from the same v5/v7 pools. Desktop identical to v9/v10.
+
+===== from v12/ART_SOURCES_v12.txt =====
+v8 CHANGES (2026-11-04 PT)
+- de Heem peach removed from every page (moved to assets/v7_rejected).
+- Product page = v3 product page unchanged (v8/product/, v3 CSS + assets copied), pearls (pearls_swag.png) removed. Its art sources are those in v3/ART_SOURCES_v3.txt.
+- Lace strips over the 3 Collections cards (cl-lace, lace_frag3) removed; all other lace kept.
+- Mobile: own flower border (.mborder) down both edges for the full page; desktop border hidden on mobile.
+- Hero wax seal is a keep-clear zone (desktop + mobile); hero rose sprays moved off it.
+Home desktop pieces: ["dh_mh1099_rose2", "gr_roses_wreath", "b_bf11_13", "b_bf03_10", "p_ro12", "dh_mh1099_wlily2", "p_ch043", "gr_khm3043_prim", "p_ro18", "gr_khm3043_stulip", "p_ch063", "dh_mh1099_rose1", "p_ch022", "dh_mh1099_bud", "p_ch065", "b_bf09_6", "dh_nga_rtulip", "p_ch000", "dh_mh49_carnA", "p_ch064", "dh_mh1099_tulip", "p_ro11", "gr_khm3043_poppy2", "dh_mh49_carnB", "b_bf10_221", "dh_nga_peony", "p_ch039", "b_bf11_11", "dh_mh1099_olily", "p_ro09", "b_bf05_5", "gr_khm3043_poppyL", "p_ch023", "b_bf07_4", "dh_mh1099_wlily", "p_ch061", "b_bf05_33", "gr_khm3043_lilies", "p_ch002", "b_bf06_80", "dh_mh1099_redfl", "p_ch018", "b_bf00_105", "p_ch003", "p_ch046", "b_bf02_7", "p_ch071", "p_ch004", "b_bf03_45", "p_ch042", "p_ro15", "b_bf05_110", "p_ro17", "p_ch026", "b_bf12_8", "p_ch019", "p_ch069"]
+Home mobile visible pieces: ["dh_mh1099_rose2", "gr_roses_wreath", "b_bf11_13", "b_bf03_10", "p_ro12", "dh_mh1099_wlily2", "p_ch043", "gr_khm3043_prim", "p_ro18", "gr_khm3043_stulip", "p_ch063", "dh_mh1099_rose1", "p_ch022", "dh_mh1099_bud", "p_ch065", "b_bf09_6", "dh_nga_rtulip", "p_ch000", "dh_mh49_carnA", "p_ch064", "dh_mh1099_tulip", "p_ro11", "p_ch055", "p_ch023", "b_bf12_8", "p_ch015", "p_ch046", "b_bf10_221", "p_ch032", "p_ch020", "b_bf11_11", "p_ch025", "p_ro03", "b_bf02_7", "dh_mh1099_olily", "gr_khm3043_poppy2", "b_bf00_105", "p_ch042", "p_ch071", "b_bf03_45", "dh_mh49_carnB", "p_ch039", "b_bf10_21", "p_ch008", "p_ro15", "b_bf05_33", "p_ch003", "p_ch004", "b_bf08_0", "p_ch018", "p_ch002", "b_bf12_82", "p_ch019", "dh_mh1099_wlily"]
+
+MinqianArt mockup v8 - art sources (all public domain / CC0; no AI imagery; fonts OFL as in v6)
+Built 2026-11-03 PT. v6 left unchanged.
+
+NEW IN v7 - Dutch Golden Age and Biedermeier still-life cut-outs (assets/v7, originals in assets/pd7)
+dh_gap: Jan Davidsz de Heem - Vase of Flowers - Google Art Project.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_-_Vase_of_Flowers_-_Google_Art_Project.jpg
+dh_mh1099: Vase of Flowers painting by Jan Davidsz. de Heem Mauritshuis 1099.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Vase_of_Flowers_painting_by_Jan_Davidsz._de_Heem_Mauritshuis_1099.jpg
+dh_nga: Jan Davidsz de Heem, Vase of Flowers, c. 1660, NGA 46097.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem,_Vase_of_Flowers,_c._1660,_NGA_46097.jpg
+dh_rijks138: Festoen van vruchten en bloemen Rijksmuseum SK-A-138.jpeg | Public domain | https://commons.wikimedia.org/wiki/File:Festoen_van_vruchten_en_bloemen_Rijksmuseum_SK-A-138.jpeg
+dh_002: Jan Davidsz de Heem 002.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_002.jpg
+dh_mh49: Jan Davidsz de Heem - Garland of Fruit and Flowers - 49 - Mauritshuis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Jan_Davidsz_de_Heem_-_Garland_of_Fruit_and_Flowers_-_49_-_Mauritshuis.jpg
+gr_khm3043: Franz Xaver Gruber - Blumenstück - 3043 - Kunsthistorisches Museum.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Franz_Xaver_Gruber_-_Blumenst%C3%BCck_-_3043_-_Kunsthistorisches_Museum.jpg
+gr_roses: Franz Xaver Gruber - Orangegelbe Rosen.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Franz_Xaver_Gruber_-_Orangegelbe_Rosen.jpg
+
+Jan Davidsz de Heem paintings used:
+ - Vase of Flowers, c.1670, Mauritshuis inv. 1099 (PD): white lilies x2, orange lily, striped tulip, two pink roses, red rose bud, red flower
+ - Vase of Flowers, c.1660, National Gallery of Art, Washington (Commons file "NGA 46097") (CC0): white peony, red-striped tulip
+ - Garland of Fruit and Flowers, Mauritshuis inv. 49 (PD): two red carnations
+ (Rijksmuseum SK-A-138 was downloaded and cut but no piece passed the edge check.)
+Franz Xaver Gruber paintings used:
+ - Blumenstück, KHM Vienna inv. 3043 (PD): orange lilies, striped tulip, yellow primulas, two red poppies
+ - Orangegelbe Rosen, watercolour (PD): orange rose spray
+Product crown (assets/v7/crown_v7.png) is a composite of 10 of those pieces: gr_khm3043_lilies, dh_mh1099_wlily, dh_mh1099_olily, dh_mh1099_tulip, gr_khm3043_stulip, gr_khm3043_prim, gr_khm3043_poppyL, dh_mh1099_rose1, dh_mh1099_rose2, dh_mh1099_bud
+Masking: dark ground keyed out, 1 px erosion to remove the dark halo, 1.2 px feather; blue blooms removed; blurry or ragged pieces rejected.
+
+
+---- carried over from v6 ----
+MinqianArt website mockup v6 — art sources. All public domain or CC0; no AI imagery; fonts OFL (unchanged).
+
+v6: warm-only palette. Blue, purple and cool flowers and blue butterflies removed. Every piece is used once per page, with no mirrored copies. Cut-outs are in assets/v5 (made by make_v5.py from assets/pd5).
+
+home_v6.html: 37 flower pieces, 11 butterflies
+  p_ro16: Redoute - Rosa gallica purpuro-violacea magna.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_purpuro-violacea_magna.jpg
+  ruysch_bouquet: v1-v3 brand cut-out of a Rachel Ruysch still life (see v3/ART_SOURCES_v3.txt), used once
+  b_bf03_10: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  b_bf10_221: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro12: Redoute - Rosa centifolia foliacea.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_centifolia_foliacea.jpg
+  p_ch043: Choix des plus belles fleurs (Plate 87) (7851475280).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_87)_(7851475280).jpg
+  p_ch063: Choix des plus belles fleurs (Plate 128) (7851511328).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_128)_(7851511328).jpg
+  p_ch022: Choix des plus belles fleurs (Plate 45) (7851440152).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_45)_(7851440152).jpg
+  p_ch026: Choix des plus belles fleurs (Plate 53) (7851447106).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_53)_(7851447106).jpg
+  p_ch000: Choix des plus belles fleurs (Plate 1) (7851396238).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_1)_(7851396238).jpg
+  p_ch025: Choix des plus belles fleurs (Plate 51) (7851445264).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_51)_(7851445264).jpg
+  p_ch040: Choix des plus belles fleurs (Plate 81) (7851470352).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_81)_(7851470352).jpg
+  p_ch020: Choix des plus belles fleurs (Plate 41) (7851436100).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_41)_(7851436100).jpg
+  p_ch055: Choix des plus belles fleurs (Plate 111) (7851497552).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_111)_(7851497552).jpg
+  p_ch039: Choix des plus belles fleurs (Plate 79) (7851468806).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_79)_(7851468806).jpg
+  b_bf10_21: CramerAndStoll-uitlandsche kapellen vol. 2- plate 144.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_144.jpg
+  p_ro17: Redoute - Rosa gallica regalis.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_regalis.jpg
+  p_ch049: Choix des plus belles fleurs (Plate 99) (7851486910).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_99)_(7851486910).jpg
+  p_ch019: Choix des plus belles fleurs (Plate 39) (7851434004).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_39)_(7851434004).jpg
+  p_ro18: Redoute flowers01.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_flowers01.jpg
+  p_ro11: Pierre-Joseph Redouté - Rosa Bifera Macrocarpa - WGA19030.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Pierre-Joseph_Redout%C3%A9_-_Rosa_Bifera_Macrocarpa_-_WGA19030.jpg
+  p_ch010: Choix des plus belles fleurs (Plate 21) (7851415504).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_21)_(7851415504).jpg
+  p_ro07: Henry Joseph Redouté - Pompon Rose - 1943.142 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Pompon_Rose_-_1943.142_-_Cleveland_Museum_of_Art.jpg
+  p_ro13: Redoute - Rosa gallica flore giganteo - brighter.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_flore_giganteo_-_brighter.jpg
+  b_bf03_45: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 044.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_044.jpg
+  p_ch065: Choix des plus belles fleurs (Plate 132) (7851514550).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_132)_(7851514550).jpg
+  p_ro09: Henry Joseph Redouté - Rosa Indica Stelligera - 1943.140 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Rosa_Indica_Stelligera_-_1943.140_-_Cleveland_Museum_of_Art.jpg
+  b_bf12_8: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch015: Choix des plus belles fleurs (Plate 31) (7851425290).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_31)_(7851425290).jpg
+  p_ro03: Henry Joseph Redouté - Les Roses- Rosa Hudsoniana Salicifolia - 1965.292 - Cleveland Museum of Art.jpg | CC0 | https://commons.wikimedia.org/wiki/File:Henry_Joseph_Redout%C3%A9_-_Les_Roses-_Rosa_Hudsoniana_Salicifolia_-_1965.292_-_Cleveland_Museum_of_Art.jpg
+  b_bf13_7: CramerAndStoll-uitlandsche kapellen vol. 2- plate 153.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_153.jpg
+  p_ch008: Choix des plus belles fleurs (Plate 17) (7851412142).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_17)_(7851412142).jpg
+  p_ch064: Choix des plus belles fleurs (Plate 130) (7851512998).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_130)_(7851512998).jpg
+  b_bf06_80: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 089.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_089.jpg
+  p_ro15: Redoute - Rosa gallica pontiana.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Redoute_-_Rosa_gallica_pontiana.jpg
+  p_ch032: Choix des plus belles fleurs (Plate 65) (7851457454).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_65)_(7851457454).jpg
+  b_bf05_0: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 069.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_069.jpg
+  p_ch003: Choix des plus belles fleurs (Plate 7) (7851402370).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_7)_(7851402370).jpg
+  p_ch071: Choix des plus belles fleurs (Plate 144) (7851523856).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_144)_(7851523856).jpg
+  b_bf07_4: CramerAndStoll-uitlandsche kapellen vol. 2- plate 141.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_141.jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  b_bf11_11: CramerAndStoll-uitlandsche kapellen vol. 2- plate 145.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_145.jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  b_bf12_82: CramerAndStoll-uitlandsche kapellen vol. 2- plate 146.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_146.jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+
+product_6in_oval_v6.html: 8 flower pieces, 2 butterflies
+  p_ch042: Choix des plus belles fleurs (Plate 85) (7851473730).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_85)_(7851473730).jpg
+  b_bf09_6: CramerAndStoll-uitlandsche kapellen vol. 2- plate 143.jpg | Public domain | https://commons.wikimedia.org/wiki/File:CramerAndStoll-uitlandsche_kapellen_vol._2-_plate_143.jpg
+  p_ch004: Choix des plus belles fleurs (Plate 9) (7851404126).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_9)_(7851404126).jpg
+  p_ch018: Choix des plus belles fleurs (Plate 37) (7851431718).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_37)_(7851431718).jpg
+  p_ch046: Choix des plus belles fleurs (Plate 93) (7851481306).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_93)_(7851481306).jpg
+  p_ch002: Choix des plus belles fleurs (Plate 5) (7851400030).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_5)_(7851400030).jpg
+  p_ch023: Choix des plus belles fleurs (Plate 47) (7851441962).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_47)_(7851441962).jpg
+  b_bf02_7: Cramer&Stoll-uitlandsche kapellen vol. 1- plate 040.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Cramer%26Stoll-uitlandsche_kapellen_vol._1-_plate_040.jpg
+  p_ch061: Choix des plus belles fleurs (Plate 123) (7851508046).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_123)_(7851508046).jpg
+  p_ch069: Choix des plus belles fleurs (Plate 140) (7851520590).jpg | Public domain | https://commons.wikimedia.org/wiki/File:Choix_des_plus_belles_fleurs_(Plate_140)_(7851520590).jpg
+
+Kept from v4: Rijksmuseum CC0 needle lace (assets/v4/lace_*). Kept from v3: chandeliers, letters, music and frames.
+
+== v9 changes ==
+Hero right restored to v4 (warm-only rule waived by owner for these):
+- assets/v4keep/bf_callithea.png (blue butterfly, top of oval), bf_painted_lady.png, rose_redoute.png (rose by seal) - same public-domain sources as listed for brand/ in earlier versions (Redouté, Les Roses; butterfly plates as in v4).
+- assets/v4keep/fl_peony.png (pink/lilac roses cluster, right edge) - as listed for assets/v4 previously.
+- Top-right spray: assets/v5/p_ro12.png (Redouté rose plate, public domain, see v5 list) replaces the v4 duplicate rose_redoute spray.
+Mobile pieces: assets/v5 and assets/v7 pool (sources unchanged, see above).
+- Hero top-left (v9 rev): assets/v5/p_ro15.png, a single red Redouté rose spray (public domain, see v5 list), replaces the poppy + pink rose stack (gr_khm3043_poppy2 border piece + dh_mh1099_rose2 veer-tl, both removed).
+
+== v10 ==
+No new artwork. Mobile edge flowers re-flowed from the same assets/v5 + assets/v7 pools (sources above). Desktop identical to v9.
+
+== v11 ==
+No new artwork; mobile edge flowers re-flowed from the same v5/v7 pools. Desktop identical to v9/v10.
+
+== v12 ==
+No new artwork. Mobile = v8 layout (hero, Collections, footer); edge flowers from the same v5/v7 pools. Desktop = v9 hero; only the footer Studio list gained Gallery + Reviews.

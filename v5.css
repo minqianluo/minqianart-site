@@ -1,0 +1,10 @@
+/* v5: unique botanical plates; flowers kept to margins and section corners */
+.v5 .sx-fl{width:150px!important;max-height:230px;object-fit:contain;top:-80px!important;z-index:6;transform:none!important}
+.v5 .sx-fl.l{left:40px!important;transform:rotate(-8deg)!important}
+.v5 .sx-fl.r{right:40px!important;left:auto!important;transform:rotate(8deg)!important}
+.v5 .hero .veer-tl{width:190px!important;max-height:300px;object-fit:contain;top:150px!important;left:-60px!important}
+.v5 .fborder img{filter:drop-shadow(0 3px 4px rgba(60,25,15,.22))}
+.v5 footer .fl{width:170px!important;max-height:260px;object-fit:contain}
+.v5 .rosea{max-height:260px;object-fit:contain}
+.v5 .unbox .sx-fl{top:-20px!important}
+.v5 .gal .rosea{right:-70px;bottom:40px;width:150px}
