@@ -1,10 +1,51 @@
-/* Real supplier frame cut-outs (user product photos). Painting sits under .frame via .art / .art-ph. */
-.fr.real{--l:18%;--r:18%;--t:18%;--b:18%}
-.fr.real .frame{position:relative;width:100%;height:auto;filter:drop-shadow(0 10px 14px rgba(0,0,0,.55));z-index:2;pointer-events:none}
+/* Real supplier frame cut-outs. Painting sits under .frame via .art / .art-ph.
+   Opening insets from openings.json as % of the frame image box. */
+.fr.real{
+  position:relative;display:inline-block;
+  padding:0!important;background:none!important;border:none!important;
+  box-shadow:none!important;border-radius:0!important;
+  --l:18%;--r:18%;--t:18%;--b:18%;
+}
+.fr.real:before{content:none!important;display:none!important}
+.fr.real .frame{
+  position:relative;display:block;width:100%;height:auto;
+  z-index:2;pointer-events:none;
+  border:none!important;box-shadow:none!important;border-radius:0!important;
+  aspect-ratio:auto!important;object-fit:contain;
+  filter:drop-shadow(0 10px 14px rgba(0,0,0,.55));
+}
+/* Art fills the measured opening; slightly oversize via negative margin so lip covers edge */
 .fr.real .art,.fr.real .art-ph{
-  position:absolute;z-index:1;object-fit:cover;
+  position:absolute;z-index:1;
   left:var(--l);right:var(--r);top:var(--t);bottom:var(--b);
-  width:calc(100% - var(--l) - var(--r));height:calc(100% - var(--t) - var(--b));
+  width:auto!important;height:auto!important;
+  max-width:none!important;max-height:none!important;
+  margin:0;padding:0;
+  object-fit:cover;object-position:center center;
+  border:none!important;box-shadow:none!important;
+  aspect-ratio:auto!important;
+  /* inset already sizes via top/right/bottom/left; force fill of that box: */
+  inset:var(--t) var(--r) var(--b) var(--l);
+}
+/* Explicit width/height from inset box — avoid intrinsic JPG size leak */
+.fr.real>.art,.fr.real>.art-ph{
+  width:calc(100% - var(--l) - var(--r))!important;
+  height:calc(100% - var(--t) - var(--b))!important;
+  left:var(--l)!important;top:var(--t)!important;
+  right:auto!important;bottom:auto!important;
+}
+.fr.real.round>.art,.fr.real.round>.art-ph{
+  border-radius:50%!important;
+  overflow:hidden!important;
+  clip-path:circle(50% at 50% 50%);
+  -webkit-clip-path:circle(50% at 50% 50%);
+}
+.fr.real.oval>.art,.fr.real.oval>.art-ph{
+  border-radius:50%;
+  clip-path:ellipse(50% 50% at 50% 50%);
+}
+.fr.real.rect>.art,.fr.real.rect>.art-ph{
+  border-radius:1%;
 }
 .fr.real .art-ph{
   background:
@@ -13,47 +54,36 @@
     #e6d7be;
   box-shadow:inset 0 0 24px rgba(80,50,20,.12);
 }
-.fr.real.oval .art,.fr.real.oval .art-ph,.fr.real.round .art,.fr.real.round .art-ph{border-radius:50%}
-.fr.real.rect .art,.fr.real.rect .art-ph{border-radius:1.5%}
-/* measured openings from cut PNG alphas */
-.fr.f-S{--l:24.0%;--r:23.7%;--t:20.2%;--b:19.9%}
-.fr.f-R{--l:21.1%;--r:21.4%;--t:19.0%;--b:19.4%}
-.fr.f-J{--l:15.6%;--r:15.6%;--t:15.1%;--b:15.6%}
-.fr.f-O{--l:14.0%;--r:14.4%;--t:14.6%;--b:15.0%}
-.fr.f-10{--l:15.0%;--r:15.1%;--t:15.0%;--b:15.1%}
+html[data-theme=dark] .fr.real .art-ph{
+  background:linear-gradient(160deg,rgba(90,70,50,.45),rgba(40,30,22,.55)),#3a2e24;
+  box-shadow:inset 0 0 24px rgba(0,0,0,.35);
+}
+/* measured openings */
+.fr.f-S{--l:21.5%;--r:21.2%;--t:17.7%;--b:17.4%}
+.fr.f-R{--l:18.6%;--r:18.9%;--t:16.5%;--b:16.9%}
+.fr.f-J{--l:14.9%;--r:11.3%;--t:12.6%;--b:13.1%}
+.fr.f-O{--l:11.5%;--r:11.9%;--t:12.1%;--b:12.5%}
+.fr.f-10{--l:13.8%;--r:13.2%;--t:10.3%;--b:10.6%}
+
+/* Kill leftover style.css .round chrome when real PNG is used */
+.fr.real.round,.fr.real.round.wood{
+  padding:0!important;background:none!important;border:none!important;
+  box-shadow:none!important;border-radius:0!important;
+}
+.fr.real.round:before,.fr.real.round.wood:before{content:none!important;display:none!important}
+.fr.real.round img{
+  border:none!important;box-shadow:none!important;
+}
+.fr.real.round>.frame{
+  border-radius:0!important;aspect-ratio:auto!important;width:100%;height:auto;
+  filter:drop-shadow(0 10px 14px rgba(0,0,0,.55));
+}
+.fr.real.oval,.fr.real.rect{padding:0;background:none;border:none}
+.fr.real.oval:before,.fr.real.rect:before{content:none;display:none}
+
 /* product option swatches */
 .frames .fopt{cursor:pointer;user-select:none}
 .frames .fopt img.sw{width:72px;height:72px;object-fit:contain;display:block;margin:0 auto 8px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.35))}
 .frames .fopt[aria-pressed="true"],.frames .fopt.on{outline:2px solid var(--gold);outline-offset:3px;background:rgba(201,163,92,.12)}
 .subj span[role="button"],.subj span.on{cursor:pointer}
 .subj span[aria-pressed="true"],.subj .on{outline:2px solid var(--gold);outline-offset:2px}
-html[data-theme=dark] .fr.real .art-ph{
-  background:
-    linear-gradient(160deg,rgba(90,70,50,.45),rgba(40,30,22,.55)),
-    #3a2e24;
-  box-shadow:inset 0 0 24px rgba(0,0,0,.35);
-}
-
-/* Real round frames: kill leftover CSS gold ring from old .round design */
-.fr.real.round,.fr.real.round.wood{
-  padding:0!important;background:none!important;border:none!important;
-  box-shadow:none!important;border-radius:0!important;
-}
-.fr.real.round:before,.fr.real.round.wood:before{content:none!important;display:none!important}
-.fr.real.round>.frame,.fr.real.round img.frame{
-  border:none!important;box-shadow:none!important;filter:drop-shadow(0 10px 14px rgba(0,0,0,.55));
-  aspect-ratio:auto!important;border-radius:0!important;width:100%;height:auto;
-}
-.fr.real.round>.art,.fr.real.round>.art-ph{border-radius:50%}
-/* Ovals / 10in: ensure no doubled decorative chrome */
-.fr.real.oval,.fr.real.rect{padding:0;background:none;border:none}
-.fr.real.oval:before,.fr.real.rect:before{content:none;display:none}
-
-/* Also neutralize style.css ".round img" chrome when a real frame PNG is used */
-.fr.real.round img{border:none!important;box-shadow:none!important;border-radius:0!important;aspect-ratio:auto!important}
-.fr.real.round img.art,.fr.real.round>.art{
-  position:absolute!important;inset:var(--t) var(--r) var(--b) var(--l);
-  width:auto!important;height:auto!important;aspect-ratio:auto!important;
-  border-radius:50%;object-fit:cover;border:none!important;box-shadow:none!important;z-index:0;
-}
-.fr.real.round img.frame{position:relative;z-index:1;width:100%;height:auto}
