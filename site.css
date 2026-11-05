@@ -113,17 +113,22 @@ html[data-theme=dark] .ab-photo2-mount::before{
   border-color:rgba(201,163,92,.45);
   box-shadow:inset 0 0 0 1px rgba(243,220,154,.12);
 }
-/* About studio card cluster — dark lace/paper */
-html[data-theme=dark] .ab-p2-lace{
-  mix-blend-mode:screen;opacity:.55;
+/* About studio card cluster — dark: keep cream lace readable */
+html[data-theme=dark] .ab-p2-lace,
+html[data-theme=dark] .ab-p2-lace2,
+html[data-theme=dark] .ab-p2-lace3,
+html[data-theme=dark] .ab-p2-lace4,
+html[data-theme=dark] .ab-p2-lace5{
+  mix-blend-mode:normal!important;
+  opacity:.95!important;
+  filter:brightness(1.12) drop-shadow(0 3px 8px rgba(0,0,0,.45));
+}
+html[data-theme=dark] .ab-p2-doily,
+html[data-theme=dark] .ab-p2-doily2{
+  mix-blend-mode:normal!important;
+  opacity:.88!important;
+  filter:brightness(1.05) drop-shadow(0 4px 10px rgba(0,0,0,.4));
 }
 html[data-theme=dark] .ab-p2-paper{
-  filter:brightness(.62) sepia(.35);opacity:.7;mix-blend-mode:screen;
-}
-html[data-theme=dark] .ab-p2-lace2,
-html[data-theme=dark] .ab-p2-lace3{
-  mix-blend-mode:screen;opacity:.5;
-}
-html[data-theme=dark] .ab-p2-doily{
-  filter:brightness(.55) sepia(.3);opacity:.4;mix-blend-mode:screen;
+  filter:brightness(.75) sepia(.25);opacity:.65;mix-blend-mode:soft-light;
 }

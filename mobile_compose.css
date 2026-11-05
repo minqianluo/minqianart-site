@@ -78,10 +78,10 @@
     position:absolute;width:78px;height:78px;right:-118px;top:-95px
   }
 
-  .hero .bf1,.hero .bf2,.hero .rose-r{order:5;z-index:3;pointer-events:none}
-  .hero .bf1{position:absolute;right:8px;top:42%;width:48px!important}
-  .hero .bf2{position:absolute;left:6px;top:38%;width:48px!important}
-  .hero .rose-r{position:absolute;right:-8px;bottom:120px;width:110px!important;opacity:.95}
+  .hero .bf1,.hero .rose-r{order:5;z-index:3;pointer-events:none}
+  .hero .bf2{display:none!important} /* was overlapping bio text */
+  .hero .bf1{position:absolute;right:8px;top:620px;width:48px!important}
+  .hero .rose-r{position:absolute;right:-8px;top:700px;width:100px!important;opacity:.95}
 
   /* inline About bio under oval */
   .hero-about{
