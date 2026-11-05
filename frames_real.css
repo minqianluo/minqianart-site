@@ -1,0 +1,35 @@
+/* Real supplier frame cut-outs (user product photos). Painting sits under .frame via .art / .art-ph. */
+.fr.real{--l:18%;--r:18%;--t:18%;--b:18%}
+.fr.real .frame{position:relative;width:100%;height:auto;filter:drop-shadow(0 14px 18px rgba(0,0,0,.45));z-index:2;pointer-events:none}
+.fr.real .art,.fr.real .art-ph{
+  position:absolute;z-index:1;object-fit:cover;
+  left:var(--l);right:var(--r);top:var(--t);bottom:var(--b);
+  width:calc(100% - var(--l) - var(--r));height:calc(100% - var(--t) - var(--b));
+}
+.fr.real .art-ph{
+  background:
+    linear-gradient(160deg,rgba(255,250,235,.55),rgba(210,190,160,.35)),
+    repeating-linear-gradient(90deg,rgba(160,130,90,.04) 0 2px,transparent 2px 5px),
+    #e6d7be;
+  box-shadow:inset 0 0 24px rgba(80,50,20,.12);
+}
+.fr.real.oval .art,.fr.real.oval .art-ph,.fr.real.round .art,.fr.real.round .art-ph{border-radius:50%}
+.fr.real.rect .art,.fr.real.rect .art-ph{border-radius:1.5%}
+/* measured openings from cut PNG alphas */
+.fr.f-S{--l:24.0%;--r:23.7%;--t:20.2%;--b:19.9%}
+.fr.f-R{--l:21.1%;--r:21.4%;--t:19.0%;--b:19.4%}
+.fr.f-J{--l:15.6%;--r:15.6%;--t:15.1%;--b:15.6%}
+.fr.f-O{--l:14.0%;--r:14.4%;--t:14.6%;--b:15.0%}
+.fr.f-10{--l:16.6%;--r:16.6%;--t:14.3%;--b:14.0%}
+/* product option swatches */
+.frames .fopt{cursor:pointer;user-select:none}
+.frames .fopt img.sw{width:72px;height:72px;object-fit:contain;display:block;margin:0 auto 8px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.35))}
+.frames .fopt[aria-pressed="true"],.frames .fopt.on{outline:2px solid var(--gold);outline-offset:3px;background:rgba(201,163,92,.12)}
+.subj span[role="button"],.subj span.on{cursor:pointer}
+.subj span[aria-pressed="true"],.subj .on{outline:2px solid var(--gold);outline-offset:2px}
+html[data-theme=dark] .fr.real .art-ph{
+  background:
+    linear-gradient(160deg,rgba(90,70,50,.45),rgba(40,30,22,.55)),
+    #3a2e24;
+  box-shadow:inset 0 0 24px rgba(0,0,0,.35);
+}

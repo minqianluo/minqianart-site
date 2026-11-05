@@ -22,7 +22,17 @@ header.site nav.r a:last-child .cartdot{font-size:12px}
 .hero .badge{right:30px;top:auto;bottom:190px}.hero .badge .wax{width:86px;height:86px}
 .hero .ribbon{height:auto;flex-wrap:wrap;gap:4px 14px;padding:10px 12px;font-size:12px;white-space:normal}
 .hero .ribbon i{display:none}
-.featured{display:none}
+/* Mobile works wall: compact horizontal wrap, no slide, all frames visible */
+.featured{display:block;padding:48px 0 56px;overflow:visible}
+.featured>.sx-drape,.featured>.sx-eph,.featured>.sx-lace,.featured>.sx-fl,.featured>.sx-candle{display:none}
+.salon{position:relative;width:calc(100% - 24px);max-width:366px;height:auto;margin:20px auto 0;
+  display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:10px 8px;
+  overflow:visible}
+.salon .rail,.salon .sp,.salon .sl{display:none}
+.salon .fr,.salon .fr.real{position:relative!important;left:auto!important;top:auto!important;right:auto!important;bottom:auto!important;
+  width:66px!important;flex:0 0 auto;display:block}
+.salon .fr .frame{filter:drop-shadow(0 6px 8px rgba(0,0,0,.4))}
+.salon .note{position:relative;bottom:auto;left:auto;right:auto;width:100%;margin-top:14px;padding:0 8px;font-size:12px;line-height:1.45}
 .collections{padding:60px 0 60px}
 h2.sect{font-size:40px}.kicker{font-size:13px;letter-spacing:.22em}.divider{width:330px;height:30px}.lede{font-size:18px;padding:0 24px}
 .cards{grid-template-columns:340px;gap:44px;margin-top:40px}

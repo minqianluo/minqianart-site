@@ -868,3 +868,10 @@ No new artwork; mobile edge flowers re-flowed from the same v5/v7 pools. Desktop
 
 == v12 ==
 No new artwork. Mobile = v8 layout (hero, Collections, footer); edge flowers from the same v5/v7 pools. Desktop = v9 hero; only the footer Studio list gained Gallery + Reviews.
+
+===== Real product frames (2026-11-05) =====
+assets/brand/frames_real/*.png — cut out from Minqian's own supplier product photos of the frames she sells.
+Sources (private product photos, not public-domain museum frames):
+  S_carved_oval.png, R_gold_oval.png, J_gold_round.png, O_wood_round.png, 10in_gold_carved.png
+Background and in-frame sample paintings were removed; openings are transparent alpha for her future acrylics.
+These replace drawn/Met frame overlays on product pages, collection cards, and the gallery wall.

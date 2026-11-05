@@ -56,5 +56,5 @@
   window.addEventListener('load',realign); window.addEventListener('resize',realign);
   if(document.fonts&&document.fonts.ready) document.fonts.ready.then(realign);
   setLang(get('ma-lang')||'en');
-  setTheme(get('ma-theme')==='dark'?'dark':'light');
+  setTheme(get('ma-theme')==='light'?'light':'dark');
 })();
