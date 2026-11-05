@@ -84,7 +84,6 @@ html[data-theme=dark] .sl.l6{
 /* keep gilt chandeliers behind copy (screen-blend was painting over text) */
 html[data-theme=dark] .ab-chand{
   z-index:0;
-  left:490px; /* sit in the gap left of the heading; light theme stays at 600px */
 }
 html[data-theme=dark] .f-chand{z-index:0}
 html[data-theme=dark] .pd-drape,html[data-theme=dark] .pd-lace,html[data-theme=dark] .pd-lace2{mix-blend-mode:normal;filter:brightness(.55) sepia(.4);opacity:.35}
@@ -137,4 +136,12 @@ html[data-theme=dark] .ab-p2-lace{
 }
 html[data-theme=dark] .ab-p2-paper{
   filter:brightness(.62) sepia(.35);opacity:.7;mix-blend-mode:screen;
+}
+
+/* Desktop About: hang centrally in the existing 140px top margin.
+   A 100px-wide pendant is 139px high, clear of both photos and copy. */
+@media (min-width:761px){
+  .v3 .about > .ab-chand{
+    left:50vw;top:0;width:100px;height:auto;transform:translateX(-50%);
+  }
 }
