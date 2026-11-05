@@ -127,9 +127,9 @@
 /* t290u About: replace bottom-right lace with studio photo card */
 .ab-lace{display:none!important} /* kept in assets; swapped for .ab-photo2 */
 .ab-copy{position:relative;z-index:5;padding-right:56px}
-.ab-copy .sig,.ab-copy p{max-width:320px}
+.ab-copy .sig,.ab-copy p{max-width:360px}
 .ab-photo2{
-  position:absolute;right:90px;bottom:130px;width:240px;margin:0;padding:0;
+  position:absolute;right:56px;bottom:100px;width:232px;margin:0;padding:0;
   z-index:4;pointer-events:none;
   transform:rotate(4deg);
   transform-origin:50% 50%;
@@ -137,11 +137,11 @@
 }
 /* keep full tilted card inside section */
 @media (max-width:1360px){
-  .ab-photo2{right:70px;width:220px;bottom:120px}
+  .ab-photo2{right:48px;width:216px;bottom:92px}
   .ab-copy .sig,.ab-copy p{max-width:360px}
 }
 @media (max-width:1280px){
-  .ab-photo2{right:64px;width:200px;bottom:110px}
+  .ab-photo2{right:44px;width:204px;bottom:88px}
   .ab-copy .sig,.ab-copy p{max-width:340px}
 }
 .ab-photo2-mount{
@@ -157,54 +157,36 @@
   border-radius:4px 4px 6px 6px;
   filter:drop-shadow(0 14px 22px rgba(0,0,0,.45));
 }
-/* hide leftover lace/doily/paper behind the studio card */
-.ab-p2-lace,
-.ab-p2-lace2,
-.ab-p2-lace3,
-.ab-p2-lace4,
-.ab-p2-lace5,
-.ab-p2-paper,
-.ab-p2-doily,
-.ab-p2-doily2{display:none!important}
-/* 1-2 torn sheet-music pieces — same asset + treatment as .ab-music */
-.ab-p2-music{
-  display:block!important;
+/* lace/paper/flowers behind studio card — peek at edges only */
+.ab-p2-lace{
   position:absolute;z-index:0;pointer-events:none;
-  width:172%;left:-4%;top:-36%;bottom:auto;right:auto;
-  transform:rotate(-7deg);
-  opacity:.3;
-  mix-blend-mode:multiply;
+  width:118%;left:-10%;bottom:-8%;
+  transform:rotate(-12deg);
+  opacity:.88;
 }
-.ab-p2-music2{
-  width:172%;left:auto;right:-42%;top:auto;bottom:-30%;
-  transform:rotate(7deg) scaleX(-1);
+.ab-p2-paper{
+  position:absolute;z-index:0;pointer-events:none;
+  width:68%;left:-16%;top:-10%;
+  transform:rotate(-8deg);
+  opacity:.48;mix-blend-mode:multiply;
 }
 .ab-p2-fl{
   position:absolute;z-index:2;pointer-events:none;
-  filter:drop-shadow(0 4px 6px rgba(60,25,15,.32));
+  filter:drop-shadow(0 3px 4px rgba(60,25,15,.28));
 }
-/* corner clusters — sit on the frame, do not cover face / easel / bio / signature */
-/* TL */
-.ab-p2-fl1{ width:96px;left:-38px;top:-36px;transform:rotate(-22deg); }
-.ab-p2-fl8{ width:86px;left:18px;top:-44px;transform:rotate(10deg); }
-.ab-p2-fl10{ width:102px;left:-48px;top:10px;transform:rotate(-14deg); }
-.ab-p2-fl13{ width:78px;left:-8px;top:-6px;transform:rotate(-30deg); }
-/* TR */
-.ab-p2-fl2{ width:70px;right:-20px;top:-30px;transform:rotate(16deg); }
-.ab-p2-fl5{ width:108px;right:-44px;top:6px;transform:rotate(26deg) scaleX(-1); }
-.ab-p2-fl15{ width:58px;right:18px;top:-38px;transform:rotate(-6deg); }
-.ab-p2-fl4{ width:48px;right:-22px;bottom:72px;transform:rotate(-16deg);opacity:.95; }
-/* BR */
-.ab-p2-fl6{ width:118px;right:-48px;bottom:-40px;transform:rotate(-8deg); }
-.ab-p2-fl11{ width:112px;right:-18px;bottom:-58px;transform:rotate(14deg) scaleX(-1); }
-.ab-p2-fl12{ width:92px;right:14%;bottom:-46px;transform:rotate(-4deg); }
-.ab-p2-fl14{ width:88px;right:-28px;bottom:18px;transform:rotate(12deg); }
-/* BL */
-.ab-p2-fl3{ width:94px;left:-36px;bottom:-26px;transform:rotate(12deg); }
-.ab-p2-fl7{ width:84px;left:-42px;bottom:22px;transform:rotate(-8deg); }
-.ab-p2-fl16{ width:80px;left:16px;bottom:-34px;transform:rotate(8deg); }
-.ab-p2-fl9{ width:50px;left:-22px;top:36%;transform:rotate(12deg); }
-
+.ab-p2-fl1{ /* rose — top-left corner */
+  width:90px;left:-36px;top:-28px;transform:rotate(-20deg);
+}
+.ab-p2-fl2{ /* bud — top-right corner */
+  width:64px;right:-10px;top:-18px;transform:rotate(14deg);
+}
+.ab-p2-fl3{ /* geranium — bottom-left corner */
+  width:82px;left:-34px;bottom:-18px;transform:rotate(8deg);
+}
+.ab-p2-fl4{ /* butterfly — mid-right edge */
+  width:44px;right:-8px;bottom:56px;transform:rotate(-12deg);
+  opacity:.95;
+}
 .ab-photo2-mount::before{
   /* thin inner gold fillet */
   content:"";position:absolute;inset:5px 5px 18px;pointer-events:none;
