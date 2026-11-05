@@ -44,7 +44,7 @@ html[data-theme=dark] .menu-open .m-menu a,html[data-theme=dark] .m-menu .lang-s
 html[data-theme=dark] .lang-sel option{background:#2a181a;color:#f1e4c8}
 /* lace & paper ephemera: lighten lace on dark, soften paper glare; flowers keep their warm colours */
 html[data-theme=dark] .drape-lace,html[data-theme=dark] .sx-drape,html[data-theme=dark] .sx-lace,html[data-theme=dark] .f-lace,html[data-theme=dark] .ab-lace,html[data-theme=dark] .h-lace1,html[data-theme=dark] .h-lace2,html[data-theme=dark] .hem-lace,html[data-theme=dark] .lace{mix-blend-mode:screen;opacity:.85}
-html[data-theme=dark] .sx-eph,html[data-theme=dark] .ab-music,html[data-theme=dark] .h-music,html[data-theme=dark] .ab-letter,html[data-theme=dark] .h-letter,html[data-theme=dark] .ch-paper1,html[data-theme=dark] .ch-vellum,html[data-theme=dark] .st-vellum,html[data-theme=dark] .q-paper,html[data-theme=dark] .cd-paper,html[data-theme=dark] .ub-papers{filter:brightness(.62) sepia(.35);opacity:.75}
+html[data-theme=dark] .sx-eph,html[data-theme=dark] .ab-music,html[data-theme=dark] .h-music,html[data-theme=dark] .ab-letter,html[data-theme=dark] .h-letter,html[data-theme=dark] .ch-paper1,html[data-theme=dark] .ch-vellum,html[data-theme=dark] .st-vellum,html[data-theme=dark] .q-paper,html[data-theme=dark] .cd-paper,html[data-theme=dark] .ub-papers,html[data-theme=dark] .ab-p2-music{filter:brightness(.62) sepia(.35);opacity:.75}
 /* product page */
 html[data-theme=dark] .parlour .gal .main,html[data-theme=dark] .v2 .gal .main,html[data-theme=dark] .v3 .gal .main{background:radial-gradient(ellipse at 50% 45%,#3a2224,rgba(28,16,18,.9) 75%),url(assets/brand/damask_gold.svg)}
 html[data-theme=dark] .parlour .fopt.on,html[data-theme=dark] .parlour .subj .on{background:#3d2420}
@@ -113,26 +113,10 @@ html[data-theme=dark] .ab-photo2-mount::before{
   border-color:rgba(201,163,92,.45);
   box-shadow:inset 0 0 0 1px rgba(243,220,154,.12);
 }
-/* About studio card cluster — dark: keep cream lace readable */
-html[data-theme=dark] .ab-p2-lace,
-html[data-theme=dark] .ab-p2-lace2,
-html[data-theme=dark] .ab-p2-lace3,
-html[data-theme=dark] .ab-p2-lace5{
-  mix-blend-mode:normal!important;
-  opacity:.95!important;
-  filter:brightness(1.12) drop-shadow(0 3px 8px rgba(0,0,0,.45));
-}
-html[data-theme=dark] .ab-p2-doily{
-  mix-blend-mode:normal!important;
-  opacity:.9!important;
-  filter:drop-shadow(0 1px 0 rgba(201,163,92,.22)) drop-shadow(0 3px 8px rgba(0,0,0,.4));
-}
-html[data-theme=dark] .ab-p2-doily2{display:none!important}
-html[data-theme=dark] .ab-p2-lace4{
-  mix-blend-mode:normal!important;
-  opacity:.9!important;
-  filter:drop-shadow(0 1px 0 rgba(201,163,92,.2)) drop-shadow(0 4px 10px rgba(0,0,0,.4));
-}
+/* About studio card cluster — leftover lace/doily stay hidden */
+html[data-theme=dark] .ab-p2-doily,
+html[data-theme=dark] .ab-p2-doily2,
+html[data-theme=dark] .ab-p2-lace4{display:none!important}
 html[data-theme=dark] .ab-p2-paper{
   filter:brightness(.75) sepia(.25);opacity:.65;mix-blend-mode:soft-light;
 }

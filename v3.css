@@ -157,30 +157,27 @@
   border-radius:4px 4px 6px 6px;
   filter:drop-shadow(0 14px 22px rgba(0,0,0,.45));
 }
-/* 1-2 LARGE lace pieces behind studio card — no small fragments/doily bits */
-.ab-p2-lace:not(.ab-p2-lace4),
+/* hide leftover lace/doily/paper behind the studio card */
+.ab-p2-lace,
 .ab-p2-lace2,
 .ab-p2-lace3,
+.ab-p2-lace4,
 .ab-p2-lace5,
-.ab-p2-paper{display:none!important}
-/* big dark-wine doily — top-left / left, extends well past the card */
-.ab-p2-doily{
-  display:block!important;
-  position:absolute;z-index:0;pointer-events:none;
-  width:162%;left:-40%;top:-26%;bottom:auto;right:auto;
-  transform:rotate(-9deg);
-  opacity:.88;
-  filter:drop-shadow(0 1px 0 rgba(201,163,92,.2)) drop-shadow(0 3px 8px rgba(0,0,0,.28));
-}
+.ab-p2-paper,
+.ab-p2-doily,
 .ab-p2-doily2{display:none!important}
-/* big wide lace panel — bottom-right, extends generously */
-.ab-p2-lace4{
+/* 1-2 torn sheet-music pieces — same asset + treatment as .ab-music */
+.ab-p2-music{
   display:block!important;
   position:absolute;z-index:0;pointer-events:none;
-  width:152%;left:auto;right:-42%;top:auto;bottom:-28%;
-  transform:rotate(12deg);
-  opacity:.9;
-  filter:drop-shadow(0 1px 0 rgba(201,163,92,.18)) drop-shadow(0 4px 10px rgba(0,0,0,.28));
+  width:172%;left:-4%;top:-36%;bottom:auto;right:auto;
+  transform:rotate(-7deg);
+  opacity:.3;
+  mix-blend-mode:multiply;
+}
+.ab-p2-music2{
+  width:172%;left:auto;right:-42%;top:auto;bottom:-30%;
+  transform:rotate(7deg) scaleX(-1);
 }
 .ab-p2-fl{
   position:absolute;z-index:2;pointer-events:none;
