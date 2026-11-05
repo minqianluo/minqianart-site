@@ -32,9 +32,9 @@ body.v2{background:#f3e8d2 url(assets/brand/damask_wine.svg)}
 .fr.artist .art{filter:sepia(.15)}
 .tape.t1{width:220px;left:-60px;top:150px;transform:rotate(-38deg)}
 .tape.t2{width:200px;right:-70px;bottom:120px;transform:rotate(-38deg)}
-.nameplate{position:absolute;left:50%;transform:translateX(-50%) rotate(-2deg);bottom:-58px;background:url(assets/collage/paper_cream.png) center/100% 100%;padding:10px 40px 12px;text-align:center;filter:drop-shadow(0 4px 5px rgba(60,30,20,.3));z-index:5}
-.nameplate .script{font-family:Pinyon,cursive;font-size:38px;color:var(--wine);line-height:1}
-.nameplate small{display:block;font-family:CormorantSC,serif;letter-spacing:.2em;color:#6e5444;font-size:13px}
+.nameplate{position:absolute;left:50%;transform:translateX(-50%) rotate(-2deg);bottom:-58px;background:url(assets/collage/paper_cream.png) center/100% 100%;padding:10px 40px 12px;text-align:center;box-shadow:0 4px 10px rgba(60,30,20,.28);z-index:5;-webkit-filter:none;filter:none}
+.nameplate .script{font-family:Pinyon,cursive;font-size:38px;color:var(--wine);line-height:1;text-shadow:none;-webkit-text-stroke:0}
+.nameplate small{display:block;font-family:CormorantSC,Cormorant,serif;letter-spacing:.18em;color:#6e5444;font-size:13px;text-transform:uppercase;font-variant:normal;font-variant-caps:normal;text-shadow:none;-webkit-text-stroke:0;white-space:nowrap;-webkit-font-smoothing:antialiased}
 .v2 .hero .art-wrap .ph{position:absolute;left:0;right:0;bottom:-96px;text-align:center;font-size:13px;font-style:italic;color:#7a5a44}
 .v2 .hero .bf1{z-index:4}.v2 .hero .bf2{z-index:5;top:560px;right:60px}
 .v2 .hero .rose-r{z-index:6;bottom:-20px}.v2 .hero .rose-r2{z-index:6;right:470px;bottom:60px}

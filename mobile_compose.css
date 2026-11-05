@@ -18,15 +18,19 @@
   body.parlour > footer{order:100}
 
   /* logo → headline → S-oval+nameplate+wax → bio → CTAs → ribbon */
-  .hero{
+  .hero,
+  .v2 .hero,
+  body.parlour.v2.v3 .hero{
     display:grid!important;
     grid-template-columns:1fr;
     justify-items:center;
     align-content:start;
     height:auto!important;
-    padding:20px 16px 28px!important;
+    padding:20px 16px 8px!important;
+    padding-bottom:8px!important; /* beats v2_mobile .v2 .hero{padding-bottom:150px!important} */
     position:relative;
     overflow:hidden;
+    z-index:41; /* above .mborder (z-index:40) so page-border flowers cannot cover hero text */
   }
   .hero .copy{display:contents}
   .hero .drape{order:0;width:100%;max-height:48px;object-fit:cover}
@@ -44,30 +48,37 @@
     order:1;width:150px!important;margin:8px auto 6px;display:block;position:relative;z-index:3
   }
   .hero .kicker{
-    order:2;text-align:center;margin:4px 12px 0;position:relative;z-index:3
+    order:2;text-align:center;margin:4px 28px 0;position:relative;z-index:3
   }
   .hero .copy h1{
     order:3;text-align:center;font-size:clamp(28px,7.2vw,36px)!important;
-    line-height:1.15;margin:6px 10px 8px;max-width:22em;position:relative;z-index:3
+    line-height:1.15;margin:6px 28px 8px;max-width:22em;position:relative;z-index:3
   }
   .hero .copy h1 em{font-size:inherit!important}
   .hero .copy > p{
     order:4;text-align:center;font-size:clamp(15px,3.8vw,17px)!important;
-    line-height:1.45;margin:0 16px 12px;max-width:34em;position:relative;z-index:3
+    line-height:1.45;margin:0 28px 12px;max-width:34em;position:relative;z-index:3
   }
 
   .hero .art-wrap{
     order:5;position:relative!important;right:auto!important;top:auto!important;left:auto!important;
-    width:min(300px,78vw)!important;margin:4px auto 8px!important;padding-bottom:40px;z-index:4
+    width:min(300px,78vw)!important;margin:4px auto 2px!important;padding-bottom:22px;z-index:4
   }
   .hero .art-wrap .fr{width:100%!important;max-width:300px}
   .hero .art-wrap .orbit{
     left:-12%!important;top:-6%!important;width:124%!important;height:118%!important
   }
   .hero .nameplate{
-    display:block!important;bottom:-42px!important;padding:6px 22px 8px!important;z-index:6
+    display:block!important;bottom:-4px!important;padding:5px 22px 7px!important;z-index:6;
+    filter:none!important;-webkit-filter:none!important;
+    box-shadow:0 4px 10px rgba(60,30,20,.28)
   }
-  .hero .nameplate .script{font-size:28px}
+  .hero .nameplate .script{font-size:28px;text-shadow:none;-webkit-text-stroke:0}
+  .hero .nameplate small{
+    display:block;text-transform:uppercase;letter-spacing:.16em;font-variant:normal;
+    font-variant-caps:normal;text-shadow:none;-webkit-text-stroke:0;white-space:nowrap;
+    -webkit-font-smoothing:antialiased;transform:none
+  }
 
   .hero .badge{
     order:5;position:relative!important;right:auto!important;left:auto!important;
@@ -75,17 +86,15 @@
     overflow:visible;z-index:8;justify-self:center
   }
   .hero .badge .wax{
-    position:absolute;width:78px;height:78px;right:-118px;top:-95px
+    position:absolute;width:78px;height:78px;right:-156px;top:-102px
   }
 
-  .hero .bf1,.hero .rose-r{order:5;z-index:3;pointer-events:none}
-  .hero .bf2{display:none!important} /* was overlapping bio text */
-  .hero .bf1{position:absolute;right:8px;top:620px;width:48px!important}
-  .hero .rose-r{position:absolute;right:-8px;top:700px;width:100px!important;opacity:.95}
+  .hero .bf1,.hero .bf2,.hero .rose-r{display:none!important} /* were overlapping hero copy / ribbon */
 
   /* inline About bio under oval */
   .hero-about{
-    order:6;display:block;width:100%;max-width:34em;margin:10px 16px 6px;
+    order:6;display:block;width:100%;max-width:34em;margin:6px 0 6px;
+    padding:0 30px;box-sizing:border-box;
     text-align:center;position:relative;z-index:5;scroll-margin-top:72px
   }
   .hero-about .kicker{margin:0 0 4px;letter-spacing:.18em;font-size:12px}
@@ -113,6 +122,24 @@
   /* never show studio card or desktop about on mobile */
   #about .ab-photo2,
   .ab-photo2{/* keep desktop; section hidden above */}
+
+  /* ribbon → featured gallery: small natural gap (was a large empty damask band) */
+  body.parlour.v3 .featured,
+  .v3 section.featured.cl,
+  .v3 #gallery{
+    margin-top:0!important;
+    padding-top:28px!important;
+    padding-bottom:48px;
+    border-radius:28px 28px 0 0!important;
+  }
+}
+
+/* keep page-border flowers as edge slivers on phones so they cannot cover hero copy */
+@media (max-width:760px){
+  .v8 .mborder img.l{left:-78px!important}
+  .v8 .mborder img.r{right:-78px!important}
+  .v8 .mborder img.bf.l{left:-50px!important;width:52px!important}
+  .v8 .mborder img.bf.r{right:-50px!important;width:52px!important}
 }
 
 @media (min-width:761px){

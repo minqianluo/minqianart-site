@@ -126,7 +126,7 @@
 
 /* t290u About: replace bottom-right lace with studio photo card */
 .ab-lace{display:none!important} /* kept in assets; swapped for .ab-photo2 */
-.ab-copy{position:relative;z-index:3;padding-right:56px}
+.ab-copy{position:relative;z-index:5;padding-right:56px}
 .ab-copy .sig,.ab-copy p{max-width:320px}
 .ab-photo2{
   position:absolute;right:90px;bottom:130px;width:240px;margin:0;padding:0;
@@ -157,71 +157,57 @@
   border-radius:4px 4px 6px 6px;
   filter:drop-shadow(0 14px 22px rgba(0,0,0,.45));
 }
-/* lace/paper/flowers behind studio card — exaggerated maximalist */
+/* lace/paper/flowers behind studio card — 1-2 small lace peeks, richer corner flowers */
 .ab-p2-lace{
   position:absolute;z-index:0;pointer-events:none;
-  width:165%;left:-38%;bottom:-28%;
+  width:70%;left:-18%;bottom:-8%;
   transform:rotate(-16deg);
-  opacity:.98;
-  filter:drop-shadow(0 4px 10px rgba(0,0,0,.25));
+  opacity:.9;
+  filter:drop-shadow(0 3px 6px rgba(0,0,0,.2));
 }
 .ab-p2-lace2{
-  width:150%;left:auto;right:-42%;top:-32%;bottom:auto;
-  transform:rotate(24deg) scaleX(-1);
-  opacity:.95;
-}
-.ab-p2-lace3{
-  width:130%;left:-36%;top:auto;bottom:-22%;
-  transform:rotate(10deg);
-  opacity:.9;
-}
-.ab-p2-lace4{
-  width:140%;left:-20%;top:-40%;bottom:auto;right:auto;
-  transform:rotate(-8deg);
+  width:56%;left:auto;right:-16%;top:-12%;bottom:auto;
+  transform:rotate(22deg) scaleX(-1);
   opacity:.88;
 }
-.ab-p2-lace5{
-  width:120%;left:auto;right:-30%;bottom:-18%;top:auto;
-  transform:rotate(-20deg);
-  opacity:.9;
-}
-.ab-p2-doily{
-  position:absolute;z-index:0;pointer-events:none;
-  width:150%;left:50%;top:42%;
-  transform:translate(-50%,-50%) rotate(-8deg);
-  opacity:.85;
-  filter:drop-shadow(0 6px 12px rgba(40,20,10,.2));
-}
-.ab-p2-doily2{
-  width:110%;left:-35%;top:auto;bottom:-30%;
-  transform:rotate(14deg);
-  opacity:.75;
-}
+/* extra lace/doilies from the lush pass — hide, keep only two peeks */
+.ab-p2-lace3,
+.ab-p2-lace4,
+.ab-p2-lace5,
+.ab-p2-doily,
+.ab-p2-doily2{display:none!important}
 .ab-p2-paper{
   position:absolute;z-index:0;pointer-events:none;
-  width:95%;left:-32%;top:-22%;
-  transform:rotate(-12deg);
-  opacity:.6;mix-blend-mode:multiply;
+  width:58%;left:-12%;top:-8%;
+  transform:rotate(-8deg);
+  opacity:.42;mix-blend-mode:multiply;
 }
 .ab-p2-fl{
   position:absolute;z-index:2;pointer-events:none;
-  filter:drop-shadow(0 5px 8px rgba(60,25,15,.35));
+  filter:drop-shadow(0 4px 6px rgba(60,25,15,.32));
 }
-/* TL cluster — large */
-.ab-p2-fl1{ width:150px;left:-78px;top:-62px;transform:rotate(-26deg); }
-.ab-p2-fl8{ width:130px;left:8%;top:-58px;transform:rotate(8deg); }
-.ab-p2-fl10{ width:160px;left:-95px;top:8px;transform:rotate(-12deg); }
-.ab-p2-fl9{ width:72px;left:-42px;top:28%;transform:rotate(14deg); }
-.ab-p2-fl7{ width:118px;left:-70px;top:42%;transform:rotate(-8deg); }
-/* TR / mid-right */
-.ab-p2-fl2{ width:88px;right:-38px;top:-40px;transform:rotate(20deg); }
-.ab-p2-fl5{ width:145px;right:-72px;top:28px;transform:rotate(30deg) scaleX(-1); }
-.ab-p2-fl4{ width:64px;right:-36px;bottom:70px;transform:rotate(-18deg);opacity:.98; }
-/* BR cluster — large */
-.ab-p2-fl6{ width:155px;right:-70px;bottom:-55px;transform:rotate(-10deg); }
-.ab-p2-fl11{ width:160px;right:-40px;bottom:-90px;transform:rotate(16deg) scaleX(-1); }
-.ab-p2-fl3{ width:135px;left:-75px;bottom:-50px;transform:rotate(14deg); }
-.ab-p2-fl12{ width:125px;right:20%;bottom:-75px;transform:rotate(-4deg); }
+/* corner clusters — sit on the frame, do not cover face / easel / bio / signature */
+/* TL */
+.ab-p2-fl1{ width:96px;left:-38px;top:-36px;transform:rotate(-22deg); }
+.ab-p2-fl8{ width:86px;left:18px;top:-44px;transform:rotate(10deg); }
+.ab-p2-fl10{ width:102px;left:-48px;top:10px;transform:rotate(-14deg); }
+.ab-p2-fl13{ width:78px;left:-8px;top:-6px;transform:rotate(-30deg); }
+/* TR */
+.ab-p2-fl2{ width:70px;right:-20px;top:-30px;transform:rotate(16deg); }
+.ab-p2-fl5{ width:108px;right:-44px;top:6px;transform:rotate(26deg) scaleX(-1); }
+.ab-p2-fl15{ width:58px;right:18px;top:-38px;transform:rotate(-6deg); }
+.ab-p2-fl4{ width:48px;right:-22px;bottom:72px;transform:rotate(-16deg);opacity:.95; }
+/* BR */
+.ab-p2-fl6{ width:118px;right:-48px;bottom:-40px;transform:rotate(-8deg); }
+.ab-p2-fl11{ width:112px;right:-18px;bottom:-58px;transform:rotate(14deg) scaleX(-1); }
+.ab-p2-fl12{ width:92px;right:14%;bottom:-46px;transform:rotate(-4deg); }
+.ab-p2-fl14{ width:88px;right:-28px;bottom:18px;transform:rotate(12deg); }
+/* BL */
+.ab-p2-fl3{ width:94px;left:-36px;bottom:-26px;transform:rotate(12deg); }
+.ab-p2-fl7{ width:84px;left:-42px;bottom:22px;transform:rotate(-8deg); }
+.ab-p2-fl16{ width:80px;left:16px;bottom:-34px;transform:rotate(8deg); }
+.ab-p2-fl9{ width:50px;left:-22px;top:36%;transform:rotate(12deg); }
+
 .ab-photo2-mount::before{
   /* thin inner gold fillet */
   content:"";position:absolute;inset:5px 5px 18px;pointer-events:none;

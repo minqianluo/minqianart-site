@@ -52,6 +52,29 @@
       var a=C[+img.getAttribute('data-anc')]; if(!a) return;
       img.style.top=(a.getBoundingClientRect().top-ct+parseFloat(img.getAttribute('data-dy')))+'px';
     });
+    /* mobile: never let page-border flowers cover hero text */
+    var hero=document.querySelector('.hero');
+    var imgs=document.querySelectorAll('.mborder img, .fborder img');
+    if(!window.matchMedia('(max-width:760px)').matches || !hero){
+      [].forEach.call(imgs,function(img){img.style.visibility='';});
+    } else {
+      var nodes=hero.querySelectorAll('.kicker,h1,h2,p,.sig,.btn,.ribbon,.nameplate,.nameplate *');
+      var tboxes=[];
+      for(var i=0;i<nodes.length;i++){
+        var t=nodes[i].getBoundingClientRect();
+        if(t.width>1&&t.height>1) tboxes.push(t);
+      }
+      [].forEach.call(document.querySelectorAll('.mborder img'),function(img){
+        var r=img.getBoundingClientRect(), hit=false;
+        for(var j=0;j<tboxes.length;j++){
+          var t=tboxes[j];
+          var w=Math.min(r.right,t.right)-Math.max(r.left,t.left);
+          var h=Math.min(r.bottom,t.bottom)-Math.max(r.top,t.top);
+          if(w>4&&h>4){hit=true;break;}
+        }
+        img.style.visibility=hit?'hidden':'';
+      });
+    }
   }
   window.addEventListener('load',realign); window.addEventListener('resize',realign);
   if(document.fonts&&document.fonts.ready) document.fonts.ready.then(realign);
