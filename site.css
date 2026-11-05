@@ -145,20 +145,13 @@ html[data-theme=dark] .ab-p2-paper{
   }
 }
 
-/* Desktop About copy clears the pendant while photo/decor coordinates stay fixed. */
+/* Move only: preserve the approved copy width, fonts and line wrapping. */
 @media (min-width:761px){
-  .v3 .about .ab-copy h2{font-size:48px;}
-  .v3 .about .ab-copy p{font-size:19px;line-height:1.5;}
-  .v3 .about .ab-copy .sig{font-size:48px;line-height:1.4;}
-  .v3 .about .ab-copy{
-    position:absolute;top:70px;left:calc(50vw + 145px);
-    width:min(360px,calc(1247px - 50vw));padding-right:0;
-  }
+  .v3 .about .ab-copy{position:fixed;left:calc(50vw + 145px);top:var(--about-copy-top,210px);width:560px;box-sizing:border-box;}
+  .v3 .about{padding-bottom:420px;}
+  .v3 .about .ab-photo2{top:800px;bottom:auto;}
 }
-@media (min-width:1700px){
-  .v3 .about .ab-copy .kicker{width:max-content;max-width:100%;}
-  .v3 .about .ab-copy h2{margin-top:16px;}
-  .v3 .about .ab-copy h2{font-size:48px;}
-  .v3 .about .ab-copy p{font-size:17px;line-height:1.4;}
-  .v3 .about .ab-copy .sig{font-size:48px;line-height:1.4;}
+
+@media (min-width:761px) and (max-width:1439px){
+  .v3 .about .ab-photo2{right:calc(1440px - 100vw + 56px);}
 }

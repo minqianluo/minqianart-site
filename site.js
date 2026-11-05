@@ -43,7 +43,17 @@
 
   /* keep the flower borders aligned with their sections when text length changes */
   var CAND="body > *:not(.fborder):not(.mborder):not(script), body > section > *, body > footer > *, body > footer > .fgrid > *";
+  function positionAboutCopy(){
+    if(!window.matchMedia('(min-width:761px)').matches) return;
+    var about=document.querySelector('#about'),copy=document.querySelector('#about .ab-copy');
+    if(!about||!copy) return;
+    var grid=about.querySelector('.ab-grid'), art=about.querySelector('.ab-art');
+    copy.style.setProperty('--about-copy-top',
+      (grid.getBoundingClientRect().top+(art.offsetHeight-copy.offsetHeight)/2)+'px');
+  }
+  window.addEventListener('scroll',positionAboutCopy,{passive:true});
   function realign(){
+    positionAboutCopy();
     if(window.MA_NO_ANCHOR) return;
     var mob=window.matchMedia('(max-width:600px)').matches, box=document.querySelector(mob?'.mborder':'.fborder');
     if(!box) return;
@@ -58,7 +68,7 @@
       var about=document.querySelector('#about');
       if(about){
         var ay=about.getBoundingClientRect().top-ct;
-        [['l13',0],['l14',370],['l15',840],['r29',140]].forEach(function(pair){
+        [['l13',0],['l14',370],['l15',840],['r29',55]].forEach(function(pair){
           var deco=box.querySelector('[data-id="'+pair[0]+'"]');
           if(deco) deco.style.top=(ay+pair[1])+'px';
         });
