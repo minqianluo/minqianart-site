@@ -68,7 +68,25 @@ html[data-theme=dark] .sx-lace{opacity:.4}
 html[data-theme=dark] .pd-drape,html[data-theme=dark] .pd-lace,html[data-theme=dark] .pd-lace2,html[data-theme=dark] .p-bow{mix-blend-mode:screen;opacity:.35}
 html[data-theme=dark] .pd-music,html[data-theme=dark] .pd-letter,html[data-theme=dark] .pd-vellum{filter:brightness(.6) sepia(.35);opacity:.6}
 html[data-theme=dark] .buy-vellum{filter:brightness(.32) sepia(.5);opacity:.85}
-html[data-theme=dark] .pd-chand,html[data-theme=dark] .pd-candle{opacity:.6}
+html[data-theme=dark] .pd-candle{opacity:.6}
+/* dark: chandeliers as readable antique gilt — light theme unchanged */
+html[data-theme=dark] .ab-chand,
+html[data-theme=dark] .chand-hero,
+html[data-theme=dark] .f-chand,
+html[data-theme=dark] .pd-chand,
+html[data-theme=dark] .sl.l6{
+  mix-blend-mode:normal;
+  opacity:.85;
+  filter:invert(1) sepia(1) saturate(2.6) hue-rotate(8deg) brightness(1.18)
+    drop-shadow(0 0 8px rgba(233,201,131,.45))
+    drop-shadow(0 0 18px rgba(201,163,92,.28));
+}
+/* keep gilt chandeliers behind copy (screen-blend was painting over text) */
+html[data-theme=dark] .ab-chand{
+  z-index:0;
+  left:490px; /* sit in the gap left of the heading; light theme stays at 600px */
+}
+html[data-theme=dark] .f-chand{z-index:0}
 html[data-theme=dark] .pd-drape,html[data-theme=dark] .pd-lace,html[data-theme=dark] .pd-lace2{mix-blend-mode:normal;filter:brightness(.55) sepia(.4);opacity:.35}
 /* translations on mobile: keep longer strings clear of the border flowers */
 @media (max-width:600px){
