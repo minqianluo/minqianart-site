@@ -42,15 +42,19 @@
 .noir .box3{background:rgba(20,14,12,.92)}.parlour .box3{background:#fffaf0}
 .box3 h4{font-family:Playfair,serif;font-weight:500;font-size:26px;margin-bottom:8px}.box3 p{color:var(--muted);font-size:18px}
 
-/* t287u/t288u frame spec + unique line — above flowers (buy column z) */
+/* t287u/t288u/t290u frame spec + unique — contrast-safe (dark remaps --cream to bg) */
 .buy .uniq{
   position:relative;z-index:4;
   margin:10px 0 14px;padding:10px 14px;
   border-left:3px solid var(--gold);
-  background:rgba(201,163,92,.10);
-  font-family:Playfair,serif;font-size:17px;line-height:1.35;color:var(--ink);
+  background:rgba(201,163,92,.14);
+  font-family:Playfair,serif;font-size:17px;line-height:1.35;
+  color:#2a1a16;
 }
-[data-theme="dark"] .buy .uniq{background:rgba(201,163,92,.14);color:var(--cream,#f6e6cf)}
+html[data-theme=dark] .buy .uniq{
+  background:rgba(201,163,92,.18);
+  color:#f6e7c8;
+}
 .buy .fspec{
   position:relative;z-index:4;
   margin:0 0 18px;padding:14px 16px 12px;
@@ -60,14 +64,20 @@
 .buy .fspec-tbl{width:100%;border-collapse:collapse;font-size:15px}
 .buy .fspec-tbl th{
   text-align:left;font-weight:500;font-family:Playfair,serif;
-  color:var(--muted);width:38%;padding:6px 10px 6px 0;vertical-align:top;
+  color:#6e5444;width:38%;padding:6px 10px 6px 0;vertical-align:top;
 }
-.buy .fspec-tbl td{padding:6px 0;color:var(--ink);vertical-align:top}
-[data-theme="dark"] .buy .fspec-tbl td{color:var(--cream,#f6e6cf)}
+.buy .fspec-tbl td{
+  padding:6px 0;vertical-align:top;
+  color:#2a1a16;font-weight:500;
+}
+html[data-theme=dark] .buy .fspec-tbl th{color:#e2cfaa}
+html[data-theme=dark] .buy .fspec-tbl td{color:#f6e7c8}
 .buy .fspec-note{
   margin:10px 0 0;padding-top:10px;border-top:1px dashed var(--gold3);
-  font-size:13px;line-height:1.45;color:var(--muted);font-style:italic;
+  font-size:13px;line-height:1.45;font-style:italic;
+  color:#5a4336;
 }
+html[data-theme=dark] .buy .fspec-note{color:#e2cfaa}
 .buy .fopt small{font-size:13px;line-height:1.25}
 /* keep buy column above collage flowers that spill from gallery */
 .v2 .buy,.v3 .buy{position:relative;z-index:4}
