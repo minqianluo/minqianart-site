@@ -55,6 +55,20 @@
   }
   window.addEventListener('load',realign); window.addEventListener('resize',realign);
   if(document.fonts&&document.fonts.ready) document.fonts.ready.then(realign);
+
+  /* mobile About links scroll to bio inside hero */
+  document.addEventListener('click',function(ev){
+    var a=ev.target.closest && ev.target.closest('a[href="#about"]');
+    if(!a) return;
+    if(!window.matchMedia('(max-width:760px)').matches) return;
+    var t=document.getElementById('about-hero');
+    if(!t) return;
+    ev.preventDefault();
+    t.scrollIntoView({behavior:'smooth',block:'start'});
+    document.body.classList.remove('menu-open');
+    try{history.replaceState(null,'','#about-hero')}catch(e){}
+  });
+
   setLang(get('ma-lang')||'en');
   setTheme(get('ma-theme')==='light'?'light':'dark');
 })();

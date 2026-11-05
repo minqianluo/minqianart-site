@@ -40,7 +40,7 @@
 .v3 .collections{background:#f3e8d2 url(assets/brand/damask_wine.svg);z-index:2}
 .v3 .steps{background:#efe1c4 url(assets/brand/damask_wine.svg);z-index:3}
 .v3 .unbox{background:#f3e8d2 url(assets/brand/damask_wine.svg);z-index:4}
-.v3 .about{position:relative;background:#ead9b8;z-index:5;overflow:hidden;padding-bottom:250px}
+.v3 .about{position:relative;background:#ead9b8;z-index:5;overflow:hidden;padding-bottom:280px}
 .v3 .testi{background:#f3e8d2 url(assets/brand/damask_wine.svg);z-index:6}
 .v3 footer{z-index:7;border-radius:50% 50% 0 0/90px 90px 0 0;margin-top:-50px;padding-top:150px;border-top:none;overflow:hidden}
 /* section collage pieces */
@@ -127,9 +127,9 @@
 /* t290u About: replace bottom-right lace with studio photo card */
 .ab-lace{display:none!important} /* kept in assets; swapped for .ab-photo2 */
 .ab-copy{position:relative;z-index:3;padding-right:56px}
-.ab-copy .sig,.ab-copy p{max-width:360px}
+.ab-copy .sig,.ab-copy p{max-width:340px}
 .ab-photo2{
-  position:absolute;right:56px;bottom:100px;width:232px;margin:0;padding:0;
+  position:absolute;right:64px;bottom:118px;width:236px;margin:0;padding:0;
   z-index:4;pointer-events:none;
   transform:rotate(4deg);
   transform-origin:50% 50%;
@@ -137,11 +137,11 @@
 }
 /* keep full tilted card inside section */
 @media (max-width:1360px){
-  .ab-photo2{right:48px;width:216px;bottom:92px}
+  .ab-photo2{right:56px;width:216px;bottom:100px}
   .ab-copy .sig,.ab-copy p{max-width:360px}
 }
 @media (max-width:1280px){
-  .ab-photo2{right:44px;width:204px;bottom:88px}
+  .ab-photo2{right:58px;width:196px;bottom:100px}
   .ab-copy .sig,.ab-copy p{max-width:340px}
 }
 .ab-photo2-mount{
@@ -157,35 +157,65 @@
   border-radius:4px 4px 6px 6px;
   filter:drop-shadow(0 14px 22px rgba(0,0,0,.45));
 }
-/* lace/paper/flowers behind studio card — peek at edges only */
+/* lace/paper/flowers behind studio card — lush maximalist */
 .ab-p2-lace{
   position:absolute;z-index:0;pointer-events:none;
-  width:118%;left:-10%;bottom:-8%;
+  width:125%;left:-12%;bottom:-8%;
   transform:rotate(-12deg);
-  opacity:.88;
+  opacity:.92;
+}
+.ab-p2-lace2{
+  width:92%;left:auto;right:-8%;top:-10%;bottom:auto;
+  transform:rotate(18deg) scaleX(-1);
+  opacity:.85;
+}
+.ab-p2-lace3{
+  width:88%;left:-14%;top:auto;bottom:-4%;
+  transform:rotate(8deg);
+  opacity:.75;
+}
+.ab-p2-doily{
+  position:absolute;z-index:0;pointer-events:none;
+  width:88%;left:50%;top:50%;
+  transform:translate(-50%,-48%) rotate(-6deg);
+  opacity:.45;mix-blend-mode:multiply;
 }
 .ab-p2-paper{
   position:absolute;z-index:0;pointer-events:none;
-  width:68%;left:-16%;top:-10%;
-  transform:rotate(-8deg);
-  opacity:.48;mix-blend-mode:multiply;
+  width:78%;left:-24%;top:-16%;
+  transform:rotate(-11deg);
+  opacity:.52;mix-blend-mode:multiply;
 }
 .ab-p2-fl{
   position:absolute;z-index:2;pointer-events:none;
-  filter:drop-shadow(0 3px 4px rgba(60,25,15,.28));
+  filter:drop-shadow(0 3px 5px rgba(60,25,15,.3));
 }
-.ab-p2-fl1{ /* rose — top-left corner */
-  width:90px;left:-36px;top:-28px;transform:rotate(-20deg);
+.ab-p2-fl1{ /* rose TL */
+  width:112px;left:-48px;top:-40px;transform:rotate(-24deg);
 }
-.ab-p2-fl2{ /* bud — top-right corner */
-  width:64px;right:-10px;top:-18px;transform:rotate(14deg);
+.ab-p2-fl2{ /* bud TR */
+  width:72px;right:-22px;top:-26px;transform:rotate(18deg);
 }
-.ab-p2-fl3{ /* geranium — bottom-left corner */
-  width:82px;left:-34px;bottom:-18px;transform:rotate(8deg);
+.ab-p2-fl3{ /* geranium BL */
+  width:100px;left:-42px;bottom:-28px;transform:rotate(12deg);
 }
-.ab-p2-fl4{ /* butterfly — mid-right edge */
-  width:44px;right:-8px;bottom:56px;transform:rotate(-12deg);
-  opacity:.95;
+.ab-p2-fl4{ /* small butterfly mid-right */
+  width:48px;right:-16px;bottom:58px;transform:rotate(-16deg);opacity:.95;
+}
+.ab-p2-fl5{ /* rose TR outer */
+  width:110px;right:-28px;top:36px;transform:rotate(28deg) scaleX(-1);
+}
+.ab-p2-fl6{ /* peony BR */
+  width:125px;right:-38px;bottom:-36px;transform:rotate(-8deg);
+}
+.ab-p2-fl7{ /* rose BL mid */
+  width:92px;left:-38px;top:38%;transform:rotate(-6deg);
+}
+.ab-p2-fl8{ /* spray TL mid */
+  width:88px;left:55%;top:-34px;transform:translateX(-50%) rotate(6deg);
+}
+.ab-p2-fl9{ /* butterfly TL */
+  width:58px;left:-28px;top:22%;transform:rotate(12deg);
 }
 .ab-photo2-mount::before{
   /* thin inner gold fillet */

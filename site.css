@@ -120,3 +120,10 @@ html[data-theme=dark] .ab-p2-lace{
 html[data-theme=dark] .ab-p2-paper{
   filter:brightness(.62) sepia(.35);opacity:.7;mix-blend-mode:screen;
 }
+html[data-theme=dark] .ab-p2-lace2,
+html[data-theme=dark] .ab-p2-lace3{
+  mix-blend-mode:screen;opacity:.5;
+}
+html[data-theme=dark] .ab-p2-doily{
+  filter:brightness(.55) sepia(.3);opacity:.4;mix-blend-mode:screen;
+}
