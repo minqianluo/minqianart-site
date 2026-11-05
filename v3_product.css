@@ -19,3 +19,6 @@
 .v3 .pinfo{padding-top:150px}
 .v3 footer{margin-top:0}
 .pd-drape{top:-120px!important;opacity:.7!important}
+/* t287u buy z */
+.v3 .buy{position:relative;z-index:4}
+.v3 .buy .uniq,.v3 .buy .fspec{isolation:isolate}

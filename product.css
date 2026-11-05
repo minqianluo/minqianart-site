@@ -41,3 +41,33 @@
 .pinfo{padding:0 0 100px}.box3{width:1310px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:50px;padding:50px 60px}
 .noir .box3{background:rgba(20,14,12,.92)}.parlour .box3{background:#fffaf0}
 .box3 h4{font-family:Playfair,serif;font-weight:500;font-size:26px;margin-bottom:8px}.box3 p{color:var(--muted);font-size:18px}
+
+/* t287u/t288u frame spec + unique line — above flowers (buy column z) */
+.buy .uniq{
+  position:relative;z-index:4;
+  margin:10px 0 14px;padding:10px 14px;
+  border-left:3px solid var(--gold);
+  background:rgba(201,163,92,.10);
+  font-family:Playfair,serif;font-size:17px;line-height:1.35;color:var(--ink);
+}
+[data-theme="dark"] .buy .uniq{background:rgba(201,163,92,.14);color:var(--cream,#f6e6cf)}
+.buy .fspec{
+  position:relative;z-index:4;
+  margin:0 0 18px;padding:14px 16px 12px;
+  border:1px solid var(--gold3);border-radius:12px;
+  background:var(--panel);
+}
+.buy .fspec-tbl{width:100%;border-collapse:collapse;font-size:15px}
+.buy .fspec-tbl th{
+  text-align:left;font-weight:500;font-family:Playfair,serif;
+  color:var(--muted);width:38%;padding:6px 10px 6px 0;vertical-align:top;
+}
+.buy .fspec-tbl td{padding:6px 0;color:var(--ink);vertical-align:top}
+[data-theme="dark"] .buy .fspec-tbl td{color:var(--cream,#f6e6cf)}
+.buy .fspec-note{
+  margin:10px 0 0;padding-top:10px;border-top:1px dashed var(--gold3);
+  font-size:13px;line-height:1.45;color:var(--muted);font-style:italic;
+}
+.buy .fopt small{font-size:13px;line-height:1.25}
+/* keep buy column above collage flowers that spill from gallery */
+.v2 .buy,.v3 .buy{position:relative;z-index:4}
