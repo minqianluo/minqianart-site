@@ -144,3 +144,21 @@ html[data-theme=dark] .ab-p2-paper{
     left:50vw;top:0;width:230px;height:auto;transform:translateX(-50%);z-index:0;
   }
 }
+
+/* Desktop About copy clears the pendant while photo/decor coordinates stay fixed. */
+@media (min-width:761px){
+  .v3 .about .ab-copy h2{font-size:48px;}
+  .v3 .about .ab-copy p{font-size:19px;line-height:1.5;}
+  .v3 .about .ab-copy .sig{font-size:48px;line-height:1.4;}
+  .v3 .about .ab-copy{
+    position:absolute;top:70px;left:calc(50vw + 145px);
+    width:min(360px,calc(1247px - 50vw));padding-right:0;
+  }
+}
+@media (min-width:1700px){
+  .v3 .about .ab-copy .kicker{width:max-content;max-width:100%;}
+  .v3 .about .ab-copy h2{margin-top:16px;}
+  .v3 .about .ab-copy h2{font-size:48px;}
+  .v3 .about .ab-copy p{font-size:17px;line-height:1.4;}
+  .v3 .about .ab-copy .sig{font-size:48px;line-height:1.4;}
+}
