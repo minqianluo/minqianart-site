@@ -123,11 +123,16 @@ html[data-theme=dark] .ab-p2-lace5{
   opacity:.95!important;
   filter:brightness(1.12) drop-shadow(0 3px 8px rgba(0,0,0,.45));
 }
-html[data-theme=dark] .ab-p2-doily,
-html[data-theme=dark] .ab-p2-doily2{
+html[data-theme=dark] .ab-p2-doily{
   mix-blend-mode:normal!important;
-  opacity:.88!important;
-  filter:brightness(1.05) drop-shadow(0 4px 10px rgba(0,0,0,.4));
+  opacity:.96!important;
+  filter:brightness(1.12) drop-shadow(0 6px 14px rgba(0,0,0,.4));
+}
+html[data-theme=dark] .ab-p2-doily2{display:none!important}
+html[data-theme=dark] .ab-p2-lace4{
+  mix-blend-mode:normal!important;
+  opacity:.95!important;
+  filter:brightness(1.18) drop-shadow(0 6px 14px rgba(0,0,0,.4));
 }
 html[data-theme=dark] .ab-p2-paper{
   filter:brightness(.75) sepia(.25);opacity:.65;mix-blend-mode:soft-light;
