@@ -87,3 +87,7 @@ html[data-theme=dark] .fr.real .art-ph{
 .frames .fopt[aria-pressed="true"],.frames .fopt.on{outline:2px solid var(--gold);outline-offset:3px;background:rgba(201,163,92,.12)}
 .subj span[role="button"],.subj span.on{cursor:pointer}
 .subj span[aria-pressed="true"],.subj .on{outline:2px solid var(--gold);outline-offset:2px}
+
+/* Salon: real frames above paper/lace collage; collage stays behind */
+.salon .sp,.salon .sl{z-index:0!important}
+.salon .fr.real{z-index:2;position:absolute}

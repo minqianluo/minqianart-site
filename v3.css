@@ -53,7 +53,7 @@
 .v3 .featured .sx-eph{opacity:.12;mix-blend-mode:screen}.v3 .featured .sx-candle{mix-blend-mode:screen;opacity:.25;filter:invert(1) sepia(1)}
 .v3 .featured .sx-drape{opacity:.6}
 /* salon extras */
-.salon .sl{position:absolute;z-index:3;pointer-events:none}
+.salon .sl{position:absolute;z-index:0;pointer-events:none}/* behind frames */
 .sl.l1{width:380px;left:-60px;top:250px;opacity:.75;transform:rotate(-12deg)}
 .sl.l2{width:200px;left:520px;top:-60px;z-index:4}
 .sl.l3{width:420px;left:830px;top:330px;opacity:.7;transform:rotate(14deg)}
