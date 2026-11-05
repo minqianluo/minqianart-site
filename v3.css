@@ -169,8 +169,8 @@
   position:absolute;z-index:0;pointer-events:none;
   width:162%;left:-40%;top:-26%;bottom:auto;right:auto;
   transform:rotate(-9deg);
-  opacity:.94;
-  filter:drop-shadow(0 8px 16px rgba(40,20,10,.22));
+  opacity:.46; /* sheer lace; holes in the PNG are already alpha 0 */
+  filter:drop-shadow(0 4px 10px rgba(40,20,10,.12));
 }
 .ab-p2-doily2{display:none!important}
 /* big wide lace panel — bottom-right, extends generously */

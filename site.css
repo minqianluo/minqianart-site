@@ -125,8 +125,8 @@ html[data-theme=dark] .ab-p2-lace5{
 }
 html[data-theme=dark] .ab-p2-doily{
   mix-blend-mode:normal!important;
-  opacity:.96!important;
-  filter:brightness(1.12) drop-shadow(0 6px 14px rgba(0,0,0,.4));
+  opacity:.4!important; /* sheer cream lace on dark — no brightness (that made it harsh white) */
+  filter:none;
 }
 html[data-theme=dark] .ab-p2-doily2{display:none!important}
 html[data-theme=dark] .ab-p2-lace4{
