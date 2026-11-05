@@ -138,10 +138,10 @@ html[data-theme=dark] .ab-p2-paper{
   filter:brightness(.62) sepia(.35);opacity:.7;mix-blend-mode:screen;
 }
 
-/* Desktop About: hang centrally in the existing 140px top margin.
-   A 100px-wide pendant is 139px high, clear of both photos and copy. */
+/* Desktop About: prominent central pendant, with a dedicated clear top margin. */
 @media (min-width:761px){
+  .v3 .about{padding-top:340px;}
   .v3 .about > .ab-chand{
-    left:50vw;top:0;width:100px;height:auto;transform:translateX(-50%);
+    left:50vw;top:0;width:230px;height:auto;transform:translateX(-50%);
   }
 }

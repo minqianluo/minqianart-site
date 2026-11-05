@@ -57,7 +57,7 @@
     if(window.matchMedia('(min-width:761px)').matches){
       var about=document.querySelector('#about');
       if(about){
-        var ay=about.getBoundingClientRect().top-ct;
+        var ay=about.getBoundingClientRect().top-ct+parseFloat(getComputedStyle(about).paddingTop)-140;
         [['l13',0],['l14',370],['l15',840],['r29',140]].forEach(function(pair){
           var deco=box.querySelector('[data-id="'+pair[0]+'"]');
           if(deco) deco.style.top=(ay+pair[1])+'px';
