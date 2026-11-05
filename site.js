@@ -52,6 +52,18 @@
       var a=C[+img.getAttribute('data-anc')]; if(!a) return;
       img.style.top=(a.getBoundingClientRect().top-ct+parseFloat(img.getAttribute('data-dy')))+'px';
     });
+    /* Desktop About border: stable section anchors from the approved reference.
+       Numeric child indexes drift when the photo-card markup changes. */
+    if(window.matchMedia('(min-width:761px)').matches){
+      var about=document.querySelector('#about');
+      if(about){
+        var ay=about.getBoundingClientRect().top-ct;
+        [['l13',0],['l14',370],['l15',840],['r29',140]].forEach(function(pair){
+          var deco=box.querySelector('[data-id="'+pair[0]+'"]');
+          if(deco) deco.style.top=(ay+pair[1])+'px';
+        });
+      }
+    }
     /* mobile: never let page-border flowers cover hero text */
     var hero=document.querySelector('.hero');
     var imgs=document.querySelectorAll('.mborder img, .fborder img');
