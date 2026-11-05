@@ -24,7 +24,7 @@ Everything else (damask, corners, dividers, wax seals, round frames) is drawn in
 ===== from v2/ART_SOURCES_v2.txt =====
 v2 uses the same public-domain/CC0 art and brand assets as v1 (see ../ART_SOURCES.txt).
 New in v2, all drawn in code by make_collage.py (numpy/PIL): torn/deckled paper pieces and strips, vellum, lace tapes, doilies, scalloped lace borders, photo placeholder. No AI imagery, no new outside images.
-Hero frame: frame_oval_carved.png (existing public-domain brand asset; source listed in the v1 credits files).
+Hero frame: real S carved oval cut-out (assets/brand/frames_real/S_carved_oval.png). About frame: real R gold oval (R_gold_oval.png).
 
 ===== from v3/ART_SOURCES_v3.txt =====
 ART_SOURCES_v3 — MinqianArt website mockup v3 (cream)
@@ -882,3 +882,6 @@ These replace drawn/Met frame overlays on product pages, collection cards, and t
 # R → fragonard_dog.jpg (Fragonard, Met 436323, CC0)
 # S → goya_osorio.jpg (Goya, Met 436545, CC0)
 # 10 → ceruti_dog.jpg (Ceruti, Met 435864, CC0)
+
+## t289u (2026-11-05)
+Artist photos use real frame PNGs: hero → S, About → R. Drawn frame_oval_carved.png removed; frame_oval_rosette.png kept for How-it-works medals.

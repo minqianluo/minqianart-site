@@ -91,3 +91,9 @@ html[data-theme=dark] .fr.real .art-ph{
 /* Salon: real frames above paper/lace collage; collage stays behind */
 .salon .sp,.salon .sl{z-index:0!important}
 .salon .fr.real{z-index:2;position:absolute}
+
+/* t289u: artist photo in real frames — keep crop position, wax above frame */
+.fr.real.artist .art,.fr.real.artist2 .art{object-position:50% 34%}
+.v2 .hero .badge,.v3 .hero .badge{z-index:8}
+.hero .art-wrap .fr.real{z-index:2}
+.ab-art .fr.real.artist2{z-index:2}
