@@ -1,5 +1,5 @@
 @media (max-width:600px){
-body{width:390px;font-size:17px}
+body{width:100%;max-width:100%;font-size:17px}
 .topbar{font-size:11px;letter-spacing:.12em;padding:7px 10px}
 header.site{grid-template-columns:44px 1fr 44px;padding:12px 14px}
 header.site nav a{display:none}

@@ -1,0 +1,228 @@
+/* Mobile-only (<=760px): unified hero + About before gallery. Desktop unchanged. */
+@media (max-width:760px){
+  /* fluid width — works at 390 and 430 */
+  body{width:100%!important;max-width:100%;overflow-x:hidden}
+
+  /* section order: hero → about → gallery → collections → … */
+  body.parlour{
+    display:flex;flex-direction:column;
+  }
+  body.parlour > .mborder,
+  body.parlour > .fborder{order:0}
+  body.parlour > header.site{order:1}
+  body.parlour > .m-menu{order:2}
+  body.parlour > .hero{order:10}
+  body.parlour > #about{order:20;display:block!important}
+  body.parlour > #gallery{order:30}
+  body.parlour > #collections{order:40}
+  body.parlour > #how{order:50}
+  body.parlour > .unbox{order:60}
+  body.parlour > #reviews{order:70}
+  body.parlour > footer{order:100}
+
+  /* —— Unified hero: logo → headline → S-oval photo+wax → buttons → ribbon —— */
+  .hero{
+    display:grid!important;
+    grid-template-columns:1fr;
+    justify-items:center;
+    align-content:start;
+    height:auto!important;
+    padding:20px 16px 28px!important;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero .copy{
+    display:contents; /* children join hero grid */
+  }
+  .hero .drape{order:0;width:100%;max-height:48px;object-fit:cover}
+  .hero .drape-lace{order:0;opacity:.5}
+  .hero .bigscript,
+  .hero .chand-hero,
+  .hero .tblock,
+  .hero .arch-panel,
+  .hero .collage-hero,
+  .hero .veer-tl,
+  .hero .veer-bl,
+  .hero .hem-lace{display:none!important}
+
+  .hero .emb{
+    order:1;
+    width:150px!important;
+    margin:8px auto 6px;
+    display:block;
+    position:relative;z-index:3;
+  }
+  .hero .kicker{
+    order:2;
+    text-align:center;
+    margin:4px 12px 0;
+    position:relative;z-index:3;
+  }
+  .hero .copy h1{
+    order:3;
+    text-align:center;
+    font-size:clamp(28px,7.2vw,36px)!important;
+    line-height:1.15;
+    margin:6px 10px 8px;
+    max-width:22em;
+    position:relative;z-index:3;
+  }
+  .hero .copy h1 em{font-size:inherit!important}
+  .hero .copy p{
+    order:4;
+    text-align:center;
+    font-size:clamp(15px,3.8vw,17px)!important;
+    line-height:1.45;
+    margin:0 16px 12px;
+    max-width:34em;
+    position:relative;z-index:3;
+  }
+
+  /* artist S-oval panel */
+  .hero .art-wrap{
+    order:5;
+    position:relative!important;
+    right:auto!important;top:auto!important;left:auto!important;
+    width:min(300px,78vw)!important;
+    margin:4px auto 8px!important;
+    padding-bottom:36px; /* room for nameplate */
+    z-index:4;
+  }
+  .hero .art-wrap .fr{width:100%!important;max-width:300px}
+  .hero .art-wrap .orbit{
+    left:-12%!important;top:-6%!important;
+    width:124%!important;height:118%!important;
+  }
+  .hero .nameplate{
+    bottom:-42px!important;
+    padding:6px 22px 8px!important;
+    z-index:6;
+  }
+  .hero .nameplate .script{font-size:28px}
+
+  /* wax seal — tuck bottom-right of photo, fully visible */
+  .hero .badge{
+    order:5;
+    position:relative!important;
+    right:auto!important;left:auto!important;
+    top:auto!important;bottom:auto!important;
+    width:0;height:0;margin:0;padding:0;
+    overflow:visible;
+    z-index:8;
+    justify-self:center;
+  }
+  .hero .badge .wax{
+    position:absolute;
+    width:78px;height:78px;
+    right:-118px;top:-95px; /* sit on BR of art-wrap above */
+  }
+
+  .hero .bf1,
+  .hero .bf2,
+  .hero .rose-r{
+    order:5;
+    z-index:3;
+    pointer-events:none;
+  }
+  .hero .bf1{position:absolute;right:8px;top:42%;width:48px!important}
+  .hero .bf2{position:absolute;left:6px;top:38%;width:48px!important}
+  .hero .rose-r{position:absolute;right:-8px;bottom:120px;width:110px!important;opacity:.95}
+
+  .hero .btns{
+    order:7;
+    display:flex!important;
+    flex-direction:column;
+    gap:12px;
+    align-items:center;
+    width:100%;
+    margin:4px 0 10px;
+    position:relative;z-index:5;
+  }
+  .hero .btns .btn{
+    width:min(300px,86vw)!important;
+    text-align:center;
+    padding:13px 10px;
+    font-size:14px;
+    box-sizing:border-box;
+  }
+
+  .hero .ribbon{
+    order:8;
+    width:100%;
+    margin-top:8px;
+    position:relative;z-index:3;
+  }
+
+  /* —— Compact About directly under hero —— */
+  .v3 .about,
+  #about.about{
+    display:flex!important;
+    flex-direction:column;
+    align-items:center;
+    position:relative;
+    padding:56px 18px 48px!important;
+    margin-top:-18px!important;
+    border-radius:50% 50% 0 0/40px 40px 0 0;
+    overflow:hidden;
+  }
+  #about > .ab-photo2{order:3}
+  #about > .ab-grid{order:2}
+  #about .ab-music,
+  #about .ab-letter,
+  #about .ab-chand{display:none!important}
+  /* hero already shows S-oval — skip duplicate R-oval on mobile */
+  #about .ab-art{display:none!important}
+  #about .ab-grid{
+    display:flex!important;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+    grid-template-columns:none!important;
+    width:100%;
+    max-width:400px;
+    margin:0 auto;
+  }
+  #about .ab-copy{
+    order:1;
+    text-align:center;
+    padding:0 4px!important;
+    max-width:100%;
+  }
+  #about .ab-photo2{order:2}
+  #about .ab-copy .kicker,
+  #about .ab-copy .sect{text-align:center!important}
+  #about .ab-copy h2.sect{font-size:clamp(28px,7vw,34px)}
+  #about .ab-copy p{
+    font-size:16px!important;
+    line-height:1.5;
+    max-width:100%!important;
+    margin:10px auto 8px;
+    text-align:center;
+  }
+  #about .ab-copy .sig{
+    font-size:40px!important;
+    max-width:100%!important;
+    margin:4px auto 0;
+  }
+  /* studio card — compact under bio */
+  #about .ab-photo2{
+    position:relative!important;
+    right:auto!important;bottom:auto!important;left:auto!important;
+    width:min(168px,46vw)!important;
+    margin:12px auto 0!important;
+    transform:rotate(3deg);
+    z-index:2;
+  }
+  #about .ab-p2-fl1{width:64px;left:-28px;top:-20px}
+  #about .ab-p2-fl2{width:48px;right:-8px;top:-14px}
+  #about .ab-p2-fl3{width:58px;left:-24px;bottom:-14px}
+  #about .ab-p2-fl4{width:34px;right:-6px;bottom:40px}
+  #about .ab-p2-lace{width:120%;left:-8%;bottom:-6%}
+  #about .ab-p2-paper{width:64%;left:-12%;top:-8%}
+}
+
+/* keep existing ≤600 gallery/collections rules; ensure about stays visible */
+@media (max-width:600px){
+  .v3 .about{display:block!important}
+  .v3 .testi,.v3 .steps,.v3 .unbox{display:none}
+}
