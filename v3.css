@@ -129,23 +129,23 @@
 .ab-copy{position:relative;z-index:3;padding-right:56px}
 .ab-copy .sig,.ab-copy p{max-width:360px}
 .ab-photo2{
-  position:absolute;right:48px;bottom:96px;width:232px;margin:0;padding:0;
+  position:absolute;right:56px;bottom:100px;width:232px;margin:0;padding:0;
   z-index:4;pointer-events:none;
   transform:rotate(4deg);
   transform-origin:50% 50%;
-  filter:drop-shadow(0 14px 22px rgba(0,0,0,.45));
+  overflow:visible;
 }
 /* keep full tilted card inside section */
 @media (max-width:1360px){
-  .ab-photo2{right:40px;width:216px;bottom:88px}
+  .ab-photo2{right:48px;width:216px;bottom:92px}
   .ab-copy .sig,.ab-copy p{max-width:360px}
 }
 @media (max-width:1280px){
-  .ab-photo2{right:36px;width:204px;bottom:84px}
+  .ab-photo2{right:44px;width:204px;bottom:88px}
   .ab-copy .sig,.ab-copy p{max-width:340px}
 }
 .ab-photo2-mount{
-  position:relative;
+  position:relative;z-index:3;
   padding:9px 9px 22px;
   background:
     linear-gradient(165deg,#f6e7c8 0%,#e8d4a8 40%,#d4bf8a 100%);
@@ -155,6 +155,37 @@
     inset 0 0 0 4px rgba(201,163,92,.35),
     0 1px 0 rgba(255,248,220,.35);
   border-radius:4px 4px 6px 6px;
+  filter:drop-shadow(0 14px 22px rgba(0,0,0,.45));
+}
+/* lace/paper/flowers behind studio card — peek at edges only */
+.ab-p2-lace{
+  position:absolute;z-index:0;pointer-events:none;
+  width:118%;left:-10%;bottom:-8%;
+  transform:rotate(-12deg);
+  opacity:.88;
+}
+.ab-p2-paper{
+  position:absolute;z-index:0;pointer-events:none;
+  width:68%;left:-16%;top:-10%;
+  transform:rotate(-8deg);
+  opacity:.48;mix-blend-mode:multiply;
+}
+.ab-p2-fl{
+  position:absolute;z-index:2;pointer-events:none;
+  filter:drop-shadow(0 3px 4px rgba(60,25,15,.28));
+}
+.ab-p2-fl1{ /* rose — top-left corner */
+  width:90px;left:-36px;top:-28px;transform:rotate(-20deg);
+}
+.ab-p2-fl2{ /* bud — top-right corner */
+  width:64px;right:-10px;top:-18px;transform:rotate(14deg);
+}
+.ab-p2-fl3{ /* geranium — bottom-left corner */
+  width:82px;left:-34px;bottom:-18px;transform:rotate(8deg);
+}
+.ab-p2-fl4{ /* butterfly — mid-right edge */
+  width:44px;right:-8px;bottom:56px;transform:rotate(-12deg);
+  opacity:.95;
 }
 .ab-photo2-mount::before{
   /* thin inner gold fillet */
