@@ -875,3 +875,10 @@ Sources (private product photos, not public-domain museum frames):
   S_carved_oval.png, R_gold_oval.png, J_gold_round.png, O_wood_round.png, 10in_gold_carved.png
 Background and in-frame sample paintings were removed; openings are transparent alpha for her future acrylics.
 These replace drawn/Met frame overlays on product pages, collection cards, and the gallery wall.
+
+# Frame placeholder paintings (one per real frame id; swap for her acrylics later) — see frame_art.js
+# J → lebrun_julie.jpg (Vigée Le Brun, Met 438132, CC0)
+# O → gainsborough_cat.jpg (Gainsborough, Met 436433, CC0)
+# R → fragonard_dog.jpg (Fragonard, Met 436323, CC0)
+# S → goya_osorio.jpg (Goya, Met 436545, CC0)
+# 10 → ceruti_dog.jpg (Ceruti, Met 435864, CC0)

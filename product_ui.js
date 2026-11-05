@@ -40,6 +40,20 @@
     // reset shape classes
     main.className='fr real '+cls+' '+shape;
     main.style.width=main.style.width||main.getAttribute('data-w')||'380px';
+    var artMap=window.MA_FRAME_ART||{};
+    var fid=btn.getAttribute('data-frame');
+    var artSrc=btn.getAttribute('data-art')||artMap[fid];
+    if(artSrc){
+      var art=$('.art',main);
+      var ph=$('.art-ph',main);
+      if(!art){
+        art=document.createElement('img'); art.className='art'; art.alt='';
+        if(ph){ main.insertBefore(art, ph); ph.remove(); }
+        else { main.insertBefore(art, img); }
+      }
+      art.src=artSrc;
+    }
+
     // thumbs
     $$('.thumbs .th[data-frame]',pdp).forEach(function(th){
       th.classList.toggle('on', th.getAttribute('data-frame')===btn.getAttribute('data-frame'));

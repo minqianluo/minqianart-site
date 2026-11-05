@@ -34,7 +34,7 @@ header.site nav.r a:last-child .cartdot{font-size:12px}
 .salon .fr .frame{filter:drop-shadow(0 6px 8px rgba(0,0,0,.4))}
 .salon .note{position:relative;bottom:auto;left:auto;right:auto;width:100%;margin-top:14px;padding:0 8px;font-size:12px;line-height:1.45}
 .collections{padding:60px 0 60px}
-h2.sect{font-size:40px}.kicker{font-size:13px;letter-spacing:.22em}.divider{width:330px;height:30px}.lede{font-size:18px;padding:0 24px}
+h2.sect{font-size:40px}.kicker{font-size:13px;letter-spacing:.22em}.divider{width:330px;height:30px}.lede{font-size:18px;padding:0 24px}.keyhole .lede{padding:0 4px;font-size:16px}
 .cards{grid-template-columns:340px;gap:44px;margin-top:40px}
 .card{padding:40px 26px 34px}.card .stage{height:290px}
 }

@@ -62,9 +62,9 @@
 .sl.l6{width:150px;left:1090px;top:260px;opacity:.35;filter:invert(1) sepia(1);mix-blend-mode:screen;z-index:0}
 .v3 .sp.p2,.v3 .sp.p4{display:none}
 /* keyhole banner */
-.keyhole{position:relative;width:720px;margin:0 auto 10px;padding:70px 60px 150px;border-radius:360px 360px 0 0;background:rgba(255,251,242,.85);border:1px solid var(--gold);box-shadow:0 0 0 10px rgba(255,251,242,.4),0 0 0 11px rgba(201,163,92,.5);overflow:visible}
+.keyhole{position:relative;width:720px;margin:0 auto 10px;padding:70px 72px 36px;border-radius:360px 360px 0 0;background:rgba(255,251,242,.85);border:1px solid var(--gold);box-shadow:0 0 0 10px rgba(255,251,242,.4),0 0 0 11px rgba(201,163,92,.5);overflow:visible}
 .kh-art{display:none}
-.kh-hole{position:absolute;left:50%;bottom:-70px;transform:translateX(-50%);width:150px;height:150px;border-radius:50%;overflow:hidden;border:2px solid var(--gold);box-shadow:0 0 0 7px #f3e8d2,0 0 0 8px var(--gold),0 6px 14px rgba(70,40,20,.35)}
+.kh-hole{display:none!important}/*removed medallion*/.kh-hole-old{position:absolute;left:50%;bottom:-70px;transform:translateX(-50%);width:150px;height:150px;border-radius:50%;overflow:hidden;border:2px solid var(--gold);box-shadow:0 0 0 7px #f3e8d2,0 0 0 8px var(--gold),0 6px 14px rgba(70,40,20,.35)}
 .kh-hole img{width:100%;height:100%;object-fit:cover;object-position:50% 30%}
 .v3 .cards{margin-top:110px}
 /* arch cards */
@@ -120,3 +120,6 @@
 .v3 .testi .sx-eph{left:auto;right:-60px;top:40px;transform:rotate(7deg)}
 .v3 .testi .sx-candle.r{display:none}
 .v3 .collections .sx-candle.l{left:auto;right:200px;top:170px}
+
+.keyhole .lede{max-width:100%;padding:0 12px;box-sizing:border-box;overflow-wrap:anywhere;word-break:normal}
+.keyhole .kh-in{padding:0 8px;box-sizing:border-box}
