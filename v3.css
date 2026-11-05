@@ -163,14 +163,14 @@
 .ab-p2-lace3,
 .ab-p2-lace5,
 .ab-p2-paper{display:none!important}
-/* big cream doily — top-left / left, extends well past the card */
+/* big dark-wine doily — top-left / left, extends well past the card */
 .ab-p2-doily{
   display:block!important;
   position:absolute;z-index:0;pointer-events:none;
   width:162%;left:-40%;top:-26%;bottom:auto;right:auto;
   transform:rotate(-9deg);
-  opacity:.46; /* sheer lace; holes in the PNG are already alpha 0 */
-  filter:drop-shadow(0 4px 10px rgba(40,20,10,.12));
+  opacity:.88;
+  filter:drop-shadow(0 1px 0 rgba(201,163,92,.2)) drop-shadow(0 3px 8px rgba(0,0,0,.28));
 }
 .ab-p2-doily2{display:none!important}
 /* big wide lace panel — bottom-right, extends generously */
@@ -179,8 +179,8 @@
   position:absolute;z-index:0;pointer-events:none;
   width:152%;left:auto;right:-42%;top:auto;bottom:-28%;
   transform:rotate(12deg);
-  opacity:.92;
-  filter:drop-shadow(0 8px 16px rgba(40,20,10,.22));
+  opacity:.9;
+  filter:drop-shadow(0 1px 0 rgba(201,163,92,.18)) drop-shadow(0 4px 10px rgba(0,0,0,.28));
 }
 .ab-p2-fl{
   position:absolute;z-index:2;pointer-events:none;
