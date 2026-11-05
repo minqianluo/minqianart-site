@@ -1,0 +1,420 @@
+/* =====================================================================
+   MinqianArt · Button style C — 丝绒烫金 (velvet + gold foil)
+   Applied to existing .btn / .fopt / .subj / controls without HTML churn.
+   Source study: /workspace/button_options/buttons.css (.bc)
+   ===================================================================== */
+
+/* ---------- shared primary velvet surface ---------- */
+.btn,
+.btn.gold-btn,
+.btn.wine,
+.btn.ghost,
+.cta .add,
+footer .news b{
+  display:inline-flex;align-items:center;justify-content:center;
+  position:relative;box-sizing:border-box;isolation:isolate;
+  vertical-align:middle;text-decoration:none;cursor:pointer;user-select:none;
+  -webkit-tap-highlight-color:transparent;
+  font-family:CormorantSC,"Cormorant SC","Noto Serif CJK SC",serif;
+  font-size:16px;letter-spacing:.18em;line-height:1.15;
+  white-space:nowrap;max-width:100%;
+  border-radius:5px;border:1px solid #c9a35c;
+  color:#f3dc9a;
+  text-shadow:0 1px 0 rgba(0,0,0,.75), 0 0 8px rgba(243,220,154,.35);
+  background:
+    radial-gradient(ellipse 90% 65% at 28% 16%, rgba(210,80,95,.42), transparent 58%),
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(255,190,190,.14), transparent 48%),
+    radial-gradient(ellipse 55% 80% at 90% 95%, rgba(10,0,4,.55), transparent 55%),
+    linear-gradient(180deg,#7a2430 0%, #5c171e 38%, #3a0e14 100%);
+  box-shadow:
+    0 8px 18px rgba(0,0,0,.42),
+    0 2px 4px rgba(0,0,0,.3),
+    inset 0 1px 0 rgba(230,130,140,.28),
+    inset 0 -3px 7px rgba(0,0,0,.5),
+    inset 0 0 0 1px rgba(201,163,92,.4),
+    inset 0 0 0 5px rgba(42,14,18,.28);
+  outline:none;
+  transition:transform .22s ease, filter .22s ease, box-shadow .22s ease, background .22s ease;
+  z-index:1;
+}
+/* corner + midpoint beads */
+.btn::before,
+.btn.gold-btn::before,
+.btn.wine::before,
+.btn.ghost::before,
+.cta .add::before,
+footer .news b::before{
+  content:"";position:absolute;inset:6px;pointer-events:none;z-index:2;border-radius:2px;
+  background:
+    radial-gradient(circle at 30% 28%, #fff6d4 0 28%, #e9cd88 40%, #8a6a2f 68%, #4a3514 100%),
+    radial-gradient(circle at 30% 28%, #fff6d4 0 28%, #e9cd88 40%, #8a6a2f 68%, #4a3514 100%),
+    radial-gradient(circle at 30% 28%, #fff6d4 0 28%, #e9cd88 40%, #8a6a2f 68%, #4a3514 100%),
+    radial-gradient(circle at 30% 28%, #fff6d4 0 28%, #e9cd88 40%, #8a6a2f 68%, #4a3514 100%),
+    radial-gradient(circle at 30% 28%, #fff6d4 0 28%, #e9cd88 40%, #8a6a2f 68%, #4a3514 100%),
+    radial-gradient(circle at 30% 28%, #fff6d4 0 28%, #e9cd88 40%, #8a6a2f 68%, #4a3514 100%);
+  background-size:7px 7px;
+  background-repeat:no-repeat;
+  background-position:0 0, 100% 0, 0 100%, 100% 100%, 50% 0, 50% 100%;
+}
+/* inner gold stitch */
+.btn::after,
+.btn.gold-btn::after,
+.btn.wine::after,
+.btn.ghost::after,
+.cta .add::after,
+footer .news b::after{
+  content:"";position:absolute;inset:5px;border-radius:2px;pointer-events:none;z-index:1;
+  border:1px dashed rgba(243,220,154,.6);
+  box-shadow:inset 0 0 0 1px rgba(201,163,92,.2);
+}
+
+.btn, .btn.gold-btn{ min-width:188px; height:auto; min-height:52px; padding:14px 28px; }
+.cta .add{ flex:1; min-width:0; min-height:54px; padding:16px 22px; font-size:17px; letter-spacing:.14em; }
+footer .news b{
+  font-weight:400; min-width:0; min-height:46px; padding:10px 18px; font-size:15px; letter-spacing:.14em;
+  display:inline-flex;
+}
+
+/* secondary — outlined velvet (wine / ghost) */
+.btn.wine,
+.btn.ghost{
+  background:linear-gradient(180deg,rgba(74,18,24,.45),rgba(28,16,18,.62));
+  box-shadow:
+    0 6px 14px rgba(0,0,0,.3),
+    inset 0 0 0 1px rgba(201,163,92,.4),
+    inset 0 0 0 5px rgba(28,16,18,.15);
+  color:#f3dc9a;
+  text-shadow:0 1px 0 rgba(0,0,0,.5);
+}
+.btn.wine::after, .btn.ghost::after{ opacity:.55 }
+
+.btn:hover, .btn.gold-btn:hover, .cta .add:hover, footer .news b:hover{
+  transform:translateY(-2px);
+  background:
+    radial-gradient(ellipse 95% 80% at 42% 24%, rgba(230,100,110,.48), transparent 60%),
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(255,200,200,.18), transparent 50%),
+    radial-gradient(ellipse 55% 80% at 90% 95%, rgba(10,0,4,.4), transparent 55%),
+    linear-gradient(180deg,#8a2c38 0%, #6a1c24 38%, #4a1218 100%);
+  box-shadow:
+    0 12px 24px rgba(0,0,0,.46),
+    0 0 18px rgba(180,50,60,.22),
+    inset 0 1px 0 rgba(240,150,160,.32),
+    inset 0 -3px 6px rgba(0,0,0,.4),
+    inset 0 0 0 1px rgba(243,220,154,.55),
+    inset 0 0 0 5px rgba(42,14,18,.22);
+}
+.btn.wine:hover, .btn.ghost:hover{
+  background:linear-gradient(180deg,rgba(90,24,32,.55),rgba(36,18,20,.7));
+  box-shadow:
+    0 8px 18px rgba(0,0,0,.4),
+    0 0 14px rgba(233,205,136,.16),
+    inset 0 0 0 1px rgba(243,220,154,.55),
+    inset 0 0 0 5px rgba(28,16,18,.2);
+}
+.btn:active, .btn.gold-btn:active, .btn.wine:active, .btn.ghost:active,
+.cta .add:active, footer .news b:active{
+  transform:translateY(1px);
+  box-shadow:
+    0 3px 8px rgba(0,0,0,.4),
+    inset 0 3px 6px rgba(0,0,0,.5),
+    inset 0 0 0 1px rgba(201,163,92,.35),
+    inset 0 0 0 5px rgba(42,14,18,.4);
+}
+.btn:focus-visible, .cta .add:focus-visible, footer .news b:focus-visible{
+  outline:2px solid #e9cf93; outline-offset:4px;
+}
+.btn[aria-disabled="true"], .btn:disabled{
+  opacity:.45; cursor:not-allowed; transform:none; filter:grayscale(.25);
+}
+
+/* CJK slightly wider tracking */
+html[lang^="zh"] .btn,
+html:lang(zh-Hans) .btn,
+html:lang(zh-Hant) .btn{ letter-spacing:.28em; font-size:17px }
+
+/* ---------- qty stepper ---------- */
+.cta .qty{
+  position:relative; isolation:isolate;
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:54px; padding:12px 18px; border-radius:5px;
+  border:1px solid #c9a35c;
+  background:linear-gradient(180deg,rgba(74,18,24,.4),rgba(28,16,18,.55));
+  color:#f3dc9a; font-size:18px;
+  box-shadow:inset 0 0 0 1px rgba(201,163,92,.35), 0 4px 10px rgba(0,0,0,.28);
+}
+.cta .qty::after{
+  content:"";position:absolute;inset:4px;border-radius:2px;pointer-events:none;
+  border:1px dashed rgba(243,220,154,.45);
+}
+
+/* ---------- frame option cards ---------- */
+.frames .fopt,
+.buy .fopt{
+  position:relative; isolation:isolate;
+  border-radius:8px !important;
+  border:1px solid rgba(201,163,92,.55) !important;
+  background:rgba(28,16,18,.55) !important;
+  box-shadow:inset 0 0 0 1px rgba(201,163,92,.28), 0 4px 12px rgba(0,0,0,.28) !important;
+  outline:none !important;
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease;
+  color:#e6d4b0;
+}
+.frames .fopt::after,
+.buy .fopt::after{
+  content:"";position:absolute;inset:5px;border-radius:4px;pointer-events:none;z-index:1;
+  border:1px dashed rgba(243,220,154,.28);
+}
+.frames .fopt b, .buy .fopt b{ color:#f3dc9a; position:relative; z-index:2 }
+.frames .fopt small, .buy .fopt small{ color:#d4bf98; position:relative; z-index:2 }
+.frames .fopt img, .buy .fopt img, .frames .fopt .sw{ position:relative; z-index:2 }
+
+/* selected frame — full velvet */
+.frames .fopt.on,
+.frames .fopt[aria-pressed="true"],
+.buy .fopt.on,
+.buy .fopt[aria-pressed="true"]{
+  border-color:#c9a35c !important;
+  background:
+    radial-gradient(ellipse 90% 65% at 28% 16%, rgba(210,80,95,.42), transparent 58%),
+    linear-gradient(180deg,#7a2430 0%, #5c171e 42%, #3a0e14 100%) !important;
+  box-shadow:
+    0 8px 18px rgba(0,0,0,.4),
+    0 0 0 2px rgba(233,205,136,.55),
+    inset 0 1px 0 rgba(230,130,140,.28),
+    inset 0 -3px 7px rgba(0,0,0,.45),
+    inset 0 0 0 1px rgba(201,163,92,.45) !important;
+}
+.frames .fopt.on::after,
+.buy .fopt.on::after,
+.frames .fopt[aria-pressed="true"]::after,
+.buy .fopt[aria-pressed="true"]::after{
+  border-color:rgba(243,220,154,.6);
+}
+.frames .fopt:hover:not(.on),
+.buy .fopt:hover:not(.on){
+  transform:translateY(-1px);
+  border-color:rgba(243,220,154,.7) !important;
+  background:rgba(58,22,28,.65) !important;
+}
+.frames .fopt:focus-visible,
+.buy .fopt:focus-visible{
+  outline:2px solid #e9cf93 !important; outline-offset:3px !important;
+}
+
+/* kill older selected fills that fight velvet */
+.parlour .fopt.on, .parlour .subj .on,
+html[data-theme=dark] .parlour .fopt.on,
+html[data-theme=dark] .parlour .subj .on,
+.noir .fopt.on, .noir .subj .on{
+  background:
+    radial-gradient(ellipse 90% 65% at 28% 16%, rgba(210,80,95,.42), transparent 58%),
+    linear-gradient(180deg,#7a2430 0%, #5c171e 42%, #3a0e14 100%) !important;
+}
+
+/* ---------- subject chips ---------- */
+.subj span{
+  position:relative; isolation:isolate;
+  border-radius:5px !important;
+  border:1px solid rgba(201,163,92,.5) !important;
+  background:rgba(28,16,18,.55) !important;
+  color:#d4bf98 !important;
+  box-shadow:inset 0 0 0 1px rgba(201,163,92,.28), 0 3px 8px rgba(0,0,0,.25);
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.subj span::after{
+  content:"";position:absolute;inset:4px;border-radius:2px;pointer-events:none;
+  border:1px dashed rgba(243,220,154,.3);
+}
+.subj span small{ color:#c9b48a !important }
+.subj span.on,
+.subj span[aria-pressed="true"]{
+  color:#f3dc9a !important;
+  border-color:#c9a35c !important;
+  background:
+    radial-gradient(ellipse 90% 65% at 28% 16%, rgba(210,80,95,.4), transparent 58%),
+    linear-gradient(180deg,#7a2430 0%, #5c171e 42%, #3a0e14 100%) !important;
+  box-shadow:
+    0 6px 14px rgba(0,0,0,.38),
+    0 0 0 2px rgba(233,205,136,.5),
+    inset 0 1px 0 rgba(230,130,140,.25),
+    inset 0 -2px 5px rgba(0,0,0,.4) !important;
+  text-shadow:0 1px 0 rgba(0,0,0,.55);
+}
+.subj span.on::after, .subj span[aria-pressed="true"]::after{
+  border-color:rgba(243,220,154,.55);
+}
+.subj span:hover:not(.on){
+  transform:translateY(-1px);
+  background:rgba(58,22,28,.65) !important;
+}
+.subj span:focus-visible{
+  outline:2px solid #e9cf93; outline-offset:3px;
+}
+
+/* ---------- upload drop zone (button-like) ---------- */
+.buy .drop{
+  border:1.5px dashed rgba(201,163,92,.7) !important;
+  border-radius:10px;
+  background:linear-gradient(180deg,rgba(74,18,24,.28),rgba(28,16,18,.4)) !important;
+  box-shadow:inset 0 0 0 1px rgba(201,163,92,.2);
+}
+.buy .drop:hover{
+  border-color:rgba(243,220,154,.85) !important;
+  background:linear-gradient(180deg,rgba(90,24,32,.38),rgba(36,18,20,.5)) !important;
+}
+
+/* ---------- lang / theme / hamburger ---------- */
+.lang-sel{
+  border:1px solid rgba(201,163,92,.7) !important;
+  border-radius:4px !important;
+  background:linear-gradient(180deg,rgba(74,18,24,.5),rgba(28,16,18,.7)) !important;
+  color:#f3dc9a !important;
+  box-shadow:inset 0 0 0 1px rgba(201,163,92,.25);
+}
+.theme-btn{
+  border:1px solid rgba(201,163,92,.7) !important;
+  background:
+    radial-gradient(ellipse 80% 60% at 35% 20%, rgba(210,80,95,.35), transparent 60%),
+    linear-gradient(180deg,#5c171e,#3a0e14) !important;
+  color:#f3dc9a !important;
+  box-shadow:inset 0 1px 0 rgba(230,130,140,.22), 0 2px 6px rgba(0,0,0,.3);
+}
+.theme-btn:hover{ filter:brightness(1.1); transform:translateY(-1px) }
+.theme-btn:focus-visible, .lang-sel:focus-visible{
+  outline:2px solid #e9cf93; outline-offset:2px;
+}
+
+/* hamburger = first header nav (site.js) */
+header.site nav:first-child{
+  border:1px solid rgba(201,163,92,.65);
+  border-radius:5px;
+  background:linear-gradient(180deg,rgba(74,18,24,.55),rgba(28,16,18,.75));
+  box-shadow:inset 0 0 0 1px rgba(201,163,92,.25), 0 2px 6px rgba(0,0,0,.28);
+}
+header.site nav:first-child:hover{ filter:brightness(1.08) }
+
+/* mobile menu links as soft velvet chips */
+.m-menu a{
+  border:1px solid rgba(201,163,92,.45);
+  border-radius:5px;
+  background:rgba(28,16,18,.45);
+  color:#f3dc9a !important;
+  margin:4px 10px;
+  padding:10px 14px !important;
+  box-shadow:inset 0 0 0 1px rgba(201,163,92,.2);
+}
+.m-menu a:hover{
+  background:linear-gradient(180deg,#7a2430,#3a0e14);
+  border-color:#c9a35c;
+}
+
+/* newsletter field rim */
+footer .news span{
+  border:1px solid rgba(201,163,92,.55) !important;
+  background:rgba(28,16,18,.4);
+  border-radius:5px 0 0 5px;
+  color:#d4bf98 !important;
+}
+footer .news b{ border-radius:0 5px 5px 0; }
+
+/* ---------- light theme ---------- */
+html:not([data-theme=dark]) .btn,
+html:not([data-theme=dark]) .btn.gold-btn,
+html:not([data-theme=dark]) .cta .add,
+html:not([data-theme=dark]) footer .news b{
+  box-shadow:
+    0 8px 18px rgba(80,40,20,.28),
+    inset 0 1px 0 rgba(200,90,100,.22),
+    inset 0 -3px 6px rgba(0,0,0,.45),
+    inset 0 0 0 1px rgba(201,163,92,.35),
+    inset 0 0 0 5px rgba(42,14,18,.3);
+}
+html:not([data-theme=dark]) .btn.wine,
+html:not([data-theme=dark]) .btn.ghost{
+  background:linear-gradient(180deg,rgba(90,40,48,.18),rgba(60,30,36,.28));
+  color:#5a1420;
+  text-shadow:0 1px 0 rgba(255,248,230,.45);
+  border-color:#8a6a2f;
+}
+html:not([data-theme=dark]) .btn.wine:hover,
+html:not([data-theme=dark]) .btn.ghost:hover{
+  color:#4a1218;
+  background:linear-gradient(180deg,rgba(110,50,58,.28),rgba(70,35,42,.38));
+}
+html:not([data-theme=dark]) .frames .fopt,
+html:not([data-theme=dark]) .buy .fopt,
+html:not([data-theme=dark]) .subj span{
+  background:rgba(255,250,240,.72) !important;
+  color:#4a2a22 !important;
+  border-color:rgba(138,106,47,.55) !important;
+}
+html:not([data-theme=dark]) .frames .fopt b,
+html:not([data-theme=dark]) .buy .fopt b{ color:#3a1e18 }
+html:not([data-theme=dark]) .frames .fopt small,
+html:not([data-theme=dark]) .buy .fopt small,
+html:not([data-theme=dark]) .subj span small{ color:#6e5444 !important }
+html:not([data-theme=dark]) .frames .fopt.on,
+html:not([data-theme=dark]) .buy .fopt.on,
+html:not([data-theme=dark]) .subj span.on,
+html:not([data-theme=dark]) .frames .fopt[aria-pressed="true"],
+html:not([data-theme=dark]) .buy .fopt[aria-pressed="true"],
+html:not([data-theme=dark]) .subj span[aria-pressed="true"]{
+  color:#f3dc9a !important;
+  background:
+    radial-gradient(ellipse 90% 65% at 28% 16%, rgba(210,80,95,.42), transparent 58%),
+    linear-gradient(180deg,#7a2430 0%, #5c171e 42%, #3a0e14 100%) !important;
+}
+html:not([data-theme=dark]) .frames .fopt.on b,
+html:not([data-theme=dark]) .buy .fopt.on b,
+html:not([data-theme=dark]) .frames .fopt.on small,
+html:not([data-theme=dark]) .buy .fopt.on small,
+html:not([data-theme=dark]) .subj span.on small{
+  color:#f3dc9a !important;
+}
+html:not([data-theme=dark]) .lang-sel{
+  background:linear-gradient(180deg,#fff8ec,#f3e4cc) !important;
+  color:#5a1420 !important;
+  border-color:rgba(138,106,47,.65) !important;
+}
+html:not([data-theme=dark]) .theme-btn{
+  background:linear-gradient(180deg,#fff8ec,#f0dcc0) !important;
+  color:#5a1420 !important;
+}
+html:not([data-theme=dark]) .cta .qty{
+  background:linear-gradient(180deg,rgba(255,248,236,.85),rgba(243,228,204,.9));
+  color:#5a1420;
+}
+html:not([data-theme=dark]) .buy .drop{
+  background:linear-gradient(180deg,rgba(255,248,236,.8),rgba(243,228,204,.75)) !important;
+}
+html:not([data-theme=dark]) footer .news span{
+  background:rgba(255,248,236,.85);
+  color:#6e5444 !important;
+}
+html:not([data-theme=dark]) .m-menu a{
+  background:rgba(255,248,236,.9);
+  color:#5a1420 !important;
+}
+
+/* ---------- mobile / long labels (DE/FR) ---------- */
+@media (max-width:480px){
+  .btn, .btn.gold-btn, .btn.wine, .btn.ghost{
+    min-width:0; width:100%; max-width:320px;
+    padding:14px 16px; font-size:14px; letter-spacing:.1em;
+    white-space:normal; text-align:center; line-height:1.25;
+  }
+  .hero .copy .btns .btn{ width:300px; }
+  .cta{ flex-wrap:wrap }
+  .cta .add{
+    flex:1 1 100%; width:100%;
+    font-size:15px; letter-spacing:.08em; white-space:normal; padding:14px 12px;
+  }
+  .cta .qty{ flex:0 0 auto }
+  .ph-btns .btn{ width:100%; max-width:320px }
+}
+/* slightly tighten tracking when label is long (latin) */
+.btn.wide, .cta .add{ letter-spacing:.12em }
+
+@media (prefers-reduced-motion:reduce){
+  .btn, .btn::before, .btn::after, .fopt, .subj span{ transition:none!important }
+}

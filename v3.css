@@ -123,3 +123,37 @@
 
 .keyhole .lede{max-width:100%;padding:0 12px;box-sizing:border-box;overflow-wrap:anywhere;word-break:normal}
 .keyhole .kh-in{padding:0 8px;box-sizing:border-box}
+
+/* t290u About: replace bottom-right lace with studio photo card */
+.ab-lace{display:none!important} /* kept in assets; swapped for .ab-photo2 */
+.ab-copy{position:relative;z-index:3;padding-right:36px}
+.ab-copy .sig,.ab-copy p{max-width:480px}
+.ab-photo2{
+  position:absolute;right:22px;bottom:-20px;width:200px;margin:0;padding:0;
+  z-index:1;pointer-events:none;
+  transform:rotate(7deg);
+  filter:drop-shadow(0 14px 22px rgba(0,0,0,.45));
+}
+.ab-photo2-mount{
+  position:relative;
+  padding:9px 9px 22px;
+  background:
+    linear-gradient(165deg,#f6e7c8 0%,#e8d4a8 40%,#d4bf8a 100%);
+  border:1px solid #8a6a2f;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,248,220,.55),
+    inset 0 0 0 4px rgba(201,163,92,.35),
+    0 1px 0 rgba(255,248,220,.35);
+  border-radius:4px 4px 6px 6px;
+}
+.ab-photo2-mount::before{
+  /* thin inner gold fillet */
+  content:"";position:absolute;inset:5px 5px 18px;pointer-events:none;
+  border:1px solid rgba(138,106,47,.55);
+  box-shadow:inset 0 0 0 1px rgba(255,248,230,.35);
+}
+.ab-photo2-mount img{
+  display:block;width:100%;height:auto;
+  border:1px solid rgba(90,58,18,.35);
+  position:relative;z-index:1;
+}

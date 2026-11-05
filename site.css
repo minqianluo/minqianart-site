@@ -84,3 +84,19 @@ html:lang(ja) body,html:lang(zh-Hans) body,html:lang(zh-Hant) body{line-break:st
 /* rose kept clear of the placeholder caption (all langs) */
 body .gal .main .rosea{bottom:96px!important}
 @media (max-width:600px){body .gal .main .rosea{bottom:120px!important;width:150px!important;right:-30px!important}}
+/* About studio photo card — dark theme mount */
+html[data-theme=dark] .ab-photo2-mount{
+  background:linear-gradient(165deg,#3a2a1a 0%,#2a1c12 55%,#1c120c 100%);
+  border-color:#c9a35c;
+  box-shadow:
+    inset 0 0 0 1px rgba(243,220,154,.22),
+    inset 0 0 0 4px rgba(201,163,92,.28),
+    0 1px 0 rgba(0,0,0,.4);
+}
+html[data-theme=dark] .ab-photo2-mount::before{
+  border-color:rgba(201,163,92,.45);
+  box-shadow:inset 0 0 0 1px rgba(243,220,154,.12);
+}
+html[data-theme=dark] .ab-photo2{
+  filter:drop-shadow(0 16px 24px rgba(0,0,0,.6));
+}

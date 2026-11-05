@@ -885,3 +885,9 @@ These replace drawn/Met frame overlays on product pages, collection cards, and t
 
 ## t289u (2026-11-05)
 Artist photos use real frame PNGs: hero → S, About → R. Drawn frame_oval_carved.png removed; frame_oval_rosette.png kept for How-it-works medals.
+
+Artist studio photo (About bottom-right card): assets/artist_photo_studio.jpg (+ .webp) — supplied by artist Nov 2025; cream dress painting wedding portrait outdoors; replaces ab-lace decorative swatch. Read-only original kept off-site; web copy optimized 933×1400.
+
+Buttons (Nov 2025): style C 丝绒烫金 (burgundy velvet + gold foil stitch/beads) via buttons_c.css linked site-wide after site.css — primary .gold-btn filled, secondary .wine/.ghost outlined, chips .fopt/.subj.on selected, lang/theme/hamburger/footer Join included. Chosen from /workspace/button_options/ option_C.png (not shipped).
+
+About studio card: .ab-photo2 replaces .ab-lace at About bottom-right; gold-edged cream/dark mount, slight tilt; z-index below .ab-copy so bio+sig stay clear; mobile About remains hidden (v3_mobile).
