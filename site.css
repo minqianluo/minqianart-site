@@ -84,6 +84,21 @@ html:lang(ja) body,html:lang(zh-Hans) body,html:lang(zh-Hant) body{line-break:st
 /* rose kept clear of the placeholder caption (all langs) */
 body .gal .main .rosea{bottom:96px!important}
 @media (max-width:600px){body .gal .main .rosea{bottom:120px!important;width:150px!important;right:-30px!important}}
+
+/* About BR flowers: kiss card corner only — never face/easel */
+.fborder img[data-id="r30"]{
+  right:-190px!important;
+  width:150px!important;
+  transform:rotate(28deg)!important;
+  margin-top:160px; /* sit at upper-right corner of card */
+}
+.fborder img[data-id="r31"]{
+  right:-175px!important;
+  width:130px!important;
+  transform:rotate(20deg)!important;
+  margin-top:80px;
+  opacity:.85;
+}
 /* About studio photo card — dark theme mount */
 html[data-theme=dark] .ab-photo2-mount{
   background:linear-gradient(165deg,#3a2a1a 0%,#2a1c12 55%,#1c120c 100%);
